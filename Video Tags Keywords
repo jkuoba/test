@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Video Tags Keywords</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Video Tags Keywords</td></tr>
+</thead><tbody>
+<!--Video asset STD START ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Fixer Upper Home</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--============-->
+<tr>
+	<td>store</td>
+	<td>false</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}' !=&quot;true&quot;</td>
+	<td>noClear</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noClear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<!--Video asset STD END ==============================================-->
+<tr>
+	<td>click</td>
+	<td>link=Tags &amp; Keywords</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[42]/div/label</td>
+	<td>Primary Tag Group</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[42]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380007&amp;aq=category%20notequalsall%20'preferred_terms'&amp;sg=false&quot;)])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[8]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'Floor Lamp')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--Secondary Tag Group-->
+<tr>
+	<td>assertText</td>
+	<td>//div[42]/small/em</td>
+	<td>CQ Property Name: jcr:content/cq:tags</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[43]/div/label</td>
+	<td>Secondary Tag Groups</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[43]/small/em</td>
+	<td>CQ Property Name: jcr:content/tagMapping-X</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[43]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[43]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li/div[2]/div/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380007&amp;aq=category%20notequalsall%20'preferred_terms'&amp;sg=false&quot;)])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@data-objectid='00000155-2c00-db86-a17f-2fdc3b7d0000']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Green Building</td>
+	<td>Green Building</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[23]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Adobe CQ')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Adobe CQ')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'SEO')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.popup-objectId-edit-heading</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--## ERROR Preferred Terms drop down duplication bug  CORE-1999-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,1000)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[44]/div/label</td>
+	<td>Preferred Terms</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[44]/small</td>
+	<td>Used for ad targeting.<br />CQ Property Name: jcr:content/sni:preferredTerm1 and sni:preferredTerm2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[6]/div/div[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.dropDown-label</td>
+	<td>Preferred Terms :: Decorating :: Color</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[66]/div/label</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[66]/small/em</td>
+	<td>CQ Property Name: jcr:content/editorialKeywords</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='editorialKeywords']</td>
+	<td>HGTV</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-post&quot;]</td>
+	<td>Comment</td>
+</tr>
+</tbody></table>
+</body>
+</html>

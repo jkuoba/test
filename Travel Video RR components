@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.travel-coredev.sni.travelchannel.com/cms/" />
+<title>Travel Video RR components</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Travel Video RR components</td></tr>
+</thead><tbody>
+<!--Video asset STD START ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Yosemite National Park</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<!--============-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noClear</td>
+</tr>
+<tr>
+	<td>clic</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noClear</td>
+	<td></td>
+</tr>
+<!--Video asset STD END ==============================================-->
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-action-publish</td>
+	<td>Publish</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.widget-publishingPublish &gt; span.calendarButton.calendarButton-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button[name=&quot;action-publish&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-newDraft&quot;]</td>
+	<td>Save Draft</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Preview</td>
+	<td>Preview</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button[name=&quot;action-trash&quot;]</td>
+	<td>Archive</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[2]/div/div/h1</td>
+	<td>Image Preview</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.widget &gt; div &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[2]/div/h1</td>
+	<td>MPX</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a &gt; button</td>
+	<td>Force Read from MPX</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/h1</td>
+	<td>Adobe CQ</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/a/button</td>
+	<td>Force Read from CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[2]/button</td>
+	<td>Force Write to CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[3]/button</td>
+	<td>Force Activate in CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[4]/button</td>
+	<td>Force Deactivate in CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=CRX DE Lite</td>
+	<td>CRX DE Lite</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-urls &gt; h1</td>
+	<td>URLs</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget-urlsItemLabel &gt; a</td>
+	<td>/video/etc/sni-asset/travelchannel/videos/0/01/018/0182/0182886</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.widget-urlsItemRemove</td>
+	<td>Remove</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.siteId&quot;]</td>
+	<td>GlobalTravel</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.type&quot;]</td>
+	<td>PermalinkRedirectAlias</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.siteId&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.siteId&quot;]</td>
+	<td>label=Travel</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;00000154-9b39-d5b6-a1de-dff9e9c10000&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.siteId&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.siteId&quot;]</td>
+	<td>label=Global</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.siteId&quot;] &gt; option</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.type&quot;]</td>
+	<td>label=Alias</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.type&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.type&quot;]</td>
+	<td>label=Redirect</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;REDIRECT&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.type&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/directory.type&quot;]</td>
+	<td></td>
+</tr>
+<!--## ERROR  * CORE-2054  Media Desk: Travel - Editing Video, the RR URLs section displays two URL.-->
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div[4]/div/div/span</td>
+	<td>Add URL</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1700)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-sites &gt; h1</td>
+	<td>Sites</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-sites &gt; label</td>
+	<td>exact:Owner:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[2]</td>
+	<td>exact:Access:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/sites/owner&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/sites/owner&quot;]</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/sites/owner&quot;] &gt; option</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/sites/owner&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/sites/owner&quot;]</td>
+	<td>label=Travel</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/sites/owner&quot;] &gt; option[value=&quot;00000154-9b39-d5b6-a1de-dff9e9c10000&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//select[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[starts-with(@id, 'i')]</td>
+	<td>label=Some Others</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[starts-with(@id, 'i')]</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div[6]/h1</td>
+	<td>Watchers</td>
+</tr>
+<!--set watcher-->
+<tr>
+	<td>click</td>
+	<td>css=div.watchers-form &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//body/div[14]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[14]/div[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.watchers-form &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.watchers-form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-object-history</td>
+	<td>Revisions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.new &gt; a</td>
+	<td>New Draft</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h2[2]</td>
+	<td>Past</td>
+</tr>
+</tbody></table>
+</body>
+</html>

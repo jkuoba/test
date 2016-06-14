@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.travel-coredev.sni.travelchannel.com/cms/" />
+<title>Travel Video Filters</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Travel Video Filters</td></tr>
+</thead><tbody>
+<!--image asset STD START ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--Site :Travel 8  Global 7-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[18]/div/div[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[18]/div/div[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Brand</td>
+	<td></td>
+</tr>
+<!--Video asset STD END ==============================================-->
+<!--## ERROR, if you are in the Travel site, you won't see the Travel channel option in the dropdown bug bug ????-->
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Starting from the video filter testing    *********************************-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td>Publish Date</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/span[2]</td>
+	<td>(End)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.month</td>
+	<td>label=December</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.week.week4 &gt; span.day.day3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.week.week4 &gt; span.day.day4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<!--## ERROR   CORE-2030 Media Desk: the start date divider line should be under timestamp-->
+<!--attributions-->
+<tr>
+	<td>assertText</td>
+	<td>css=span.objectId-placeholder</td>
+	<td>Attributions</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.searchFilterItem &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<!--Error in Here-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@href,'u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000154-9b22-d137-af76-db6fd73a0017&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=true&amp;o=0&amp;l=10&amp;st=00000154-9b22-d137-af76-db6fd73a0017&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000154-9c4a-d7eb-abd5-9fdf3a350000&amp;taxonLevel=3')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000154-9b22-d137-af76-db6fd73a0017&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=true&amp;o=0&amp;l=10&amp;st=00000154-9b22-d137-af76-db6fd73a0017&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000154-9c4a-d7eb-abd5-9fdf3a350000&amp;taxonLevel=3')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[contains(.,'Frank Carfaro')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'Frank Carfaro')]</td>
+	<td></td>
+</tr>
+<!--subjects-->
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/a/span</td>
+	<td>Subjects</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Subjects</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[1]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'/cms/content/objectIdResult.jsp?_u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000154-9b22-d137-af76-db6fd73a0017&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=true&amp;o=0&amp;l=10&amp;st=00000154-9b22-d137-af76-db6fd73a0017&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000154-9c49-d7eb-abd5-9fddf2390000&amp;taxonLevel=3')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'Valerie Conners')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[contains(.,'Frank Carfaro')]</td>
+	<td>Frank Carfaro</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Valerie Conners</td>
+	<td>Valerie Conners</td>
+</tr>
+<!--Preferred Terms-->
+<!--## ERROR Duplicate options drop down -->
+<tr>
+	<td>assertText</td>
+	<td>link=Preferred Terms</td>
+	<td>Preferred Terms</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(.,'Preferred Terms')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[26]/div/div[2]</td>
+	<td></td>
+</tr>
+<!--Brand-->
+<tr>
+	<td>assertText</td>
+	<td>link=Brand</td>
+	<td>Brand</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Brand</td>
+	<td>Brand</td>
+</tr>
+<!--//body/div[28]/div/div[8]   for Travel Channel under brand lisitng Site: Global-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//body/div[28]/div/div[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'DIY')]</td>
+	<td></td>
+</tr>
+<!--## ERROR  CORE TeamCORE-2029  Media Desk: Travel - Filter with type "image" and Brand "Travel Channel", system returns empty.-->
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<!--Missing Travel Channel on SIte:Travel -->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>link=DIY</td>
+	<td>DIY</td>
+</tr>
+<!--Web Series -->
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.webSeries&quot;]</td>
+	<td>Test Web Series</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[name=&quot;f.webSeries&quot;]</td>
+	<td></td>
+</tr>
+<!--Content Types  8/11-->
+<!--Its empty because the available values are created by ingestion from MPX. Home has no values for that field from MPX   -->
+<!--## NOTE: travel does, hey're looking into populating it for home, but not there yet-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[8]/div/div</td>
+	<td>Content Types</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div[8]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[28]/div/div[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Sponsored Short</td>
+	<td>Sponsored Short</td>
+</tr>
+<!--Tags-->
+<tr>
+	<td>assertText</td>
+	<td>link=Tags</td>
+	<td>Tags</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Tags</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'/cms/content/objectIdResult.jsp?_u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000154-9b22-d137-af76-db6fd73b0005&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=true&amp;o=0&amp;l=10&amp;st=00000154-9b22-d137-af76-db6fd73b0005&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.parent=&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000154-9c42-d5b6-a1de-deeb83ee0000&amp;taxonLevel=3')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[@data-objectid='00000154-9c42-d5b6-a1de-deeb85390000']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@data-objectid='00000154-9c42-d5b6-a1de-deeb85390000']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Travels Best</td>
+	<td>Travels Best</td>
+</tr>
+<!--## Note: please add a CQ path to verify -->
+<!--CQ Path-->
+<tr>
+	<td>assertValue</td>
+	<td>css=input[name=&quot;f.cq.path&quot;]</td>
+	<td></td>
+</tr>
+<!--Type Map -->
+<!--## ERROR  CORE-2032 Media Desk: Travel Image Global Search - field "Type Map" with no dropdown content.-->
+<tr>
+	<td>assertText</td>
+	<td>link=Type Map</td>
+	<td>Type Map</td>
+</tr>
+<!--## ERROR CORE-2018 -->
+<tr>
+	<td>click</td>
+	<td>link=Type Map</td>
+	<td>Type Map</td>
+</tr>
+<!--## ERROR empty dron dow   old drop down click  //div[20]/div/div-->
+<!--im workflow, published-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>In Workflow, Published</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--Collections-->
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilter.searchFilter-record &gt; a.objectId-select</td>
+	<td>Collections</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(.,'Collections')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[36]/div/div/h1</td>
+	<td>Select</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//select[@name='s'])[2]</td>
+	<td>exact:Sort: Page Views Last 24 HoursSort: Page Views Last 30 DaysSort: Page Views Last 7 DaysSort: Page Views Last HourSort: Page Views This MonthSort: Page Views This WeekSort: Page Views TodaySort: Publish DateSort: Update DateSort: Views Last 24 HoursSort: Views Last 30 DaysSort: Views Last 7 DaysSort: Views Last HourSort: Views This MonthSort: Views This WeekSort: Views Today</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchPagination &gt; ul.pagination &gt; li</td>
+	<td>1 to 1 of 1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.searchForm &gt; div.searchControls &gt; div.searchFilters &gt; h2</td>
+	<td>Filters</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.searchForm &gt; div.searchControls &gt; div.searchCreate &gt; form.objectId-create.bsp-onDomInsert-inserted-31 &gt; button.action.action-create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--advance Query-->
+<tr>
+	<td>assertText</td>
+	<td>css=input[name=&quot;av&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-wrench</td>
+	<td>Advanced Query Builder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;searchAdvancedQuery&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;av&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;av&quot;]</td>
+	<td>mpxGuid = 0187970</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchForm</td>
+	<td></td>
+</tr>
+<!--Create /new-->
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchCreate &gt; h2</td>
+	<td>Create</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Video</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/form/button</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[2]/form/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//h1/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h1/span</td>
+	<td>New Video: Untitled</td>
+</tr>
+<!--ENDENDNED-->
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Image SEO</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Image SEO</td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--======  end of filtering IMAGE -->
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Grand Canyon Railway EMD </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noClear</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noClear</td>
+	<td></td>
+</tr>
+<!--===== END of Image selection  steps  ==============================================-->
+<tr>
+	<td>click</td>
+	<td>link=SEO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[56]/div/label</td>
+	<td>Title</td>
+</tr>
+<!--==============================================-->
+<tr>
+	<td>assertText</td>
+	<td>//div[57]/div/label</td>
+	<td>Description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='cms.seo.description']</td>
+	<td>Test Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[58]/div/label</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[58]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<!--## ERROR CORE-2019 Media Desk: Travel image SEO tab - keywords + function not working.-->
+<!--click    css=input[name="00000154-a535-d164-adf7-a77709aa0000/cms.seo.keywords.text"]  -->
+<!--type   css=input[name="00000154-a535-d164-adf7-a77709aa0000/cms.seo.keywords.text"]   color -->
+<tr>
+	<td>click</td>
+	<td>//div[58]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<!--type   css=div.addButtonContainer.state-focus > input[name="00000154-a535-d164-adf7-a77709aa0000/cms.seo.keywords.text"] -->
+<tr>
+	<td>click</td>
+	<td>//div[58]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotValue</td>
+	<td>xpath=(//input[@name='00000154-a535-d164-adf7-a77709aa0000/cms.seo.keywords.text'])[2]</td>
+	<td>design</td>
+</tr>
+<tr>
+	<td>assertNotValue</td>
+	<td>css=input[name=&quot;00000154-a535-d164-adf7-a77709aa0000/cms.seo.keywords.text&quot;]</td>
+	<td>color</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[59]/div/label</td>
+	<td>Robots</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[59]/small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[59]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[18]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[59]/div[2]/div</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

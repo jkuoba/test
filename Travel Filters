@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.travel-coredev.sni.travelchannel.com/cms/" />
+<title>Travel Filters</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Travel Filters</td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>700</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-listItem.state-hover</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[18]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[18]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.searchResult-images</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--Go through all filters dropdown -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td>Publish Date</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/span[2]</td>
+	<td>(End)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.month</td>
+	<td>label=December</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.week.week4 &gt; span.day.day3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.week.week4 &gt; span.day.day4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<!--## ERROR   CORE-2030 Media Desk: Travel - Global Search with image type, the start date divider line should be under timestamp-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilterItem &gt; div.dropDown-input &gt; a.dropDown-label.state-placeholder</td>
+	<td>Image Resolution</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//body/div[26]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[26]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[26]/div/div[1]</td>
+	<td></td>
+</tr>
+<!--attributions-->
+<tr>
+	<td>assertText</td>
+	<td>css=span.objectId-placeholder</td>
+	<td>Attributions</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.searchFilterItem &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>8000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<!--Error in Here-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//a[contains(@href,'u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000154-9b22-d137-af76-db6fd73a0017&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=true&amp;o=0&amp;l=10&amp;st=00000154-9b22-d137-af76-db6fd73a0017&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000154-9c4a-d7eb-abd5-9fdf3a350000&amp;taxonLevel=3')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000154-9b22-d137-af76-db6fd73a0017&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=true&amp;o=0&amp;l=10&amp;st=00000154-9b22-d137-af76-db6fd73a0017&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000154-9c4a-d7eb-abd5-9fdf3a350000&amp;taxonLevel=3')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[contains(.,'Frank Carfaro')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'Frank Carfaro')]</td>
+	<td></td>
+</tr>
+<!--subjects-->
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/div/a/span</td>
+	<td>Subjects</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Subjects</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[1]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'/cms/content/objectIdResult.jsp?_u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000154-9b22-d137-af76-db6fd73a0017&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=true&amp;o=0&amp;l=10&amp;st=00000154-9b22-d137-af76-db6fd73a0017&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000154-9c49-d7eb-abd5-9fddf2390000&amp;taxonLevel=3')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'Holly C. Corbett')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[contains(.,'Frank Carfaro')]</td>
+	<td>Frank Carfaro</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Holly C. Corbett</td>
+	<td>Holly C. Corbett</td>
+</tr>
+<!--Brand-->
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[7]/div/div</td>
+	<td>Brand</td>
+</tr>
+<!--//body/div[28]/div/div[8]   for Travel Channel under brand lisitng Site: Global-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//body/div[28]/div/div[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[28]/div/div[6]</td>
+	<td></td>
+</tr>
+<!--## ERROR  CORE TeamCORE-2029  Media Desk: Travel - Filter with type "image" and Brand "Travel Channel", system returns empty.-->
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<!--Missing Travel Channel on SIte:Travel -->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>link=HGTV</td>
+	<td>HGTV</td>
+</tr>
+<!--Syndication-->
+<tr>
+	<td>assertText</td>
+	<td>link=Syndication / Distribution</td>
+	<td>Syndication / Distribution</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-text &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<!--26  OR 30 -->
+<tr>
+	<td>click</td>
+	<td>//div[30]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All External</td>
+	<td>All External</td>
+</tr>
+<!--Right/Restirctions start/end-->
+<tr>
+	<td>assertText</td>
+	<td>//div[9]/span</td>
+	<td>Rights/Restrictions Start</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[9]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.week.week4 &gt; span.day.day4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[9]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<!--Right/Restirctions end/end-->
+<!--## ERROR  CORE-1997 Media Desk: Image asset global search "Rights/Restrictions" calendar icon should be line up with Start /End label-->
+<tr>
+	<td>assertText</td>
+	<td>//form[2]/div[2]/div[10]</td>
+	<td>Rights/Restrictions End(End)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[10]/span[2]</td>
+	<td>(End)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[10]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[10]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_clear</td>
+	<td></td>
+</tr>
+<!--Location-->
+<!--## ERROR  CORE-2031 Media Desk: Travel - Global Search filter:Location, "Locations" title under the bottom of the drop down.-->
+<tr>
+	<td>assertText</td>
+	<td>link=Locations</td>
+	<td>Locations</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[2]/div[2]/div[11]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[2]/div[2]/div[11]/div</td>
+	<td></td>
+</tr>
+<!--platform-->
+<tr>
+	<td>assertText</td>
+	<td>link=Platforms</td>
+	<td>Platforms</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[2]/div[2]/div[12]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[34]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Mobile</td>
+	<td>Mobile</td>
+</tr>
+<!--Public-->
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;f.publicPhoto&quot;]</td>
+	<td>exact:PublicPublic: YesPublic: No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.publicPhoto&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.publicPhoto&quot;]</td>
+	<td>label=Public: Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;true&quot;]</td>
+	<td></td>
+</tr>
+<!--Wayfaire-->
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;f.displayWayfair&quot;]</td>
+	<td>exact:Display Wayfair?Display Wayfair? YesDisplay Wayfair? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.displayWayfair&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.displayWayfair&quot;]</td>
+	<td>label=Display Wayfair? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.displayWayfair&quot;] &gt; option[value=&quot;false&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;f.displayWayfair&quot;]</td>
+	<td>exact:Display Wayfair?Display Wayfair? YesDisplay Wayfair? No</td>
+</tr>
+<!--Keywords-->
+<tr>
+	<td>assertValue</td>
+	<td>css=input[name=&quot;f.keywords&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.keywords&quot;]</td>
+	<td>image</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchInput.state-focus &gt; button</td>
+	<td></td>
+</tr>
+<!--Preferred Terms-->
+<!--Duplicate options drop down -->
+<tr>
+	<td>assertText</td>
+	<td>link=Preferred Terms</td>
+	<td>Preferred Terms</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[2]/div[2]/div[16]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[2]/div[2]/div[16]/div/div</td>
+	<td></td>
+</tr>
+<!--Create date -->
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/span</td>
+	<td>Creation Date</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/span[2]</td>
+	<td>(End)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[17]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[17]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#calendarPopup</td>
+	<td></td>
+</tr>
+<!--Tags-->
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/a/span</td>
+	<td>Tags</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Tags</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href,'/cms/content/objectIdResult.jsp?_u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000154-9b22-d137-af76-db6fd73b0005&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=true&amp;o=0&amp;l=10&amp;st=00000154-9b22-d137-af76-db6fd73b0005&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.parent=&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000154-9c42-d5b6-a1de-deeb83ee0000&amp;taxonLevel=3')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//span[@data-objectid='00000154-9c42-d5b6-a1de-deeb85390000']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@data-objectid='00000154-9c42-d5b6-a1de-deeb85390000']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2200</td>
+	<td></td>
+</tr>
+<!--CQ Path-->
+<tr>
+	<td>assertValue</td>
+	<td>css=input[name=&quot;f.cq.path&quot;]</td>
+	<td></td>
+</tr>
+<!--## Note: please add a CQ path to verify -->
+<!--Type Map -->
+<!--## ERROR  CORE-2032 Media Desk: Travel Image Global Search - field "Type Map" with no dropdown content.-->
+<tr>
+	<td>assertText</td>
+	<td>link=Type Map</td>
+	<td>Type Map</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[2]/div[2]/div[20]/div/div</td>
+	<td></td>
+</tr>
+<!--old drop down click  //div[20]/div/div-->
+<!--im workflow, published-->
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>In Workflow, Published</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<!--36/44/42/40-->
+<tr>
+	<td>click</td>
+	<td>//div[40]/div/div[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input.dropDown-input-bottom &gt; a.dropDown-label</td>
+	<td>Published</td>
+</tr>
+<!--Search Result section-->
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-record &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.searchForm &gt; div.searchControls &gt; div.searchFilters &gt; h2</td>
+	<td>Filters</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//h2[contains(.,'Result')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<!--advance Query-->
+<tr>
+	<td>assertText</td>
+	<td>css=input[name=&quot;av&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-wrench</td>
+	<td>Advanced Query Builder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;searchAdvancedQuery&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Create /new-->
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchCreate &gt; h2</td>
+	<td>Create</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Image</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/form/button</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[2]/form/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//h1/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h1/span</td>
+	<td>New Image: Untitled</td>
+</tr>
+<!--ENDENDNED-->
+</tbody></table>
+</body>
+</html>

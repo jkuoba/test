@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Image Adobe CQ</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Image Adobe CQ</td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--======  end of filtering IMAGE -->
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Grand Canyon Railway EMD </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noClear</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noClear</td>
+	<td></td>
+</tr>
+<!--===== END of Image selection  steps  ==============================================-->
+<tr>
+	<td>click</td>
+	<td>link=Adobe CQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[47]/div/label</td>
+	<td>CQ Path</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='cq.path']</td>
+	<td>/content/dam/images/travel/fullrights/2016/01/26/national-parks-train-trips/national-park-train-trips-grand-canyon-railway-village.jpg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[48]/div/label</td>
+	<td>Type Map</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Travel Images / Full Rights</td>
+	<td>Travel Images / Full Rights</td>
+</tr>
+<!--## Follow up how many option we should have  under the type map dropdown -->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>link=GAC Fullset Images</td>
+	<td>GAC Fullset Images</td>
+</tr>
+<!--## ERROR CORE-2018 Media Desk: Travel Image Adobe CQ tab - The "Type Map" drop-down list missing "(Required)" title-->
+<!--## ERROR  CORE-2003 Media Desk: Adobe CQ tab - Interacting Field "Type Map", the dropdown display empty slot.-->
+<!--Follow, is that only one option or we can have other option like GAC Fullset Images etc.-->
+<tr>
+	<td>click</td>
+	<td>//div[48]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//body/div[16]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[66]/div/label</td>
+	<td>Last Replication Action</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='mediadesk.lastReplicationAction']</td>
+	<td>Activate</td>
+</tr>
+<!--Rest of fields read only.  Here is prod data for comparison   http://screencast.com/t/Y9oIcfKBez-->
+</tbody></table>
+</body>
+</html>

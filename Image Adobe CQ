@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Image Adobe CQ</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Image Adobe CQ</td></tr>
+</thead><tbody>
+<!--image asset STD START ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[16]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--======  end of filtering IMAGE -->
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Transitional Kitchen With Black Island and Cabinetry</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Image with search end -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<!--Clear Changes %%%%%%%%%%%%-->
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>//a[@class='icon icon-action-remove']</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@class='icon icon-action-remove']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<!--above is image asset STD END  steps  ==============================================-->
+<tr>
+	<td>click</td>
+	<td>link=Adobe CQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[47]/div/label</td>
+	<td>CQ Path</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='cq.path']</td>
+	<td>/content/dam/images/hgtv/fullset/2012/10/2/1/HKITC208H_Black-Kitchen-3_s3x4.jpg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[48]/div/label</td>
+	<td>Type Map</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=HGTV Fullset Images</td>
+	<td>HGTV Fullset Images</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[48]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[16]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=GAC Fullset Images</td>
+	<td>GAC Fullset Images</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[66]/div/label</td>
+	<td>Last Replication Action</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='mediadesk.lastReplicationAction']</td>
+	<td>Activate</td>
+</tr>
+<!--Rest of fields read only.  Here is prod data for comparison   http://screencast.com/t/Y9oIcfKBez-->
+<!--#ERROR  CORE-2003 Media Desk: Adobe CQ tab - Interacting Field "Type Map", the dropdown display empty slot.-->
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Video Main Tab</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Video Main Tab</td></tr>
+</thead><tbody>
+<!--Video asset STD START ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Yosemite National Park</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<!--============-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noClear</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noClear</td>
+	<td></td>
+</tr>
+<!--Video asset STD END ==============================================-->
+<tr>
+	<td>assertText</td>
+	<td>//h1/span</td>
+	<td>Edit Video: Yosemite National Park</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/label</td>
+	<td>Editorial Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/small</td>
+	<td>CQ Property Name: jcr:content/editorialTitle</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//textarea[@data-dynamic-field-name='editorialTitle']</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='editorialTitle']</td>
+	<td>Yosemite National Park</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/div/label</td>
+	<td>Editorial Description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//textarea[@data-dynamic-field-name='editorialDescription']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='editorialDescription']</td>
+	<td>Yosemite National Park is the most revisited park in the United States.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[8]/div/label</td>
+	<td>Editorial SEO Title</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//textarea[@data-dynamic-field-name='editorialSeoTitle']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='editorialSeoTitle']</td>
+	<td>Yosemite National Park</td>
+</tr>
+<!--## ERROR Video Preview does not have image -->
+<tr>
+	<td>assertText</td>
+	<td>//div[10]/div/label</td>
+	<td>Editorial SEO Description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//textarea[@data-dynamic-field-name='editorialSeoDescription']</td>
+	<td>Editorial SEO Description</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='editorialSeoDescription']</td>
+	<td>Yosemite National Park is the most revisited park in the United States.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=pre..CodeMirror-line </td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[12]/div/label</td>
+	<td>Internal Notes</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@autocapitalize='off']</td>
+	<td>Internal Notes QA Test</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[13]/div/label</td>
+	<td>Tracking</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='tracking']</td>
+	<td>QA tracking </td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/div/label</td>
+	<td>Cq Thumbnail Image</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//select[@data-root='.inputSmall']</td>
+	<td>Keep ExistingNoneNew UploadNew URL</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//select[@data-root='.inputSmall']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/cqThumbnailImage.action&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/cqThumbnailImage.action&quot;]</td>
+	<td>label=New Upload</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;newUpload&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;newUpload&quot;]</td>
+	<td></td>
+</tr>
+<!--## Follow up, Need  to do the upload image testing manually -->
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9ded-d7eb-abd5-9ffd56590000/cqThumbnailImage.action&quot;]</td>
+	<td>label=Keep Existing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;keep&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--## Follow up, need manually test Video Preview.-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,1000)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-preview</td>
+	<td>View Original</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[41]/div/label</td>
+	<td>Video Preview</td>
+</tr>
+<!--#############-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,1200)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[75]/h2</td>
+	<td>Open Graph</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[75]/div/label</td>
+	<td>OpenGraph Title</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='editorialOgTitle']</td>
+	<td>QA Test&nbsp;&nbsp;Open Graph Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[77]/div/label</td>
+	<td>OpenGraph Description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='editorialOgDescription']</td>
+	<td>QA Desc Open Graph desc</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form/div/div/div[3]</td>
+	<td></td>
+</tr>
+<!--#############-->
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.conversation-empty</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

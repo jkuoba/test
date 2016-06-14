@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Image Assoications</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Image Assoications</td></tr>
+</thead><tbody>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<!--====================-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--======  end of filtering IMAGE -->
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Grand Canyon Railway EMD </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noClear</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noClear</td>
+	<td></td>
+</tr>
+<!--above is image asset STD END  steps  ==============================================-->
+<tr>
+	<td>click</td>
+	<td>link=Associations</td>
+	<td></td>
+</tr>
+<!--Sources - Attributions-->
+<tr>
+	<td>assertText</td>
+	<td>//div[7]/div/label</td>
+	<td>Attributions</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--Verify Existing Atrributions-->
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[4]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-select</td>
+	<td>Robin Bennefield</td>
+</tr>
+<!--End Attribution -->
+<!--Sources -Show-->
+<tr>
+	<td>assertText</td>
+	<td>//div[12]/div/label</td>
+	<td>Show</td>
+</tr>
+<!--==============-->
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73b0000&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73b0000&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[3]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73b0000&amp;aq=&amp;sg=true')])[2]</td>
+	<td>15 Sin City Secrets</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Sources -Episode-->
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73a001a&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[6]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Top Ten Hearty Helpings</td>
+	<td>Top Ten Hearty Helpings</td>
+</tr>
+<!--Subjects -->
+<tr>
+	<td>assertText</td>
+	<td>//div[16]/div/label</td>
+	<td>Subjects</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73a0017&amp;aq=level%20equalsany%20'normal'&amp;sg=true&quot;)])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.state-selected &gt; a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[12]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[8]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Magic Man</td>
+	<td>Magic Man</td>
+</tr>
+<!--Primary Destination - not in Home, need to verify with Travel asset  ###-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,700)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/div/label</td>
+	<td>Primary Destination</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73a0007&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[7]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Austria</td>
+	<td>Austria</td>
+</tr>
+<!--Secondary Destination-->
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/label</td>
+	<td>Secondary Destinations</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[18]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73a0007&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Primary Interest -->
+<tr>
+	<td>assertText</td>
+	<td>//div[19]/div/label</td>
+	<td>Primary Interest</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73a000e&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Beaches</td>
+	<td>Beaches</td>
+</tr>
+<!--Secondary Interrest -->
+<tr>
+	<td>assertText</td>
+	<td>//div[20]/div/label</td>
+	<td>Secondary Interests</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[20]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73a000e&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Business</td>
+	<td>Business</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Arts And Culture</td>
+	<td>Arts And Culture</td>
+</tr>
+<!--Brand-->
+<tr>
+	<td>assertText</td>
+	<td>//div[21]/div/label</td>
+	<td>Brand</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--#ERROR  CORE-2038 Media Desk: Site Travel - Associations tab, the field "Brand" drop down missing option "Travel Channel"-->
+<!--you need to be in the site: Global to see Travel Channel. clarification in the ticket 2038-->
+<!--click  //div[6]/div/div[8]    Travel Channel-->
+<tr>
+	<td>click</td>
+	<td>//div[6]/div/div[5]</td>
+	<td>HGTV Remodels</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>link=Travel Channel</td>
+	<td></td>
+</tr>
+<!--Project Name-->
+<tr>
+	<td>assertText</td>
+	<td>//div[22]/div/label</td>
+	<td>Project Name</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//textarea[@data-dynamic-field-name='projectName']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='projectName']</td>
+	<td>CQ Project name </td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,1200)</td>
+	<td></td>
+</tr>
+<!--Copyright-->
+<tr>
+	<td>assertText</td>
+	<td>//div[23]/div/label</td>
+	<td>Copyright</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='copyright']</td>
+	<td>QATest_Copyright</td>
+</tr>
+<!--Credit-->
+<tr>
+	<td>assertText</td>
+	<td>//div[24]/div/label</td>
+	<td>Credit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='credit']</td>
+	<td>QA</td>
+</tr>
+<!--QA note: not travel image does not have location info and field -->
+<tr>
+	<td>assertText</td>
+	<td>//div[26]/div</td>
+	<td>GuideOwner</td>
+</tr>
+<!--Owner-->
+<tr>
+	<td>assertText</td>
+	<td>//div[26]/div/label</td>
+	<td>Owner</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='owner']</td>
+	<td>JK@psd.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.frame.loaded &gt; div.widget</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='owner']</td>
+	<td></td>
+</tr>
+<!--Analytics-->
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<!--Conversation-->
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.conversation-empty</td>
+	<td>Nobody has said anything yet.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=input[name=&quot;action-post&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-post&quot;]</td>
+	<td>Comment</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button[name=&quot;action-post&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

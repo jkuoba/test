@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Video Associations Tab</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Video Associations Tab</td></tr>
+</thead><tbody>
+<!--Video asset STD START ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Fixer Upper Home</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--============-->
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noClear</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noClear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--Video asset STD END ==============================================-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Associations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Associations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputContainer &gt; h2</td>
+	<td>Sources</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[19]/div/label</td>
+	<td>Attributions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[19]/small/em</td>
+	<td>CQ Property Name: jcr:content/editorialSources</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[19]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[5]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-select</td>
+	<td>Bent Fork Bakery [HGTV]</td>
+</tr>
+<!--==============================================-->
+<!--Sources -Show-->
+<tr>
+	<td>assertText</td>
+	<td>//div[22]/div/label</td>
+	<td>Show</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=small.inputNote &gt; span</td>
+	<td>House Hunters [HGTV]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[22]/small/em</td>
+	<td>CQ Property Name: jcr:content/editorialShow</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--QA Note:  It is normal we stop here. please skip Sources testing -->
+<!--## ERROR  CORE-2061  Media Desk: HGTV QA: Video asset Associations tab, Current Value data does not display on the field "Show" and "Episode"-->
+<!--#ERROR Current value does not display on the Show Episdoe fields -->
+<!--Error Note :  current value comes from the mpx data.. its the default if they don't override it I need to change that to put in a placeholder value instead-->
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>//div/div/div/form/div/div/h1/span</td>
+	<td>Edit Show: House Hunters [HGTV]</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div/div/div/form/div/div/div[3]</td>
+	<td></td>
+</tr>
+<!--click      xpath=(//a[contains(text(),'Adobe CQ')])[2]-->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>//div/div/div/form/div/div/div[3]/div[4]/div/label</td>
+	<td>CQ Path</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>//textarea[contains(.,'/content/hgtv-com/en/shows/on-tv/h/house-hunters')]</td>
+	<td>/content/hgtv-com/en/shows/on-tv/h/house-hunters</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>//div/div/div/form/div/div/div[3]/div[5]/div/label</td>
+	<td>Type Map</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>link=HGTV Shows</td>
+	<td></td>
+</tr>
+<!--click     //div[3]/div[5]/div[2]/div-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--click       //div[3]/div[5]/div[2]/div-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div/div/div/form/div/div/div[3]</td>
+	<td></td>
+</tr>
+<!--click    xpath=(//a[contains(text(),'SEO')])[2]-->
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>//div/div/div/form/div/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.popup-objectId-edit-heading</td>
+	<td></td>
+</tr>
+<!--=================-->
+<!--Sources -Episode-->
+<!--## ERROR Eposide and Show pop up empty -->
+<tr>
+	<td>assertText</td>
+	<td>//div[26]/div/label</td>
+	<td>Episode</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<!--click      link=The Caribbean [HGTV]-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[4]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputContainer.state-changed &gt; div.inputSmall &gt; a.objectId-select</td>
+	<td>20 Ways to Add Value to Your Home [HGTV]</td>
+</tr>
+<!--Subjects -->
+<tr>
+	<td>assertText</td>
+	<td>//div[28]/h2</td>
+	<td>Subjects</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[28]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;aq=level%20equalsany%20'normal'&amp;sg=false&quot;)])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[8]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Primary Destination - not in Home, need to verify with Travel asset  ###-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[31]/div/label</td>
+	<td>Primary Destination</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370034&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Secondary Destination-->
+<tr>
+	<td>assertText</td>
+	<td>//div[32]/div/label</td>
+	<td>Secondary Destinations</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370034&amp;aq=&amp;sg=true')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Primary Interest -->
+<tr>
+	<td>assertText</td>
+	<td>//div[37]/div/label</td>
+	<td>Primary Interest</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff437003b&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Secondary Interrest -->
+<tr>
+	<td>assertText</td>
+	<td>//div[38]/div/label</td>
+	<td>Secondary Interests</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[38]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff437003b&amp;aq=&amp;sg=true')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Analytics-->
+<tr>
+	<td>assertText</td>
+	<td>//div[80]/h2</td>
+	<td>Other</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[80]/div</td>
+	<td>GuideWeb Series</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[80]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:editorialWebSeries</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.label</td>
+	<td>Use no value</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//textarea[@data-dynamic-field-name='editorialWebSeries']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='editorialWebSeries']</td>
+	<td>QA Property Name</td>
+</tr>
+<!--=======-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,1000)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<!--Conversation-->
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.conversation-empty</td>
+	<td>Nobody has said anything yet.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=input[name=&quot;action-post&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-post&quot;]</td>
+	<td>Comment</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button[name=&quot;action-post&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

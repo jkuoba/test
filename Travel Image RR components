@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.travel-coredev.sni.travelchannel.com/cms/" />
+<title>Travel Image RR components</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Travel Image RR components</td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--======  end of filtering IMAGE -->
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Grand Canyon Railway EMD </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noClear</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noClear</td>
+	<td></td>
+</tr>
+<!--===== END of Image selection  steps  ==============================================-->
+<tr>
+	<td>assertText</td>
+	<td>css=li.state-selected &gt; a</td>
+	<td>Main</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-action-publish</td>
+	<td>Publish</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div[2]/div/div[2]/div</td>
+	<td>Candidate by CQ at Wed May 11 12:07 AM</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Workflow</td>
+	<td>Workflow</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td>Reject</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//button[@name='action-workflow'])[2]</td>
+	<td>Bypass MD</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//button[@name='action-workflow'])[3]</td>
+	<td>Approve Candidate</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-draft&quot;]</td>
+	<td>Save</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-delete&quot;]</td>
+	<td>Delete Permanently</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Preview</td>
+	<td>Preview</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget-publishingPublish &gt; span.calendarButton.calendarButton-empty</td>
+	<td>Now</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[2]/div/div/h1</td>
+	<td>Image Preview</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.widget &gt; div &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div[3]/div/h1</td>
+	<td>Adobe CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a &gt; button</td>
+	<td>Force Read from CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[2]/button</td>
+	<td>Force Write to CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[3]/button</td>
+	<td>Force Activate in CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[4]/button</td>
+	<td>Force Deactivate in CQ</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=CQ DAM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-urls &gt; h1</td>
+	<td>URLs</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[contains(.,'/content/dam/images/travel/fullrights/2016/01/26/national-parks-train-trips/national-park-train-trips-grand-canyon-railway-village.jpg')]</td>
+	<td>/content/dam/images/travel/fullrights/2016/01/26/national-parks-train-trips/national-park-train-trips-grand-canyon-railway-village.jpg</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1700)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div[2]/div/span</td>
+	<td>Add URL</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-sites &gt; h1</td>
+	<td>Sites</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-sites &gt; label</td>
+	<td>exact:Owner:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;00000154-9dfe-d7eb-abd5-9fffec5a0000/sites/owner&quot;]</td>
+	<td>None Travel</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[2]</td>
+	<td>exact:Access:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//select[@name='00000154-9dfe-d7eb-abd5-9fffec5a0000/sites/access']</td>
+	<td>None All Others Some Others</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9dfe-d7eb-abd5-9fffec5a0000/sites/owner&quot;]</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;00000154-9dfe-d7eb-abd5-9fffec5a0000/sites/owner&quot;] &gt; option</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9dfe-d7eb-abd5-9fffec5a0000/sites/owner&quot;]</td>
+	<td>label=Travel</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;00000154-9b39-d5b6-a1de-dff9e9c10000&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//select[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[starts-with(@id, 'i')]</td>
+	<td>label=Some Others</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[starts-with(@id, 'i')]</td>
+	<td>label=None</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div[6]/h1</td>
+	<td>Watchers</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-object-history</td>
+	<td>Revisions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget &gt; h2</td>
+	<td>Drafts</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h2[2]</td>
+	<td>Past</td>
+</tr>
+</tbody></table>
+</body>
+</html>

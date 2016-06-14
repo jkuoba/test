@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Image sellection RR links V&V </title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Image sellection RR links V&V </td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowFocus</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<!--check the default RR Optlion list -->
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-30 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-30 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>New Selection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
+	<td>All</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.searchResult-action-simple &gt; a.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-action-simple &gt; a.button</td>
+	<td>Create New Photo Gallery</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Bulk Edit Selected</td>
+	<td>Bulk Edit Selected</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Bulk Workflow Selected</td>
+	<td>Bulk Workflow Selected</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Fullscreen</td>
+	<td>Fullscreen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Save Search</td>
+	<td>Save Search</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Save Collection</td>
+	<td>Save Collection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Unwatch Selected</td>
+	<td>Unwatch Selected</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=New Work Stream</td>
+	<td>New Work Stream</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.button.icon-action-trash</td>
+	<td>Bulk Archive Selected</td>
+</tr>
+<!--Verify with Image seleced RR option list -->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
+	<td>All</td>
+</tr>
+</tbody></table>
+</body>
+</html>

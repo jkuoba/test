@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Approve Candidate</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Approve Candidate</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[16]/div/div[4]</td>
+	<td>Image</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[4]</td>
+	<td>Image</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(.,'In Workflow, Published')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--38/52-->
+<tr>
+	<td>click</td>
+	<td>//div[38]/div/div[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[38]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[38]/div/div[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchResult-images</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input.dropDown-input-bottom &gt; a.dropDown-label</td>
+	<td>Candidate</td>
+</tr>
+<!--add type - image -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span &gt; span.visibilityLabel</td>
+	<td>Candidate</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form/div[2]/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td>Reject</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//button[@name='action-workflow'])[2]</td>
+	<td>Bypass MD</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//button[@name='action-workflow'])[3]</td>
+	<td>Approve Candidate</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button[name=&quot;action-delete&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@name='action-workflow'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span &gt; span.visibilityLabel</td>
+	<td>Approved for MD</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td>Apply MD</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[30]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#i8416dcc6274445fca6375ac93084e67d</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.visibilityLabel.widget-publishingWorkflowState</td>
+	<td>Submitted</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td>Reject</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//button[@name='action-workflow'])[2]</td>
+	<td>Re-Apply MD</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-delete&quot;]</td>
+	<td>Delete Permanently</td>
+</tr>
+<!--Rejecting ------------------------>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td>Resubmit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td></td>
+</tr>
+<!--Back to Candidate -------------------------------->
+<tr>
+	<td>assertText</td>
+	<td>css=span.visibilityLabel.widget-publishingWorkflowState</td>
+	<td>Candidate</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span &gt; span.visibilityLabel</td>
+	<td>Candidate</td>
+</tr>
+</tbody></table>
+</body>
+</html>

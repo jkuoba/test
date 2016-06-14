@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>image Main Tab</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">image Main Tab</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>windowFocus</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<!--====================-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--======  end of filtering IMAGE -->
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;s&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;s&quot;]</td>
+	<td>label=Sort: Publish Date</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;cms.content.publishDate&quot;]</td>
+	<td></td>
+</tr>
+<!--sorting key end -->
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Grand Canyon Railway EMD </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Image with search end -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noClear</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.icon.icon-action-remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noClear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.state-selected &gt; a</td>
+	<td>Main</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputLabel &gt; label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='title']</td>
+	<td>Grand Canyon Railway EMD F40PH 237, Grand Canyon Village</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/label</td>
+	<td>Caption</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='caption']</td>
+	<td>Your 65-mile, two-hour journey to the Grand Canyon on this vintage steam train starts in Williams, Ariz.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/label</td>
+	<td>SEO Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[5]/div</td>
+	<td>GuideAlt Tag</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='altTag']</td>
+	<td>family, train, trips, amtrak, grand canyon railway</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/div/label</td>
+	<td>Internal Notes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='internalNotes']</td>
+	<td>Royalty-free with proper credit</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[60]/div/label</td>
+	<td>File</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,1400)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.conversation-empty</td>
+	<td>Nobody has said anything yet.</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=input[name=&quot;action-post&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button[name=&quot;action-post&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.imageEditor-image &gt; img</td>
+	<td></td>
+</tr>
+<!--==========================================================================-->
+<!--invisible controls -->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>link=Focus</td>
+	<td>Focus</td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[14]</td>
+	<td>Edit</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@data-root='.inputSmall']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9dfe-d7eb-abd5-9fffec5a0000/file.action&quot;]</td>
+	<td>label=New Upload</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;newUpload&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;newUpload&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;00000154-9dfe-d7eb-abd5-9fffec5a0000/file.action&quot;]</td>
+	<td>label=Keep Existing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;keep&quot;]</td>
+	<td></td>
+</tr>
+<!--View Original-->
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-preview</td>
+	<td>View Original</td>
+</tr>
+<!--## ERROR no image and SP image to use -->
+<!--Hot Spots-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[5]/div[2]/div/span</td>
+	<td>Add Editorial Hot Spot</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[5]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.popup.popup-show &gt; div.content &gt; div.plugin-popup &gt; h1.widget-heading</td>
+	<td>Edit Hotspot</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div/div/label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[contains(@name,&quot;0000154&quot;)]</td>
+	<td>Hot Spot Title</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@autocorrect='off']</td>
+	<td>Hot Spot Caption</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=pre..CodeMirror-line </td>
+	<td>//textarea[contains(@name,'00000154-df04-d79d-a35d-df4d37490000/title')]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[3]/div/label</td>
+	<td>URL</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='url']</td>
+	<td>http://google.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[4]/div/label</td>
+	<td>Image</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73a000d&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[5]/div/label</td>
+	<td>Sponsor URL</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//textarea[@data-dynamic-field-name='sponsorUrl']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='sponsorUrl']</td>
+	<td>http://www.psd.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[6]/div/label</td>
+	<td>Sponsor Logo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000154-9dfe-d7eb-abd5-9fffec5a0000&amp;py=00000154-9b22-d137-af76-db6fd73a000b&amp;p=false&amp;rt=00000154-9b22-d137-af76-db6fd73a000d&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.actions &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//li/div[2]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[2]/div[2]/div/div[5]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.imageEditor-textOverlayLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.imageEditor-textOverlayLabel</td>
+	<td>HotSpot</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.content.state-focus &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.imageEditor-textOverlayRemove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.imageEditor-textOverlayRemove</td>
+	<td></td>
+</tr>
+<!--View Original  - manuel testing please -->
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-preview</td>
+	<td>View Original</td>
+</tr>
+<!--click   css=a.action-preview-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

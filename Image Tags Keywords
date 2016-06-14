@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Image Tags Keywords</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Image Tags Keywords</td></tr>
+</thead><tbody>
+<!--image asset STD START ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[16]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--======  end of filtering IMAGE -->
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Transitional Kitchen With Black Island and Cabinetry</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Image with search end -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<!--Clear Changes %%%%%%%%%%%%-->
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>//a[@class='icon icon-action-remove']</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@class='icon icon-action-remove']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<!--above is image asset STD END  steps  ==============================================-->
+<tr>
+	<td>click</td>
+	<td>link=Tags &amp; Keywords</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul &gt; li &gt; a.objectId-select</td>
+	<td>Color :: Black</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Style :: Transitional</td>
+	<td>Style :: Transitional</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Rooms And Spaces :: Kitchen :: Eat In Kitchen</td>
+	<td>Rooms And Spaces :: Kitchen :: Eat In Kitchen</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[38]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380007&amp;aq=category%20notequalsall%20'preferred_terms'&amp;sg=false&quot;)])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/span</td>
+	<td></td>
+</tr>
+<!--css=div[name="objectId-1-select"] > div.content > div.closeButton-->
+<!--  ==============================================-->
+<!--secondary tag groups-->
+<tr>
+	<td>assertText</td>
+	<td>//div[39]/div/label</td>
+	<td>Secondary Tag Groups</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.repeatableLabel</td>
+	<td>Tag Group: [Materials And Supplies :: Metal :: Copper, Appliance :: Range Hood]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[2]/div</td>
+	<td>Tag Group: [Color :: Black, Furniture :: Stool]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[3]/div</td>
+	<td>Tag Group: [Color :: Black, Rooms And Spaces :: Kitchen, Home Component :: Cabinet]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[4]/div</td>
+	<td>Tag Group: [Color :: Black, Home Component :: Kitchen Island]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[39]/div[2]/div/span</td>
+	<td>Add Tag Group</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[39]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[5]/div[2]/div/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380007&amp;aq=category%20notequalsall%20'preferred_terms'&amp;sg=false&quot;)])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[16]/span</td>
+	<td></td>
+</tr>
+<!--close -->  css=div[name="objectId-1-select"] > div.content > div.closeButton-->
+<!--  ==============================================-->
+<!--Keywords and Terms -->
+<!--## ERROR CORE-1999  option listing duplication-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[40]/h2</td>
+	<td>Keywords and Preferred Terms</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[40]/div/label</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='keywords']</td>
+	<td>Kitchen Cousins, kitchen renovation, colonial-inspired, barstools</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[41]/div/label</td>
+	<td>Preferred Terms</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[41]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[14]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>link=Preferred Terms :: Bathroom</td>
+	<td>Preferred Terms :: Bathroom</td>
+</tr>
+</tbody></table>
+</body>
+</html>

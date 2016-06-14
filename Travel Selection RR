@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.travel-coredev.sni.travelchannel.com/cms/" />
+<title>Selection RR</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Selection RR</td></tr>
+</thead><tbody>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[14]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<!--Create first selection-->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Name')]</td>
+	<td>Name</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.actions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='name']</td>
+	<td>QA Image selection 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--27 or 31-->
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>QA Image selection 1</td>
+</tr>
+<!--Create second selection   42/ 25 -->
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[25]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='name']</td>
+	<td>QA Image selection 2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Delete Permanently</td>
+	<td>Delete Permanently</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.searchResult-selectionPreview</td>
+	<td></td>
+</tr>
+<!--Filter Selection search -->
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-record &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//select[@name='s'])[2]</td>
+	<td>exact:Sort: Page Views Last 24 HoursSort: Page Views Last 30 DaysSort: Page Views Last 7 DaysSort: Page Views Last HourSort: Page Views This MonthSort: Page Views This WeekSort: Page Views TodaySort: Publish DateSort: Update DateSort: Views Last 24 HoursSort: Views Last 30 DaysSort: Views Last 7 DaysSort: Views Last HourSort: Views This MonthSort: Views This WeekSort: Views Today</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.searchPagination &gt; ul.pagination &gt; li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//descendant::input[contains(@id,'i')][3]</td>
+	<td>QA</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>QA Image selection 1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[2]/td/span</td>
+	<td>QA Image selection 2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//select[@name='s'])[2]</td>
+	<td>exact:Sort: Page Views Last 24 HoursSort: Page Views Last 30 DaysSort: Page Views Last 7 DaysSort: Page Views Last HourSort: Page Views This MonthSort: Page Views This WeekSort: Page Views TodaySort: Publish DateSort: RelevantSort: Update DateSort: Views Last 24 HoursSort: Views Last 30 DaysSort: Views Last 7 DaysSort: Views Last HourSort: Views This MonthSort: Views This WeekSort: Views Today</td>
+</tr>
+<!--check all the drop down -->
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Reset')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//select[@name='s'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>xpath=(//select[@name='s'])[2]</td>
+	<td>label=Sort: Views Last 24 Hours</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//option[@value='analytics.getViewsLast24Hours'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='av'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Permanently</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>New Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--77/ 64 /58/56/53-->
+<tr>
+	<td>click</td>
+	<td>//div[58]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Permanently</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
+	<td>All</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk1.hgtv-dev.sni.hgtv.com" />
+<title>filter dafulit Mixed display </title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">filter dafulit Mixed display </td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>700</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li</td>
+	<td>1 to 10 of 261558</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td>label=Show 20</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;] &gt; option[value=&quot;20&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li</td>
+	<td>1 to 20 of 261558</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td &gt; input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=td &gt; input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//input[@name='id'])[12]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//input[@name='id'])[20]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>xpath=(//input[@name='id'])[21]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td>label=Show 50</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;] &gt; option[value=&quot;50&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li</td>
+	<td>1 to 50 of 261558</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//input[@name='id'])[50]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td>label=Show 10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;] &gt; option[value=&quot;10&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li</td>
+	<td>1 to 10 of 261558</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>xpath=(//input[@name='id'])[11]</td>
+	<td></td>
+</tr>
+<!--Now on the list display only-->
+<tr>
+	<td>click</td>
+	<td>css=a.icon.icon-list-ul</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td>label=Show 50</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;] &gt; option[value=&quot;50&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[50]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li</td>
+	<td>1 to 50 of 261558</td>
+</tr>
+<!--pagination-->
+<tr>
+	<td>click</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div[2]/div/div[2]/div/ul/li[2]</td>
+	<td>101 to 150 of 261558</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div[2]/div/div[2]/div/ul/li[2]</td>
+	<td>201 to 250 of 261558</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.previous &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.previous &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.previous &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.previous &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li</td>
+	<td>1 to 50 of 261558</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.icon.icon-list-ul</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div[2]/div/div[2]/div/ul/li[2]</td>
+	<td>151 to 200 of 261558</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//input[@name='id'])[50]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.previous &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div[2]/div/div[2]/div/ul/li[2]</td>
+	<td>101 to 150 of 261558</td>
+</tr>
+</tbody></table>
+</body>
+</html>
