@@ -125,6 +125,11 @@
 	<td>Primary Tag Group</td>
 </tr>
 <tr>
+	<td>assertText</td>
+	<td>//div[42]/small/em</td>
+	<td>CQ Property Name: jcr:content/cq:tags</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[42]/div[2]/div/span</td>
 	<td></td>
@@ -175,15 +180,15 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectWindow</td>
-	<td>null</td>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
 <!--Secondary Tag Group-->
 <tr>
-	<td>assertText</td>
-	<td>//div[42]/small/em</td>
-	<td>CQ Property Name: jcr:content/cq:tags</td>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -247,7 +252,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//a[contains(text(),'Edit')])[23]</td>
+	<td>//a[contains(@href,'/cms/content/edit.jsp?id=00000155-2c00-db86-a17f-2fdc3b7d0000&amp;')]</td>
 	<td></td>
 </tr>
 <tr>

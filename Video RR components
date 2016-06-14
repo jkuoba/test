@@ -167,12 +167,12 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//div[3]/div[2]/div/h1</td>
+	<td>//h1[contains(.,'Adobe CQ')]</td>
 	<td>Adobe CQ</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/div[2]/div/h1</td>
+	<td>//h1[contains(.,'Adobe CQ')]</td>
 	<td>Adobe CQ</td>
 </tr>
 <tr>
