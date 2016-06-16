@@ -215,11 +215,6 @@
 	<td>2000</td>
 	<td></td>
 </tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
 <!--QA Note:  It is normal we stop here. please skip Sources testing -->
 <!--## ERROR  CORE-2061  Media Desk: HGTV QA: Video asset Associations tab, Current Value data does not display on the field "Show" and "Episode"-->
 <!--#ERROR Current value does not display on the Show Episdoe fields -->
@@ -229,9 +224,30 @@
 	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;aq=&amp;sg=true')])[2]</td>
 	<td></td>
 </tr>
+<!--##  since value does not show in the field, thus we  add it and test the editing first -->
 <tr>
 	<td>click</td>
-	<td>xpath=(//a[contains(text(),'Edit')])[5]</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[contains(@class,'autoFocus bsp-onDomInsert-inserted-2')]</td>
+	<td>house hunter</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchInput &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.link</td>
 	<td></td>
 </tr>
 <tr>
@@ -239,52 +255,61 @@
 	<td>//div/div/div/form/div/div/h1/span</td>
 	<td>Edit Show: House Hunters [HGTV]</td>
 </tr>
+<!--From here, we fixed the data issue -->
 <tr>
-	<td>assertElementNotPresent</td>
-	<td>//div/div/div/form/div/div/div[3]</td>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Adobe CQ')])[2]</td>
 	<td></td>
 </tr>
 <!--click      xpath=(//a[contains(text(),'Adobe CQ')])[2]-->
 <tr>
-	<td>assertTextNotPresent</td>
+	<td>assertText</td>
 	<td>//div/div/div/form/div/div/div[3]/div[4]/div/label</td>
 	<td>CQ Path</td>
 </tr>
 <tr>
-	<td>assertTextNotPresent</td>
+	<td>assertText</td>
 	<td>//textarea[contains(.,'/content/hgtv-com/en/shows/on-tv/h/house-hunters')]</td>
 	<td>/content/hgtv-com/en/shows/on-tv/h/house-hunters</td>
 </tr>
 <tr>
-	<td>assertTextNotPresent</td>
+	<td>assertText</td>
 	<td>//div/div/div/form/div/div/div[3]/div[5]/div/label</td>
 	<td>Type Map</td>
 </tr>
 <tr>
-	<td>assertElementNotPresent</td>
+	<td>assertElementPresent</td>
 	<td>link=HGTV Shows</td>
 	<td></td>
 </tr>
-<!--click     //div[3]/div[5]/div[2]/div-->
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<!--click       //div[3]/div[5]/div[2]/div-->
 <tr>
 	<td>pause</td>
 	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementNotPresent</td>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
 	<td>//div/div/div/form/div/div/div[3]</td>
 	<td></td>
 </tr>
 <!--click    xpath=(//a[contains(text(),'SEO')])[2]-->
 <tr>
-	<td>assertElementNotPresent</td>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'SEO')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
 	<td>//div/div/div/form/div/div/div[3]</td>
 	<td></td>
 </tr>
@@ -306,7 +331,6 @@
 	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=&amp;sg=true')])[2]</td>
 	<td></td>
 </tr>
-<!--click      link=The Caribbean [HGTV]-->
 <tr>
 	<td>pause</td>
 	<td>2000</td>
@@ -329,7 +353,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.inputContainer.state-changed &gt; div.inputSmall &gt; a.objectId-select</td>
+	<td>link=20 Ways to Add Value to Your Home [HGTV]</td>
 	<td>20 Ways to Add Value to Your Home [HGTV]</td>
 </tr>
 <!--Subjects -->
@@ -397,6 +421,11 @@
 	<td>pause</td>
 	<td>2000</td>
 	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Greenwood King Properties [HGTV]</td>
+	<td>Greenwood King Properties [HGTV]</td>
 </tr>
 <!--Primary Destination - not in Home, need to verify with Travel asset  ###-->
 <tr>

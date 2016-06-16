@@ -89,6 +89,11 @@
 	<td>Adobe CQ</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>storeElementPresent</td>
 	<td>css=a.icon.icon-action-remove</td>
 	<td>YN</td>

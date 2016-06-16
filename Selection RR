@@ -43,7 +43,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[4]</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[14]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -135,15 +140,15 @@
 	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
-<!--42/44/50-->
+<!--40/41/42/44/50-->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//body/div[44]/div/div</td>
+	<td>//body/div[40]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//body/div[44]/div/div</td>
+	<td>//body/div[40]/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -197,6 +202,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>link=Delete Permanently</td>
 	<td>Delete Permanently</td>
@@ -207,13 +217,28 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>xpath=(//input[@name='id'])[10]</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -222,8 +247,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -232,8 +267,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>xpath=(//input[@name='id'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -242,8 +287,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>xpath=(//input[@name='id'])[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -345,7 +400,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <!--31/34-->
@@ -362,7 +417,7 @@
 <!--75/73/83/77-->
 <tr>
 	<td>click</td>
-	<td>//div[77]/div/div[2]</td>
+	<td>//div[75]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>

@@ -43,12 +43,12 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[16]/div/div[4]</td>
+	<td>//div[14]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[4]</td>
+	<td>//div[14]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -155,6 +155,11 @@
 	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/span</td>
 	<td></td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
 <!--css=div[name="objectId-1-select"] > div.content > div.closeButton-->
 <!--  ==============================================-->
 <!--secondary tag groups-->
@@ -199,16 +204,30 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380007&amp;aq=category%20notequalsall%20'preferred_terms'&amp;sg=false&quot;)])[5]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[16]/span</td>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]/span</td>
 	<td></td>
 </tr>
-<!--close -->  css=div[name="objectId-1-select"] > div.content > div.closeButton-->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
 <!--  ==============================================-->
 <!--Keywords and Terms -->
 <!--## ERROR CORE-1999  option listing duplication-->

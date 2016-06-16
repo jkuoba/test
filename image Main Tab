@@ -54,7 +54,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[4]</td>
+	<td>//div[14]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -407,7 +407,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[2]/div[4]/div/label</td>
+	<td>//li/div[2]/div[4]/div/label</td>
 	<td>Image</td>
 </tr>
 <tr>

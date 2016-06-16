@@ -120,10 +120,66 @@
 </tr>
 <!--Video asset STD END ==============================================-->
 <tr>
-	<td>assertText</td>
-	<td>css=h1.icon.icon-action-publish</td>
-	<td>Publish(Saved WIP)</td>
+	<td>assertElementPresent</td>
+	<td>css=a.widget-publishing-tools</td>
+	<td></td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>css=a.widget-publishing-tools</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=table.table-striped &gt; tbody &gt; tr &gt; th</td>
+	<td>Last Updated</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-compare&quot;]</td>
+	<td>Start Comparison</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/h2[2]</td>
+	<td>Advanced Edits</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.bsp-onDomInsert-inserted-31 &gt; div.inputContainer &gt; div.inputLabel &gt; label</td>
+	<td>New Publish Date</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button[name=&quot;action-edits&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[3]/div/div/div/label</td>
+	<td>exact:Return To Dashboard On Save?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;contentTools&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.bsp-onDomInsert-inserted-31 &gt; div.inputContainer &gt; div.inputSmall &gt; span.calendarButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;contentTools&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--end of Tool -->
 <tr>
 	<td>assertElementPresent</td>
 	<td>css=div.widget-publishingPublish &gt; span.calendarButton.calendarButton-empty</td>
@@ -203,7 +259,7 @@
 <!--MPX-->
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/div[3]/div/h1</td>
+	<td>//h1[contains(.,'MPX')]</td>
 	<td>MPX</td>
 </tr>
 <tr>

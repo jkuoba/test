@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>Default first look</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Default first look</td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>700</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--First Column-->
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchRecent.bsp-onDomInsert-inserted-32 &gt; h2</td>
+	<td>Recent Searches</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchSaved &gt; h2</td>
+	<td>Saved Searches</td>
+</tr>
+<!--Second column-->
+<tr>
+	<td>assertText</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Any Types</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-select</td>
+	<td>Collections</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>In Workflow, Published</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Article</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.action.action-create</td>
+	<td>New</td>
+</tr>
+<!--Third Column-->
+<tr>
+	<td>waitForTextPresent</td>
+	<td>List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/form/label</td>
+	<td>exact:Watching?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-fields &gt; a</td>
+	<td>exact:Fields: Default</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;s&quot;]</td>
+	<td>exact:Sort: Page Views Last 24 HoursSort: Page Views Last 30 DaysSort: Page Views Last 7 DaysSort: Page Views Last HourSort: Page Views This MonthSort: Page Views This WeekSort: Page Views TodaySort: Publish DateSort: Update DateSort: Views Last 24 HoursSort: Views Last 30 DaysSort: Views Last 7 DaysSort: Views Last HourSort: Views This MonthSort: Views This WeekSort: Views Today</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td>Show 10Show 20Show 50</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td>Next {count}</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=li.previous &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td>Show 10Show 20Show 50</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td>label=Show 50</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;] &gt; option[value=&quot;50&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchResult-pagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td>Next {count}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=li.previous &gt; a</td>
+	<td></td>
+</tr>
+<!--Fourth Column-->
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
+	<td>All</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-action-simple &gt; a.button</td>
+	<td>Fullscreen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Save Search</td>
+	<td>Save Search</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=New Work Stream</td>
+	<td>New Work Stream</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;miscSearch&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;miscSearch&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;l&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

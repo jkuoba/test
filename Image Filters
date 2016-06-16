@@ -19,7 +19,7 @@
 </tr>
 <tr>
 	<td>setSpeed</td>
-	<td>700</td>
+	<td>600</td>
 	<td></td>
 </tr>
 <tr>
@@ -84,16 +84,6 @@
 </tr>
 <!--31/32/28/34-->
 <tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
 	<td>assertText</td>
 	<td>//h2[contains(.,'Recent Searches')]</td>
 	<td>Recent Searches</td>
@@ -111,12 +101,12 @@
 <!--14/16/44-->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[16]/div/div[4]</td>
+	<td>//div[14]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[4]</td>
+	<td>//div[14]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -350,7 +340,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[@href='/cms/content/objectIdResult.jsp?_u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=false&amp;o=0&amp;l=10&amp;st=00000155-2b5e-d342-a55f-ab5ff4370044&amp;is=false&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000155-2c4b-db86-a17f-2fdf7ee90000&amp;taxonLevel=3']</td>
+	<td>//a[contains(@href,'u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=false&amp;o=0&amp;l=10&amp;st=00000155-2b5e-d342-a55f-ab5ff4370044&amp;is=false&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;md.srs=&amp;av=&amp;taxonParentId=00000155-2c4b-db86-a17f-2fdf7ee90000&amp;taxonLevel=3')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -437,7 +427,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[@href='/cms/content/objectIdResult.jsp?_u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=false&amp;o=0&amp;l=10&amp;st=00000155-2b5e-d342-a55f-ab5ff4370044&amp;is=false&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000155-2c45-db86-a17f-2fddd96c0000&amp;taxonLevel=3']</td>
+	<td>//a[contains(@href,'u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=false&amp;o=0&amp;l=10&amp;st=00000155-2b5e-d342-a55f-ab5ff4370044&amp;is=false&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;md.srs=&amp;av=&amp;taxonParentId=00000155-2c45-db86-a17f-2fddd96c0000&amp;taxonLevel=3')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -467,21 +457,101 @@
 	<td>link=Brand</td>
 	<td></td>
 </tr>
-<!--24/28/22-->
-<tr>
-	<td>assertElementPresent</td>
-	<td>//body/div[22]/div/div[11]</td>
-	<td></td>
-</tr>
+<!--24/26/28/22-->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
-	<td>css=span.link</td>
-	<td></td>
+	<td>store</td>
+	<td>24</td>
+	<td>brandID</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[2]</td>
+	<td>Cooking Channel</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[3]</td>
+	<td>DIY</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[4]</td>
+	<td>Fine Living Network</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[5]</td>
+	<td>Food Network</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[6]</td>
+	<td>Food.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[7]</td>
+	<td>Front Door</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[8]</td>
+	<td>GAC</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[9]</td>
+	<td>GOLDEN-HGTV</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[10]</td>
+	<td>GOLDEN-HGTV Remodels</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[11]</td>
+	<td>HGRM</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[12]</td>
+	<td>HGTV</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[13]</td>
+	<td>HGTV Remodels</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[14]</td>
+	<td>HGTVF</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[15]</td>
+	<td>hgtvgardens.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${brandID}]/div/div[16]</td>
+	<td>uLive</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${brandID}]/div/div[16]</td>
+	<td>uLive</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=uLive</td>
+	<td>uLive</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -519,12 +589,12 @@
 <!--26  , 28 OR 30 -->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[28]/div/div[2]</td>
+	<td>//div[26]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[28]/div/div[2]</td>
+	<td>//div[26]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -633,14 +703,19 @@
 	<td>Locations</td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[2]/div[12]/div</td>
 	<td>Locations</td>
 </tr>
-<!--28 /30 -->
+<!--28 /30   All countries is one of the option? -->
 <tr>
 	<td>click</td>
-	<td>//div[30]/div/div[3]</td>
+	<td>//div[28]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
@@ -662,7 +737,7 @@
 <!--34/30/32-->
 <tr>
 	<td>click</td>
-	<td>//div[32]/div/div[3]</td>
+	<td>//div[30]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
@@ -745,9 +820,10 @@
 	<td>//form[2]/div[2]/div[17]/div/div</td>
 	<td></td>
 </tr>
+<!--32/34-->
 <tr>
 	<td>click</td>
-	<td>//div[34]/div/div[4]</td>
+	<td>//div[32]/div/div[4]</td>
 	<td></td>
 </tr>
 <!--Create date -->
@@ -819,7 +895,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>5000</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <!--CQ Path   jkuojkuojkuo-->
@@ -845,17 +921,13 @@
 	<td></td>
 </tr>
 <!--Type Map -->
-<!--## ERROR  CORE-2032 Media Desk: Travel Image Global Search - field "Type Map" with no dropdown content.-->
+<!--no more this field ## ERROR  CORE-2032 Media Desk: Travel Image Global Search - field "Type Map" with no dropdown con-->
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>link=Type Map</td>
 	<td>Type Map</td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>//form[2]/div[2]/div[21]/div/div</td>
-	<td></td>
-</tr>
+<!--Click   //form[2]/div[2]/div[21]/div/div-->
 <!--old drop down click  //div[20]/div/div-->
 <!--im workflow, published-->
 <tr>
@@ -878,10 +950,10 @@
 	<td>2500</td>
 	<td></td>
 </tr>
-<!--36/44/42/40/38-->
+<!--34/36/44/42/40/38-->
 <tr>
 	<td>click</td>
-	<td>//div[38]/div/div[6]</td>
+	<td>//div[34]/div/div[6]</td>
 	<td></td>
 </tr>
 <tr>
@@ -901,7 +973,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input.dropDown-input-bottom &gt; a.dropDown-label</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>Published</td>
 </tr>
 <!--Search Result section-->

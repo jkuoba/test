@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>RR Bulk Edit </title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RR Bulk Edit </td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>700</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--31/32/28/34-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h2[contains(.,'Recent Searches')]</td>
+	<td>Recent Searches</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchSaved &gt; h2</td>
+	<td>Saved Searches</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--14/16/44-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[16]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--End of Image selection-->
+<!--check the RR with some selection-->
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[13]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[14]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[15]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Clear</td>
+	<td>Clear</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
+	<td>CollectionClear</td>
+</tr>
+<!--RR component list changes -->
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-action-simple &gt; a.button</td>
+	<td>Create New Photo Gallery</td>
+</tr>
+<!--## ERROR CORE-xxx remove Create Photo Gallery button -->
+<!--Bulk Edit Selected -->
+<tr>
+	<td>assertText</td>
+	<td>link=Bulk Edit Selected</td>
+	<td>Bulk Edit Selected</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Bulk Edit Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.content-edit-bulk &gt; h1</td>
+	<td>Bulk Edit 3 Items</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputLabel &gt; label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Caption')]</td>
+	<td>Caption</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Alt Tag')]</td>
+	<td>Alt Tag</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/seoDescription&quot;]</td>
+	<td>label=Replace</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'File')]</td>
+	<td>File</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td>Bulk Edit SEO Description update </td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-save&quot;]</td>
+	<td>Bulk Save</td>
+</tr>
+<!--Check other tabs  Associations-->
+<tr>
+	<td>click</td>
+	<td>link=Associations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Sources</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h2[contains(.,'Subjects')]</td>
+	<td>Subjects</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/attributions&quot;]</td>
+	<td>label=Add</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/attributions&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/subjects&quot;]</td>
+	<td>label=Remove</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/subjects&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/owner&quot;]</td>
+	<td>label=Clear</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/owner&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<!--Check other tabs Debug-->
+<tr>
+	<td>click</td>
+	<td>link=Debug</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/episodeNumber&quot;]</td>
+	<td>label=Clear</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/episodeNumber&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/hidden&quot;]</td>
+	<td>label=Replace</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/hidden&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Episode Number')]</td>
+	<td>Episode Number</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Hidden?')]</td>
+	<td>Hidden?</td>
+</tr>
+<!--Check other tabs Usage -->
+<tr>
+	<td>click</td>
+	<td>link=Usage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Rights / Usage Permissions')]</td>
+	<td>Rights / Usage Permissions</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/rightsAndRestrictions&quot;]</td>
+	<td>label=Replace</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/rightsAndRestrictions&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Sponsored?')]</td>
+	<td>Sponsored?</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/sponsored&quot;]</td>
+	<td>label=Clear</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/sponsored&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Dynamic Promotion End')]</td>
+	<td>Dynamic Promotion End</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/dynamicPromotionEnd&quot;]</td>
+	<td>label=Replace</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/dynamicPromotionEnd&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<!--Check other tabs Tags & Keywords-->
+<tr>
+	<td>click</td>
+	<td>link=Tags &amp; Keywords</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Secondary Tag Groups')]</td>
+	<td>Secondary Tag Groups</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/secondaryTags&quot;]</td>
+	<td>label=Add</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/secondaryTags&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Keywords')]</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/keywords&quot;]</td>
+	<td>label=Clear</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/keywords&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<!--Check other tabs  Adobe CQ-->
+<tr>
+	<td>click</td>
+	<td>link=Adobe CQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[starts-with(@id, 'i')]/div/div[47]/div/label</td>
+	<td>CQ Path</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/cq.path&quot;]</td>
+	<td>label=Clear</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/cq.path&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Type Map')]</td>
+	<td>Type Map</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/cq.typeMap&quot;]</td>
+	<td>label=Replace</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/cq.typeMap&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Last Replication Action')]</td>
+	<td>Last Replication Action</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/mediadesk.lastReplicationAction&quot;]</td>
+	<td>label=Clear</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;contentEditBulk.op/mediadesk.lastReplicationAction&quot;]</td>
+	<td>label=Keep</td>
+</tr>
+<!--Check other tabs Analytics-->
+<tr>
+	<td>click</td>
+	<td>link=Analytics</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='objectInputs bsp-onDomInsert-inserted-25 bsp-onDomInsert-inserted-28 plugin-tabbed state-focus']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-save&quot;]</td>
+	<td>Bulk Save</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(.,'Main')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[name=&quot;action-save&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//body/div[2]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//body/div[2]/div/div</td>
+	<td>Finished running! 3 successes and 0 {count} out of 3 {count}.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//body/div[2]/div/div</td>
+	<td>Finished running! 3 successes and 0 {count} out of 3 {count}.</td>
+</tr>
+</tbody></table>
+</body>
+</html>

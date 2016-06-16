@@ -55,7 +55,7 @@
 <!--24/14-->
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[9]</td>
+	<td>//div[14]/div/div[10]</td>
 	<td></td>
 </tr>
 <!--Video asset STD END ==============================================-->
@@ -269,7 +269,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//a[@href='/cms/content/objectIdResult.jsp?_u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=false&amp;o=0&amp;l=10&amp;st=00000155-2b5e-d342-a55f-ab5ff4370044&amp;is=false&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;f.cq.typeMap=&amp;md.srs=&amp;av=&amp;taxonParentId=00000155-2c41-db86-a17f-2fdd3ffe0000&amp;taxonLevel=3']</td>
+	<td>//a[contains(@href,'u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=false&amp;o=0&amp;l=10&amp;st=00000155-2b5e-d342-a55f-ab5ff4370044&amp;is=false&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;md.srs=&amp;av=&amp;taxonParentId=00000155-2c41-db86-a17f-2fdd3ffe0000&amp;taxonLevel=3')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -401,6 +401,7 @@
 <!--Content Types  8/11-->
 <!--Its empty because the available values are created by ingestion from MPX. Home has no values for that field from MPX   -->
 <!--## NOTE: travel does, hey're looking into populating it for home, but not there yet-->
+<!--## QA Note: need to clarify whether we should remove content types field from the Search section -->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
@@ -411,17 +412,30 @@
 	<td>xpath=(//a[contains(text(),'Content Types')])[2]</td>
 	<td>Content Types</td>
 </tr>
-<!--9/13-->
+<!--Type Map -->
+<!--## ERROR  CORE-2032 Media Desk: Travel Image Global Search - field "Type Map" with no dropdown content.-->
 <tr>
-	<td>click</td>
-	<td>//div[13]/div/div</td>
+	<td>assertText</td>
+	<td>xpath=(//a[contains(text(),'Content Types')])[2]</td>
+	<td>Content Types</td>
+</tr>
+<!--## ERROR CORE-2018 -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[2]/div[10]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[13]/div/div</td>
+	<td>//div[2]/div[10]/div/div</td>
 	<td></td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>css=.bsp-onDomInsert-inserted-37</td>
+	<td></td>
+</tr>
+<!--## ERROR empty dron dow   old drop down click  //div[20]/div/div-->
 <!--Tags-->
 <tr>
 	<td>assertText</td>
@@ -475,25 +489,6 @@
 	<td>css=input[name=&quot;f.cq.path&quot;]</td>
 	<td></td>
 </tr>
-<!--Type Map -->
-<!--## ERROR  CORE-2032 Media Desk: Travel Image Global Search - field "Type Map" with no dropdown content.-->
-<tr>
-	<td>assertText</td>
-	<td>link=Type Map</td>
-	<td>Type Map</td>
-</tr>
-<!--## ERROR CORE-2018 -->
-<tr>
-	<td>click</td>
-	<td>link=Type Map</td>
-	<td>Type Map</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Type Map</td>
-	<td>Type Map</td>
-</tr>
-<!--## ERROR empty dron dow   old drop down click  //div[20]/div/div-->
 <!--im workflow, published-->
 <tr>
 	<td>pause</td>
@@ -589,17 +584,17 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>//div[2]/form/button</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2500</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>waitForElementPresent</td>
 	<td>//h1/span</td>
 	<td></td>
 </tr>
