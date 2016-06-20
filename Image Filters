@@ -101,12 +101,12 @@
 <!--14/16/44-->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[14]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[14]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -457,16 +457,10 @@
 	<td>link=Brand</td>
 	<td></td>
 </tr>
-<!--24/26/28/22-->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
 	<td></td>
-</tr>
-<tr>
-	<td>store</td>
-	<td>24</td>
-	<td>brandID</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -589,12 +583,12 @@
 <!--26  , 28 OR 30 -->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[26]/div/div[2]</td>
+	<td>//div[${syndicationDropDown}]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[26]/div/div[2]</td>
+	<td>//div[${syndicationDropDown}]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -715,7 +709,7 @@
 <!--28 /30   All countries is one of the option? -->
 <tr>
 	<td>click</td>
-	<td>//div[28]/div/div[3]</td>
+	<td>//div[${locationDropDown}]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
@@ -737,7 +731,7 @@
 <!--34/30/32-->
 <tr>
 	<td>click</td>
-	<td>//div[30]/div/div[3]</td>
+	<td>//div[${platformDropDown}]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
@@ -820,10 +814,9 @@
 	<td>//form[2]/div[2]/div[17]/div/div</td>
 	<td></td>
 </tr>
-<!--32/34-->
 <tr>
 	<td>click</td>
-	<td>//div[32]/div/div[4]</td>
+	<td>//div[${preferredDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
 <!--Create date -->
@@ -950,10 +943,9 @@
 	<td>2500</td>
 	<td></td>
 </tr>
-<!--34/36/44/42/40/38-->
 <tr>
 	<td>click</td>
-	<td>//div[34]/div/div[6]</td>
+	<td>//div[${statusDropDown}]/div/div[6]</td>
 	<td></td>
 </tr>
 <tr>

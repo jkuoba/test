@@ -43,12 +43,12 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[14]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td>Image</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[14]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td>Image</td>
 </tr>
 <tr>
@@ -66,10 +66,10 @@
 	<td>3000</td>
 	<td></td>
 </tr>
-<!--34/36/38/52-->
+<!--34/36/38/52  record status -->
 <tr>
 	<td>click</td>
-	<td>//div[34]/div/div[6]</td>
+	<td>//div[${statusDropDown}]/div/div[6]</td>
 	<td></td>
 </tr>
 <tr>
@@ -79,7 +79,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[34]/div/div[3]</td>
+	<td>//div[${statusDropDown}]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[34]/div/div[9]</td>
+	<td>//div[${statusDropDown}]/div/div[9]</td>
 	<td></td>
 </tr>
 <tr>

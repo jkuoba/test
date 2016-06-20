@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>Global Variables</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Global Variables</td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<!--filter dropdown var-->
+<tr>
+	<td>store</td>
+	<td>16</td>
+	<td>filterDropDown</td>
+</tr>
+<!--24/26/28/22  field- Brand drop down -->
+<tr>
+	<td>store</td>
+	<td>26</td>
+	<td>brandID</td>
+</tr>
+<!--26  , 28 OR 30    syndication/restriction drop down -->
+<tr>
+	<td>store</td>
+	<td>28</td>
+	<td>syndicationDropDown</td>
+</tr>
+<!--28/30  locations drop down -->
+<tr>
+	<td>store</td>
+	<td>30</td>
+	<td>locationDropDown</td>
+</tr>
+<!--34/30/32      field Platforms dropdown -->
+<tr>
+	<td>store</td>
+	<td>32</td>
+	<td>platformDropDown</td>
+</tr>
+<!--32/34     field Preferred tags DropDown -->
+<tr>
+	<td>store</td>
+	<td>34</td>
+	<td>preferredDropDown</td>
+</tr>
+<!--34/36/44/42/40/38  field - published /in workstream etc DropDown -->
+<tr>
+	<td>store</td>
+	<td>36</td>
+	<td>statusDropDown</td>
+</tr>
+<!--40/41/42/43/44/50/54     field - Collection DropDown -->
+<tr>
+	<td>store</td>
+	<td>42</td>
+	<td>collectionDropDown</td>
+</tr>
+<!--75/73/83/77  find the first collection name -->
+<tr>
+	<td>store</td>
+	<td>77</td>
+	<td>collection1</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

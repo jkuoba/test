@@ -55,7 +55,7 @@
 <!--24/14-->
 <tr>
 	<td>click</td>
-	<td>//div[14]/div/div[10]</td>
+	<td>//div[${filterDropDown}]/div/div[10]</td>
 	<td></td>
 </tr>
 <!--Video asset STD END ==============================================-->

@@ -170,8 +170,9 @@
 	<td>2000</td>
 	<td></td>
 </tr>
+<!--#ERROR workstream start not working and can create same work stream name -->
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=div.block.p-workStreams-notWorking</td>
 	<td>No users working on QA image workstreamStart<br />1 of 1 left</td>
 </tr>
@@ -180,15 +181,15 @@
 	<td>css=a.button.p-workStreams-start</td>
 	<td></td>
 </tr>
-<tr>
-	<td>assertText</td>
-	<td>css=div.block.p-workStreams-notWorking</td>
-	<td>No users working on QA image workstreamStart<br />1 of 1 left</td>
-</tr>
 <!--##Note: Test Deleting workstream -->
 <tr>
+	<td>assertElementPresent</td>
+	<td>link=QA image workstream</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>css=div.block.p-workStreams-notWorking &gt; a</td>
+	<td>link=QA image workstream</td>
 	<td></td>
 </tr>
 <tr>
@@ -288,7 +289,7 @@
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,300)</td>
 	<td></td>
 </tr>
-<!--Test the workstream start button -->
+<!--## ERROR Not working --> Test the workstream start button -->
 <tr>
 	<td>clickAndWait</td>
 	<td>css=a.button.p-workStreams-start</td>

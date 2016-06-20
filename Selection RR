@@ -48,7 +48,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[14]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -140,15 +140,14 @@
 	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
-<!--40/41/42/44/50-->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//body/div[40]/div/div</td>
+	<td>//body/div[${collectionDropDown}]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//body/div[40]/div/div</td>
+	<td>//body/div[${collectionDropDown}]/div/div</td>
 	<td></td>
 </tr>
 <tr>
