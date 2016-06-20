@@ -413,10 +413,10 @@
 	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
-<!--75/73/83/77-->
+<!--75/73/83/77  find the first collection name -->
 <tr>
 	<td>click</td>
-	<td>//div[75]/div/div[2]</td>
+	<td>//div[${collection1}]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>

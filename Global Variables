@@ -70,7 +70,12 @@
 	<td>77</td>
 	<td>collection1</td>
 </tr>
-
+<!--43/51  find the first collection name -->
+<tr>
+	<td>store</td>
+	<td>51</td>
+	<td>collectionEdit</td>
+</tr>
 </tbody></table>
 </body>
 </html>

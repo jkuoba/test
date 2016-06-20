@@ -44,12 +44,12 @@
 <!--14/16/44-->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[14]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[14]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
 <!--## ERROR  CORE-2076 Media Desk: RR "Export Selected" save function no working.-->
@@ -62,6 +62,11 @@
 <tr>
 	<td>click</td>
 	<td>link=Fullscreen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <!--Save Search-->
@@ -173,12 +178,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=#i476db8f6381d46bf86e8b4bc733bd1da</td>
+	<td>//textarea[@data-dynamic-field-name='name']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>css=#i476db8f6381d46bf86e8b4bc733bd1da</td>
+	<td>//textarea[@data-dynamic-field-name='name']</td>
 	<td>RR Collection Save testing</td>
 </tr>
 <tr>
@@ -204,17 +209,22 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=#i7e488d5cb2d44af2ba49f2a53a3eac44</td>
+	<td>//textarea[@data-dynamic-field-name='name']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>css=#i7e488d5cb2d44af2ba49f2a53a3eac44</td>
+	<td>//textarea[@data-dynamic-field-name='name']</td>
 	<td>RR Collection Save testing editing</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>//div[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -346,16 +356,81 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>css=li.state-hover &gt; a</td>
 	<td></td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
-	<td>//div[2]/div/div[4]</td>
-	<td>No users working on QA test Work StreamStart<br />3 of 3 left</td>
+	<td>css=div.block.p-workStreams-notWorking</td>
+	<td>No users working on QA test Work StreamStart<br />1 of 1 left</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.block.p-workStreams-notWorking &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[name=&quot;action-delete&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
 </tr>
 <!--Bulk Archive All -->
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(.,'New Collection')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[${collectionEdit}]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
 <tr>
 	<td>assertText</td>
 	<td>css=a.button.icon-action-trash</td>
@@ -367,18 +442,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>fbMainContainer</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=#fbInspectButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -387,43 +452,28 @@
 	<td>Click below to confirm bulk archive of 3 items.</td>
 </tr>
 <tr>
-	<td>selectFrame</td>
-	<td>fbMainContainer</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=#fbInspectButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>css=button.icon-action-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=button.icon-action-trash</td>
-	<td>Confirm bulk ARCHIVE</td>
-</tr>
-<tr>
-	<td>selectFrame</td>
-	<td>fbMainContainer</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=#fbInspectButton</td>
-	<td></td>
+	<td>//div[57]/div/div/div</td>
+	<td>Successfully archived 3 items.</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>css=div[name=&quot;bulkArchive&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
