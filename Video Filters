@@ -247,6 +247,7 @@
 	<td>//div[6]/div/a/span</td>
 	<td>Subjects</td>
 </tr>
+<!--## ERROR CORE-2078 Media Desk: Image Global Search field Subjects Pop Up - The capital letters should not showing up.-->
 <tr>
 	<td>click</td>
 	<td>link=Subjects</td>
@@ -259,38 +260,18 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[1]/a</td>
+	<td>css=span.link</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
 	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[contains(@href,'u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=false&amp;o=0&amp;l=10&amp;st=00000155-2b5e-d342-a55f-ab5ff4370044&amp;is=false&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;md.srs=&amp;av=&amp;taxonParentId=00000155-2c41-db86-a17f-2fdd3ffe0000&amp;taxonLevel=3')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[@data-objectid='00000155-2c41-db86-a17f-2fdd3fe50000']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>link=Ethan Allen [HGTV]</td>
-	<td>Ethan Allen [HGTV]</td>
+	<td>link=Test [HGTV]</td>
+	<td>Test [HGTV]</td>
 </tr>
 <!--Preferred Terms-->
 <!--## ERROR Duplicate options drop down -->

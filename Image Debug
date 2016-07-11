@@ -90,11 +90,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
-	<td>//a[@class='icon icon-action-remove']</td>
-	<td></td>
-</tr>
-<tr>
 	<td>storeElementPresent</td>
 	<td>//a[@class='icon icon-action-remove']</td>
 	<td>YN</td>

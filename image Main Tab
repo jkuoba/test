@@ -222,11 +222,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>//div[60]/div/label</td>
-	<td>File</td>
-</tr>
-<tr>
 	<td>storeEval</td>
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,1400)</td>
 	<td></td>

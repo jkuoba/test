@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>RR Video Adobe CQ </title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RR Video Adobe CQ </td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--14/16/44-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[${filterDropDown}]/div/div[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${filterDropDown}]/div/div[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--check video Adobe CQ -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Adobe CQ</td>
+	<td>Adobe CQ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Adobe CQ</td>
+	<td>Adobe CQ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[3]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form/div[2]/div[2]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div[2]/div[2]/div[2]/div</td>
+	<td>Adobe CQForce Read from CQ<br /><br />Force Write to CQ<br /><br />Activated.<br /><br />Force Deactivate in CQ<br /><br />CRX DE Lite</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[3]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div[2]/div[2]/div[2]/div</td>
+	<td>Adobe CQForce Read from CQ<br /><br />Force Write to CQ<br /><br />Force Activate in CQ<br /><br />Deactivated.<br /><br />CRX DE Lite</td>
+</tr>
+</tbody></table>
+</body>
+</html>

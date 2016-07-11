@@ -54,6 +54,11 @@
 </tr>
 <!--Video Default options -->
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>Video</td>
@@ -108,6 +113,11 @@
 	<td>assertText</td>
 	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
 	<td>CollectionClear</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Clear</td>
+	<td>Clear</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -177,6 +187,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>selectWindow</td>
 	<td>null</td>
 	<td></td>
@@ -228,8 +243,18 @@
 </tr>
 <!--Add video item-->
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[13]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -248,6 +273,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
@@ -261,6 +291,11 @@
 <tr>
 	<td>click</td>
 	<td>//div[16]/div/div[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -287,6 +322,11 @@
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -372,6 +412,11 @@
 </tr>
 <!--Export selected testing skip-->
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>//a[contains(text(),'Export&nbsp;&nbsp;Selected')]</td>
 	<td>Export Selected</td>
@@ -432,8 +477,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Unwatch Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>

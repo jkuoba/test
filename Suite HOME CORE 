@@ -9,6 +9,7 @@
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="Global Variables">Global Variables</a></td></tr>
+<tr><td><a href="Global Variables AM ">Global Variables AM </a></td></tr>
 <tr><td><a href="default filter workflow published">default filter workflow published</a></td></tr>
 <tr><td><a href="image hover display eidt ">image hover display eidt </a></td></tr>
 <tr><td><a href="Image Filters">Image Filters</a></td></tr>

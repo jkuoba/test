@@ -54,11 +54,21 @@
 </tr>
 <!--## ERROR  CORE-2076 Media Desk: RR "Export Selected" save function no working.-->
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//a[contains(text(),'Export&nbsp;&nbsp;Selected')]</td>
 	<td></td>
 </tr>
 <!--Full screen seems not working -->
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
 <tr>
 	<td>click</td>
 	<td>link=Fullscreen</td>
@@ -170,10 +180,15 @@
 	<td>css=div[name=&quot;miscSearch&quot;] &gt; div.searchHistory &gt; div.searchSaved &gt; div[name=&quot;savedSearches&quot;] &gt; ul.links &gt; li &gt; a</td>
 	<td>QA Save Search testing</td>
 </tr>
-<!--Sace Collection-->
+<!--Save Collection-->
 <tr>
 	<td>click</td>
-	<td>xpath=(//a[contains(text(),'Save Collection')])[2]</td>
+	<td>link=Save Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -208,6 +223,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//textarea[@data-dynamic-field-name='name']</td>
 	<td></td>
@@ -235,12 +255,12 @@
 <!--Watch Selected -->
 <tr>
 	<td>assertText</td>
-	<td>xpath=(//a[contains(text(),'Watch Selected')])[2]</td>
+	<td>link=Watch Selected</td>
 	<td>Watch Selected</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//a[contains(text(),'Watch Selected')])[2]</td>
+	<td>link=Watch Selected</td>
 	<td></td>
 </tr>
 <tr>
@@ -254,25 +274,20 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
 	<td>assertText</td>
-	<td>xpath=(//a[contains(text(),'Watch Selected')])[2]</td>
+	<td>link=Watch Selected</td>
 	<td>Watch Selected</td>
 </tr>
 <!--## ERROR CORE-2077 Media Desk: User not able to start a work stream session - no content found.	-->
 <!--New Work Stream -->
 <tr>
 	<td>assertText</td>
-	<td>xpath=(//a[contains(text(),'New Work Stream')])[2]</td>
+	<td>link=New Work Stream</td>
 	<td>New Work Stream</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//a[contains(text(),'New Work Stream')])[2]</td>
+	<td>link=New Work Stream</td>
 	<td></td>
 </tr>
 <tr>
@@ -326,8 +341,18 @@
 	<td>Step 1<br />Step 2<br />Step 3</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>css=span.addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -336,8 +361,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>css=span.link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -346,8 +381,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>css=button[name=&quot;action-save&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -356,8 +401,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>css=li.state-hover &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -368,7 +423,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=div.block.p-workStreams-notWorking</td>
-	<td>No users working on QA test Work StreamStart<br />1 of 1 left</td>
+	<td>No users working on QA test Work StreamStart<br />3 of 3 left</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -383,11 +438,6 @@
 <tr>
 	<td>click</td>
 	<td>css=button[name=&quot;action-delete&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <!--Bulk Archive All -->
@@ -408,7 +458,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <tr>
@@ -461,9 +511,15 @@
 	<td>2000</td>
 	<td></td>
 </tr>
+<!--49/57-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[49]/div/div/div</td>
+	<td>Successfully archived 3 items.</td>
+</tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[57]/div/div/div</td>
+	<td>//div[49]/div/div/div</td>
 	<td>Successfully archived 3 items.</td>
 </tr>
 <tr>

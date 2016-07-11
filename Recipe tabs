@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>Suite FOOD</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Suite FOOD</td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--Recipe-->
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/div[7]</td>
+	<td>Recipe</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[18]/div/div[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=figcaption</td>
+	<td>9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--Main Tab -->
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputLabel &gt; label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=em</td>
+	<td>CQ Property Name: jcr:content/jcr:title</td>
+</tr>
+<!--#ERROR  CORE-2134 Media Desk: Recipe MD, the Main tab field "Directions" & "Ingredients", please remove carriage return symbols.-->
+<!--# ERROR   CORE-2135 Media Desk: Recipe MD Main tab - missing value of "Total Time" & "Servings Per Recipe"-->
+<!--#ERROR Missing Tags info -->
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:seoDescription</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/div/label</td>
+	<td>SEO Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/label</td>
+	<td>SEO Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:seoTitle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='seoTitle']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Sources</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[19]/div/label</td>
+	<td>Attributions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[19]/small/em</td>
+	<td>CQ Property Name: jcr:content/editorialAttributions</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[19]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/div/h1</td>
+	<td>Add to Attributions - 9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>hosts</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/span</td>
+	<td>chefs</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/span</td>
+	<td>shows</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.action.action-create</td>
+	<td>New Profile</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[7]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span[@data-objectid='00000155-977c-d634-abf7-d7fcdbc50000']</td>
+	<td>Jet Tila [Food Network]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span[contains(.,'Brett August [Food Network]')]</td>
+	<td>Brett August [Food Network]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[10]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span[contains(.,'Katie Lee [Food Network]')]</td>
+	<td>Katie Lee [Food Network]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'Katie Lee [Food Network]')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-select</td>
+	<td>Katie Lee [Food Network]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[20]/div/label</td>
+	<td>Show</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[20]/small/em</td>
+	<td>CQ Property Name: jcr:content/editorialShow</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.inputSmall &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/div/h1</td>
+	<td>Select Show - 9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'All-Star [Food Network]')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputSmall &gt; a.objectId-select</td>
+	<td>All-Star [Food Network]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[21]/div/label</td>
+	<td>Episode</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[21]/small/em</td>
+	<td>CQ Property Name: jcr:content/editorialEpisode</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-9767-d634-abf7-d7f7c1650000&amp;py=00000155-0bfa-df30-adf5-7ffa9cbd0048&amp;p=false&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbe0000&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/div/h1</td>
+	<td>Select Episode - 9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'Dining with Geishas [Food Network]')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Dining with Geishas [Food Network]</td>
+	<td>Dining with Geishas [Food Network]</td>
+</tr>
+<!--image  ------------------------->
+<tr>
+	<td>assertText</td>
+	<td>//div[22]/div/label</td>
+	<td>Image</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[22]/small/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//span[@data-dynamic-html='${content.calculateNoteHtmlImage()}']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[22]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:images</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-9767-d634-abf7-d7f7c1650000&amp;py=00000155-0bfa-df30-adf5-7ffa9cbd0048&amp;p=false&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbd003a&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/div/h1</td>
+	<td>Select Image - 9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.action.action-create</td>
+	<td>New Image</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.action.action-create</td>
+	<td>New Image</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/div/div/form/div/div/h1/span</td>
+	<td>New Image: Untitled</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/div[2]/div[2]/div/label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[3]/div/label</td>
+	<td>Caption</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[4]/div/label</td>
+	<td>SEO Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[5]/div/label</td>
+	<td>Alt Tag</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[6]/div/label</td>
+	<td>Internal Notes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[56]/div/label</td>
+	<td>File</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<!--Association-->
+<tr>
+	<td>click</td>
+	<td>link=Associations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[17]/div/label</td>
+	<td>Brand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[17]/small/em</td>
+	<td>CQ Property Name: metadata/sni:brand</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.inputContainer.state-changed &gt; div.inputSmall &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.inputContainer.state-changed &gt; div.inputSmall &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--59/55-->
+<!--new image - Debug-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Debug')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Debug')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[9]/div/label</td>
+	<td>Episode Number</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[9]/small/em</td>
+	<td>CQ Property Name: metadata/sni:episodeNo</td>
+</tr>
+<!--##ERROR  Prodcut ID field is not editable but with yellow color -->
+<tr>
+	<td>click</td>
+	<td>link=Usage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[23]/div/label</td>
+	<td>Rights / Usage Permissions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[23]/small/em</td>
+	<td>CQ Property Name: metadata/sni:rights</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[24]/div/label</td>
+	<td>Not for Dynamic Use</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[24]/small/em</td>
+	<td>CQ Property Name: metadata/sni:doNotFeature</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[25]/div/label</td>
+	<td>exact:Do Not Search?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[25]/small/em</td>
+	<td>CQ Property Name: metadata/sni:doNotSearch</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[26]/div/label</td>
+	<td>Public</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[26]/small/em</td>
+	<td>CQ Property Name: metadata/sni:publicPhoto</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[27]/div/label</td>
+	<td>exact:Sponsored?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[27]/small/em</td>
+	<td>CQ Property Name: metadata/sni:sponsored</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[28]/div/label</td>
+	<td>exact:Disable Products?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[28]/small/em</td>
+	<td>CQ Property Name: metadata/sni:disableProducts</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[31]/div/label</td>
+	<td>Dynamic Promotion Start</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[31]/small/em</td>
+	<td>CQ Property Name: metadata/sni:dynamicPromoStart</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[32]/div/label</td>
+	<td>Dynamic Promotion End</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[32]/small/em</td>
+	<td>CQ Property Name: metadata/sni:dynamicPromoEnd</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[33]/div/label</td>
+	<td>Expiration Date</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[33]/small/em</td>
+	<td>CQ Property Name: metadata/sni:expireDate</td>
+</tr>
+<!--tags keywords-->
+<tr>
+	<td>click</td>
+	<td>link=Tags &amp; Keywords</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[34]/div/label</td>
+	<td>Primary Tag Group</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[35]/div/label</td>
+	<td>Secondary Tag Groups</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div[34]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ul &gt; li &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--50/46-->
+<tr>
+	<td>assertText</td>
+	<td>//div[46]/div/div/h1</td>
+	<td>Add to Primary Tag Group - Untitled</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[8]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-6-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[36]/h2</td>
+	<td>Keywords and Preferred Terms</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[36]/small/em</td>
+	<td>CQ Property Name: metadata/dc:subject</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[36]/div/label</td>
+	<td>Keywords</td>
+</tr>
+<!--ERROR Subject vs Keyword ????-->
+<tr>
+	<td>assertText</td>
+	<td>//div[36]/small/em</td>
+	<td>CQ Property Name: metadata/dc:subject</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[37]/div/label</td>
+	<td>Preferred Terms</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[37]/small/em</td>
+	<td>CQ Property Name: metadata/sni:preferredTerm1 and sni:preferredTerm2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[37]/div[2]/div</td>
+	<td></td>
+</tr>
+<!--## ERROR  preferred Tems drop down empty -->
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Adobe CQ')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[44]/div/label</td>
+	<td>Type Map</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[44]/div[2]/div</td>
+	<td></td>
+</tr>
+<!--57/49-->
+<tr>
+	<td>click</td>
+	<td>//body/div[49]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[62]/div/label</td>
+	<td>Last Replication Action</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[62]/small/em</td>
+	<td>CQ Property Name: jcr:content/cq:lastReplicationAction</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Food Network Fullset Images</td>
+	<td>Food Network Fullset Images</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Analytics</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div/div/div/form/div/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'SEO')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[52]/div/label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Video section ------------------------->
+<!--## ERROR should not allow user to  upload vdeo -->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,1500)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[23]/div/label</td>
+	<td>Videos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[23]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:videos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-upload</td>
+	<td>Upload Files</td>
+</tr>
+<!--Brbrtsr Pairing -->
+<tr>
+	<td>assertText</td>
+	<td>//div[24]/div/label</td>
+	<td>Beverage Pairing</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[24]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:pairingLinks</td>
+</tr>
+<!--confirmation stop, that is normal dur to IDE -->
+<tr>
+	<td>click</td>
+	<td>//div[24]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-9767-d634-abf7-d7f7c1650000&amp;py=00000155-0bfa-df30-adf5-7ffa9cbd0048&amp;p=false&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbd0029&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbd0048&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/div/h1</td>
+	<td>Add to Beverage Pairing - 9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchCreate &gt; h2</td>
+	<td>Create</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Article</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchSuggestions &gt; h2</td>
+	<td>Suggestions</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a &gt; figure &gt; figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.objectId-select &gt; figure &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--get the second one -->
+<tr>
+	<td>click</td>
+	<td>//div[24]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-9767-d634-abf7-d7f7c1650000&amp;py=00000155-0bfa-df30-adf5-7ffa9cbd0048&amp;p=false&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbd0029&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbd0048&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--## QA ERROR NOTE:  36/75/63 /84     Do we allow to creat new Article and Recipe here ? this might be the permission ticket fix -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[63]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[63]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.action.action-create</td>
+	<td></td>
+</tr>
+<!--77/65/86-->
+<tr>
+	<td>assertText</td>
+	<td>//div[65]/div/div/div/form/div/div/h1/span</td>
+	<td>New Recipe: Untitled</td>
+</tr>
+<!--## ERROR Not able to create Recipe in here.  Main Tab.  e.g., Titlie, difficuty , ingredients , please ensure user can create Article and Recipe from Beverign pair feature field -->
+<!--please ensure user can create Article and Recipe from Beverign pair feature field -->
+<!--Or it is permission issue -->
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Related Content Start -->
+<tr>
+	<td>assertText</td>
+	<td>//div[25]/div/label</td>
+	<td>Related Content</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[25]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:relatedContent</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[25]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-9767-d634-abf7-d7f7c1650000&amp;py=00000155-0bfa-df30-adf5-7ffa9cbd0048&amp;p=false&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbd0043&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbf0001&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbd0029&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/div/h1</td>
+	<td>Add to Related Content - 9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Article</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Any Types</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.action.action-create</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@class='message message-warning bsp-onDomInsert-inserted-30']</td>
+	<td>No matching items!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--There should be three types - Article, Photo gallery, Video Playlist -->
+<!--88/93/72-->
+<tr>
+	<td>assertText</td>
+	<td>//body/div[72]</td>
+	<td>Any Types<br /> Article<br /> Photo Gallery<br /> Video Playlist</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[72]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--#ERROR ?? do we allow user to create Article Photo Gallery Video list under recipe content field -->
+<!--Per Rob - that will carry through via permissions... if you can't create them, tyou can't create them anywhere-->
+<!--Please make sure user can not create new in QA -->
+<!--92/76/97-->
+<tr>
+	<td>assertText</td>
+	<td>//div[76]/div</td>
+	<td>Article<br /> Photo Gallery<br /> Video Playlist</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Preferred Terms  ------------------------------->
+<!--## ERROR Perferred Terms drop down is empty-->
+<tr>
+	<td>assertText</td>
+	<td>//div[26]/div/label</td>
+	<td>Preferred Terms</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[26]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:preferredTerm1 and sni:preferredTerm2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[26]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[26]/div[2]/div</td>
+	<td></td>
+</tr>
+<!--Do Not Search? ---------------------------------->
+<tr>
+	<td>assertText</td>
+	<td>//div[27]/div/label</td>
+	<td>exact:Do Not Search?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[27]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:doNotSearch</td>
+</tr>
+<!--Do Not Feature ------------>
+<tr>
+	<td>assertText</td>
+	<td>//div[28]/div/label</td>
+	<td>exact:Do Not Feature?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[28]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:doNotFeature</td>
+</tr>
+<!--Note: Healthy? field is not accesible -->
+<!--END OF RECIPE MAIN TAB-->
+<!--Debug-->
+<tr>
+	<td>click</td>
+	<td>link=Debug</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div/div/div[3]</td>
+	<td></td>
+</tr>
+<!--Adobe CQ  *****-->
+<tr>
+	<td>click</td>
+	<td>link=Adobe CQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='cq.path']</td>
+	<td>/content/food-com/en/recipes/no-chef/9/9-/9-t/9-ti/9-time-pro-roller-chicken-spring-rolls-recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[31]/div/label</td>
+	<td>Type Map</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Food Network Recipes</td>
+	<td>Food Network Recipes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[43]/div/label</td>
+	<td>Last Replication Action</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='mediadesk.lastReplicationAction']</td>
+	<td>Activate</td>
+</tr>
+<!--Ad Package ====-->
+<tr>
+	<td>click</td>
+	<td>link=Ad Package</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[35]/div/label</td>
+	<td>Package Anchor</td>
+</tr>
+<!--## ERROR Duplicate "Use No Value" -->
+<tr>
+	<td>assertText</td>
+	<td>css=div.useEmptyValueCheckbox</td>
+	<td>Use no value</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-9767-d634-abf7-d7f7c1650000&amp;py=00000155-0bfa-df30-adf5-7ffa9cbd0048&amp;p=false&amp;rt=00000155-922d-d54d-a1f5-d3af8e8e0000&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/div/h1</td>
+	<td>Select Package Anchor - 9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Any Types</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--## ERROR Please make sure the Filter drop down is correct -->
+<!--78/99-->
+<tr>
+	<td>assertText</td>
+	<td>//div[78]/div</td>
+	<td>Any Types<br />Main Content Types<br /> Photo Gallery<br /> Universal Landing Page<br />Misc Content Types<br /> Package Anchor<br /> Show</td>
+</tr>
+<!--## Follow up   QA Note: We need to add testing for filter each type -->
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchCreate &gt; h2</td>
+	<td>Create</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.action.action-create</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[37]/div/label</td>
+	<td>Sponsorship Code</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[37]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:sponsorship</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@name='00000155-9767-d634-abf7-d7f7c1650000/sponsorshipCode']</td>
+	<td>QA1234</td>
+</tr>
+<!--SEO-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=SEO</td>
+	<td></td>
+</tr>
+<!--21/39-->
+<tr>
+	<td>assertText</td>
+	<td>//div[39]/div/label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='cms.seo.title']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[40]/div/label</td>
+	<td>Description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='cms.seo.description']</td>
+	<td>QA Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[41]/div/label</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;00000155-9767-d634-abf7-d7f7c1650000/cms.seo.keywords.text&quot;]</td>
+	<td>house</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.addButtonContainer.state-focus &gt; span.addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[42]/div/label</td>
+	<td>Robots</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=small.inputNote &gt; a</td>
+	<td>robots meta tag documentation</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[42]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[42]/div[2]/div</td>
+	<td></td>
+</tr>
+<!--RR  ########################-->
+<!--Publish widget-->
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-action-publish</td>
+	<td>Publish</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td>Now</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-publish&quot;]</td>
+	<td>Publish</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-preview</td>
+	<td>Preview</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=button[name=&quot;action-newDraft&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-trash&quot;]</td>
+	<td>Archive</td>
+</tr>
+<!--Image preview widget -->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,0)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[2]/div/div/h1</td>
+	<td>Image Preview</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div &gt; img</td>
+	<td></td>
+</tr>
+<!--Adobe CQ widget -->
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/h1</td>
+	<td>Adobe CQ</td>
+</tr>
+<!--## ERROR the Label is incorrecet Read. Reloading Page -->
+<tr>
+	<td>assertText</td>
+	<td>css=a &gt; button</td>
+	<td>Force Read from CQ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[2]/button</td>
+	<td>Force Write to CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[3]/button</td>
+	<td>Force Activate in CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[4]/button</td>
+	<td>Force Deactivate in CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=CQ CF</td>
+	<td>CQ CF</td>
+</tr>
+<!--##ERROR CF link failed Cannot serve request to -->
+<!--Manuel Testing only   click  link=CA CF -->
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-urls &gt; h1</td>
+	<td>URLs</td>
+</tr>
+<!--User sholuld not see the URL widget but internally it is accessible -->
+<!--## QA Note: please make sure user cannot see the URL widge-->
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-sites &gt; h1</td>
+	<td>Sites</td>
+</tr>
+<!--## ERROR once the permission ticket fixed, make sure the drop down is correct -->
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-sites &gt; label</td>
+	<td>exact:Owner:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;00000155-9767-d634-abf7-d7f7c1650000/sites/owner&quot;]</td>
+	<td>None Food</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[2]</td>
+	<td>exact:Access:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//select[@name='00000155-9767-d634-abf7-d7f7c1650000/sites/access']</td>
+	<td>None All Others Some Others</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h1[contains(.,'Watchers')]</td>
+	<td>Watchers</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-object-history</td>
+	<td>Revisions</td>
+</tr>
+</tbody></table>
+</body>
+</html>

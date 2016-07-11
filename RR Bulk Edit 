@@ -82,7 +82,7 @@
 	<td>null</td>
 	<td></td>
 </tr>
-<!--31/32/28/34-->
+<!--31/32/28/34/27-->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
@@ -120,6 +120,57 @@
 	<td></td>
 </tr>
 <!--End of Image selection-->
+<!--filter with candidate  image only-->
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${statusDropDown}]/div/div[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${statusDropDown}]/div/div[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${statusDropDown}]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Candidate</td>
+</tr>
 <!--check the RR with some selection-->
 <tr>
 	<td>click</td>
@@ -141,16 +192,11 @@
 	<td>link=Clear</td>
 	<td>Clear</td>
 </tr>
-<tr>
-	<td>assertText</td>
-	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
-	<td>CollectionClear</td>
-</tr>
 <!--RR component list changes -->
 <tr>
-	<td>assertText</td>
-	<td>css=div.searchResult-action-simple &gt; a.button</td>
-	<td>Create New Photo Gallery</td>
+	<td>verifyText</td>
+	<td>link=Clear</td>
+	<td>Clear</td>
 </tr>
 <!--## ERROR CORE-xxx remove Create Photo Gallery button -->
 <!--Bulk Edit Selected -->
@@ -216,9 +262,14 @@
 	<td>Sources</td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
-	<td>//h2[contains(.,'Subjects')]</td>
-	<td>Subjects</td>
+	<td>//label[contains(.,'Attributions')]</td>
+	<td>Attributions</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -386,7 +437,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//form[starts-with(@id, 'i')]/div/div[47]/div/label</td>
+	<td>//form[starts-with(@id, 'i')]/div/div[43]/div/label</td>
 	<td>CQ Path</td>
 </tr>
 <tr>

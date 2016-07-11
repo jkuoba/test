@@ -141,8 +141,13 @@
 	<td>Rooms And Spaces :: Kitchen :: Eat In Kitchen</td>
 </tr>
 <tr>
+	<td>assertText</td>
+	<td>//div[34]/div[2]/div/span</td>
+	<td>Add Item</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//div[38]/div[2]/div/span</td>
+	<td>//div[34]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -165,7 +170,7 @@
 <!--secondary tag groups-->
 <tr>
 	<td>assertText</td>
-	<td>//div[39]/div/label</td>
+	<td>//div[35]/div/label</td>
 	<td>Secondary Tag Groups</td>
 </tr>
 <tr>
@@ -190,12 +195,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[39]/div[2]/div/span</td>
+	<td>//div[35]/div[2]/div/span</td>
 	<td>Add Tag Group</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[39]/div[2]/div/span</td>
+	<td>//div[35]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -209,9 +214,19 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380007&amp;aq=category%20notequalsall%20'preferred_terms'&amp;sg=false&quot;)])[5]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[22]/div/div/h1</td>
+	<td>Add to Secondary Tag Groups → Tags - Transitional Kitchen With Black Island and Cabinetry</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -238,12 +253,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[40]/h2</td>
+	<td>//div[36]/h2</td>
 	<td>Keywords and Preferred Terms</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[40]/div/label</td>
+	<td>//div[36]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
@@ -253,17 +268,17 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[41]/div/label</td>
+	<td>//div[37]/div/label</td>
 	<td>Preferred Terms</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[41]/div[2]/div</td>
+	<td>//div[37]/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[14]/div/div</td>
+	<td>//div[14]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>

@@ -105,6 +105,11 @@
 </tr>
 <!--Video asset STD END ==============================================-->
 <tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>//h1/span</td>
 	<td>Edit Video: Fixer Upper Home</td>
@@ -248,7 +253,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[41]/div/label</td>
+	<td>//div[29]/div/label</td>
 	<td>Video Preview</td>
 </tr>
 <!--#############-->
@@ -259,12 +264,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[75]/h2</td>
+	<td>//div[63]/h2</td>
 	<td>Open Graph</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[75]/div/label</td>
+	<td>//div[63]/div/label</td>
 	<td>OpenGraph Title</td>
 </tr>
 <tr>
@@ -274,7 +279,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[77]/div/label</td>
+	<td>//div[65]/div/label</td>
 	<td>OpenGraph Description</td>
 </tr>
 <tr>
@@ -292,9 +297,10 @@
 	<td>//form/div/div/div[3]</td>
 	<td></td>
 </tr>
+<!--Tags  19 /22 -->
 <tr>
 	<td>click</td>
-	<td>xpath=(//a[contains(text(),'Edit')])[25]</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[19]</td>
 	<td></td>
 </tr>
 <tr>

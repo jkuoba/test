@@ -99,23 +99,18 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.searchResult-images</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
+	<td>css=div[name=&quot;searchResultActions&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>Candidate</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[2]/div[3]/div</td>
+	<td></td>
 </tr>
 <!--add type - image -->
 <tr>

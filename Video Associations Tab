@@ -359,7 +359,7 @@
 <!--Subjects -->
 <tr>
 	<td>assertText</td>
-	<td>//div[28]/h2</td>
+	<td>//div[28]/div/label</td>
 	<td>Subjects</td>
 </tr>
 <tr>
@@ -369,52 +369,12 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;aq=level%20equalsany%20'normal'&amp;sg=false&quot;)])[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/ul/li[8]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td>//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=(com.scripps.mediadesk.model.profile.Profile%2Flevel%20equalsany%20'normal'%20or%20com.scripps.mediadesk.model.profile.Profile%2Fname%20equalsany%20missing)&amp;sg=false&quot;)]</td>
 	<td></td>
 </tr>
 <tr>
@@ -424,23 +384,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>link=Greenwood King Properties [HGTV]</td>
-	<td>Greenwood King Properties [HGTV]</td>
-</tr>
-<!--Primary Destination - not in Home, need to verify with Travel asset  ###-->
-<tr>
-	<td>storeEval</td>
-	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,800)</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>//div[31]/div/label</td>
-	<td>Primary Destination</td>
+	<td>//div[17]/div/div/h1</td>
+	<td>Add to Subjects - Fixer Upper Home</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370034&amp;aq=&amp;sg=true')])[2]</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[2]/td[3]/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -449,97 +398,25 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
-<!--Secondary Destination-->
-<tr>
 	<td>assertText</td>
-	<td>//div[32]/div/label</td>
-	<td>Secondary Destinations</td>
+	<td>link=Bargain Outlet [HGTV]</td>
+	<td>Bargain Outlet [HGTV]</td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>//div[32]/div[2]/div/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370034&amp;aq=&amp;sg=true')])[3]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
-<!--Primary Interest -->
-<tr>
-	<td>assertText</td>
-	<td>//div[37]/div/label</td>
-	<td>Primary Interest</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff437003b&amp;aq=&amp;sg=true')])[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
-<!--Secondary Interrest -->
-<tr>
-	<td>assertText</td>
-	<td>//div[38]/div/label</td>
-	<td>Secondary Interests</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[38]/div[2]/div/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-3626-d82d-ad57-bf6f9cce0000&amp;py=00000155-2b5e-d342-a55f-ab5ff438000d&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff437003b&amp;aq=&amp;sg=true')])[3]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
+<!--no more destination interest  now using loction and tag P -->
 <!--Analytics-->
 <tr>
 	<td>assertText</td>
-	<td>//div[80]/h2</td>
+	<td>//div[68]/h2</td>
 	<td>Other</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[80]/div</td>
+	<td>//div[68]/div</td>
 	<td>GuideWeb Series</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[80]/small/em</td>
+	<td>//div[68]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:editorialWebSeries</td>
 </tr>
 <tr>

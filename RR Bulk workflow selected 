@@ -62,6 +62,7 @@
 	<td>css=h1.icon.icon-object-workflow</td>
 	<td>Workflow Options</td>
 </tr>
+<!--we have 3 asset being selected but one of them with "published" stae so it will be ignored. -->
 <tr>
 	<td>assertText</td>
 	<td>css=h3</td>

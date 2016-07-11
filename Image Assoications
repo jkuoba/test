@@ -91,11 +91,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
-	<td>//a[@class='icon icon-action-remove']</td>
-	<td></td>
-</tr>
-<tr>
 	<td>storeElementPresent</td>
 	<td>//a[@class='icon icon-action-remove']</td>
 	<td>YN</td>
@@ -317,7 +312,7 @@
 	<td>link=15 Most Amazing Homes in America [HGTV]</td>
 	<td>15 Most Amazing Homes in America [HGTV]</td>
 </tr>
-<!--Subjects -->
+<!--Subjects - CORE-1403 -->
 <tr>
 	<td>assertText</td>
 	<td>//div[16]/div/label</td>
@@ -335,57 +330,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;aq=level%20equalsany%20'normal'&amp;sg=false&quot;)])[5]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/ul/li[10]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[@data-objectid='00000155-2c43-db86-a17f-2fdf99d40000']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/a</td>
+	<td>//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=(com.scripps.mediadesk.model.profile.Profile%2Flevel%20equalsany%20'normal'%20or%20com.scripps.mediadesk.model.profile.Profile%2Fname%20equalsany%20missing)&amp;sg=false&quot;)]</td>
 	<td></td>
 </tr>
 <tr>
@@ -405,112 +350,412 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[4]/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>link=Intero Real Estate Services, Inc. [HGTV]</td>
-	<td>Intero Real Estate Services, Inc. [HGTV]</td>
+	<td>link=Test [HGTV]</td>
+	<td>Test [HGTV]</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>link=Antonio Ballatore [HGTV]</td>
-	<td>Antonio Ballatore [HGTV]</td>
+	<td>link=EasyClosets [HGTV]</td>
+	<td>EasyClosets [HGTV]</td>
 </tr>
-<!--Primary Destination - not in Home, need to verify with Travel asset  ###-->
+<tr>
+	<td>click</td>
+	<td>//div[16]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<!--testing Subjects Filter options -->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--retest starting point -->
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=(com.scripps.mediadesk.model.profile.Profile%2Flevel%20equalsany%20'normal'%20or%20com.scripps.mediadesk.model.profile.Profile%2Fname%20equalsany%20missing)&amp;sg=false&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilters &gt; h2</td>
+	<td>Filters</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Reset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Any Types</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--48/36-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//body/div[36]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[36]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[36]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>15 FRESH HANDMADE GIFT IDEAS [HGTV]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[42]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[42]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Profile</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li</td>
+	<td>Sponsors</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]</td>
+	<td>Editorial</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]</td>
+	<td>Partners</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]</td>
+	<td>Talent</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]</td>
+	<td>Professionals</td>
+</tr>
+<!--Now test the next level  ===================-->
+<!--sponsors-->
+<tr>
+	<td>click</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[11]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>Raymour &amp; Flanigan [HGTV]</td>
+</tr>
+<!--Editorial-->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>css=span.link</td>
+	<td>Raymour &amp; Flanigan [HGTV]</td>
+</tr>
+<!--## ERROR  CORE-2100 Media Desk: Performance issue on "Add to Subjects" Profile filter listing-->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Abigail Barnes [HGTV]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.link</td>
+	<td>Abigail Barnes [HGTV]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>Abigail Barnes [HGTV]</td>
+</tr>
+<!--Partners-->
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]</td>
+	<td>Partners</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]</td>
+	<td>Partners</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=span.link</td>
+	<td>Abigail Barnes [HGTV]</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>Chas Everitt International Property Group [HGTV]</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--Talent-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=span.link</td>
+	<td>Chas Everitt International Property Group [HGTV]</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=span.link</td>
+	<td>Carol Duvall [HGTV]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>Carol Duvall [HGTV]</td>
+</tr>
+<!--professional-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>css=span.link</td>
+	<td>Chas Everitt International Property Group [HGTV]</td>
+</tr>
+<tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=span.link</td>
+	<td>Carol Duvall [HGTV]</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[10]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[10]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[11]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[11]/span</td>
+	<td>Cathy Hobbs [HGTV]</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>2 Doors Down Design [HGTV]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Destinations are being re-implemented as Locations, post home/food launch. Interests are being handled by tags (by the Tags fields, no separate field) moving forward.  [3:20]   Subjects is now (Profiles, Shows, Episodes)-->
 <tr>
 	<td>storeEval</td>
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,800)</td>
 	<td></td>
 </tr>
+<!--Primary Secondary Destination-->
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>//div[17]/div/label</td>
 	<td>Primary Destination</td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370034&amp;aq=&amp;sg=true')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
-<!--Secondary Destination-->
-<tr>
-	<td>assertText</td>
-	<td>//div[18]/div/label</td>
-	<td>Secondary Destinations</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[18]/div[2]/div/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370034&amp;aq=&amp;sg=true')])[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
-<!--Primary Interest -->
-<tr>
-	<td>assertText</td>
-	<td>//div[19]/div/label</td>
-	<td>Primary Interest</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff437003b&amp;aq=&amp;sg=true')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
+<!--Primary Interest  Secondary Interrest -->
 <!--Secondary Interrest -->
-<tr>
-	<td>assertText</td>
-	<td>//div[20]/div/label</td>
-	<td>Secondary Interests</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[20]/div[2]/div/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff437003b&amp;aq=&amp;sg=true')])[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
 <!--Brand-->
 <tr>
 	<td>assertText</td>
-	<td>//div[21]/div/label</td>
+	<td>//div[17]/div/label</td>
 	<td>Brand</td>
 </tr>
 <tr>
@@ -536,7 +781,7 @@
 <!--Project Name-->
 <tr>
 	<td>assertText</td>
-	<td>//div[22]/div/label</td>
+	<td>//div[18]/div/label</td>
 	<td>Project Name</td>
 </tr>
 <tr>
@@ -552,7 +797,7 @@
 <!--Copyright-->
 <tr>
 	<td>assertText</td>
-	<td>//div[23]/div/label</td>
+	<td>//div[19]/div/label</td>
 	<td>Copyright</td>
 </tr>
 <tr>
@@ -563,7 +808,7 @@
 <!--Credit-->
 <tr>
 	<td>assertText</td>
-	<td>//div[24]/div/label</td>
+	<td>//div[20]/div/label</td>
 	<td>Credit</td>
 </tr>
 <tr>
@@ -574,19 +819,24 @@
 <!--QA note: not travel image does not have location info and field -->
 <tr>
 	<td>assertText</td>
-	<td>//div[26]/div</td>
-	<td>GuideOwner</td>
+	<td>//div[21]/div</td>
+	<td>GuideLocation</td>
 </tr>
 <!--Owner-->
 <tr>
 	<td>assertText</td>
-	<td>//div[26]/div/label</td>
-	<td>Owner</td>
+	<td>//div[22]/div</td>
+	<td>GuideOwner</td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>//textarea[@data-dynamic-field-name='owner']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='owner']</td>
+	<td>joseph@psd.com</td>
 </tr>
 <!--Analytics-->
 <tr>
@@ -618,11 +868,6 @@
 <tr>
 	<td>assertElementPresent</td>
 	<td>css=button[name=&quot;action-post&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;aq=level%20equalsany%20'normal'&amp;sg=false&quot;)])[5]</td>
 	<td></td>
 </tr>
 </tbody></table>

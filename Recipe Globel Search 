@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk1.core-dev.sni.foodnetwork.com/cms/" />
+<title>Recipe Globel Search </title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Recipe Globel Search </td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--Recipe-->
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/div[7]</td>
+	<td>Recipe</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[18]/div/div[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td>Publish Date</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td>Publish Date</td>
+</tr>
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td>Publish Date</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.year</td>
+	<td>2010</td>
+</tr>
+<!--QA NOte: automation not working please test it manually by click on the Set button-->
+<!--##  ERROR calendar does not working right , change the date and month, the year back to current year -->
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.cms.content.publishDate.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<!--css=img[alt="Kinda Sorta Sours"]-->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.cms.content.publishDate.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/span[2]</td>
+	<td>(End)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[3]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.cms.content.publishDate.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.cms.content.publishDate.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[3]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_clear</td>
+	<td></td>
+</tr>
+<!--difficulty-->
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilterItem &gt; div.dropDown-input &gt; a.dropDown-label.state-placeholder</td>
+	<td>Difficulty</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; div.dropDown-input &gt; a.dropDown-label.state-placeholder</td>
+	<td>Difficulty</td>
+</tr>
+<!--## ERROR Diffculty dropdown missing options -->
+<tr>
+	<td>assertText</td>
+	<td>//body/div[26]/div/div[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//body/div[26]/div/div[2]</td>
+	<td>Easy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[26]/div/div[2]</td>
+	<td>Easy</td>
+</tr>
+<!--#ERROR easy return nothing -->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.difficulty.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.difficulty.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input.state-focus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[26]/div/div[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilterItem &gt; div.dropDown-input &gt; a.dropDown-label.state-placeholder</td>
+	<td>Difficulty</td>
+</tr>
+<!--## Pending on the product team to tell the difference -->
+<!--Scrid -->
+<tr>
+	<td>assertText</td>
+	<td>css=input[name=&quot;f.rmaId&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=input[name=&quot;f.rmaId.m&quot;]</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.rmaId.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.rmaId.m&quot;]</td>
+	<td></td>
+</tr>
+<!--Source ID -->
+<tr>
+	<td>assertText</td>
+	<td>css=input[name=&quot;f.sourceId&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=input[name=&quot;f.scrid.m&quot;]</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.sourceId.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.sourceId.m&quot;]</td>
+	<td></td>
+</tr>
+<!--Time-->
+<tr>
+	<td>assertText</td>
+	<td>css=input[name=&quot;f.cookTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.cookTime&quot;]</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.cookTime.x&quot;]</td>
+	<td>25</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.cookTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.cookTime.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--preapratoin -->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.preparationTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.preparationTime&quot;]</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.preparationTime.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.preparationTime.x&quot;]</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.preparationTime.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.preparationTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Total Time-->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.totalTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.totalTime&quot;]</td>
+	<td>60</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.totalTime.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.totalTime.x&quot;]</td>
+	<td>720</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchForm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.totalTime.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.totalTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Active Preparation-->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.activePreparationTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.activePreparationTime&quot;]</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.activePreparationTime.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.activePreparationTime.x&quot;]</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.activePreparationTime.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.activePreparationTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--InActive Preparation-->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.inactivePreparationTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.inactivePreparationTime&quot;]</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.inactivePreparationTime.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.inactivePreparationTime.x&quot;]</td>
+	<td>120</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.inactivePreparationTime.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.inactivePreparationTime&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Servings Person-->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.servingsPerRecipe&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.servingsPerRecipe&quot;]</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.servingsPerRecipe.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.servingsPerRecipe.x&quot;]</td>
+	<td>8</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.servingsPerRecipe.x&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.servingsPerRecipe&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--Tag-->
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilterItem &gt; a.objectId-select</td>
+	<td>Tags</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; a.objectId-select</td>
+	<td>Tags</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[37]/div/div/h1</td>
+	<td>Select</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; a.objectId-select</td>
+	<td>Tags</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[19]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; a.objectId-clear</td>
+	<td></td>
+</tr>
+<!--Beverage Pairing -->
+<tr>
+	<td>assertText</td>
+	<td>//div[15]/div/a/span</td>
+	<td>Beverage Pairing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Beverage Pairing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Recipe: Ham&nbsp;Gravy&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<!--related Contentn-->
+<tr>
+	<td>assertText</td>
+	<td>//div[16]/div/a/span</td>
+	<td>Related Content</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Related Content</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/div</td>
+	<td>No matching items!</td>
+</tr>
+<!--# ERROR, Search Pop up should not habe "New" button.-->
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.searchForm &gt; div.searchControls &gt; div.searchCreate &gt; form.objectId-create.bsp-onDomInsert-inserted-32 &gt; button.action.action-create</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Prefered Terms-->
+<tr>
+	<td>assertText</td>
+	<td>link=Preferred Terms</td>
+	<td>Preferred Terms</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div[17]/div/div</td>
+	<td></td>
+</tr>
+<!--## ERROR No Preferred Terms drop down   #######-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[28]/div/div[1]</td>
+	<td></td>
+</tr>
+<!--Do Not Search   ## QA Note:  manual testing plaec -->
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;f.doNotSearch&quot;]</td>
+	<td>exact:Do Not Search?Do Not Search? YesDo Not Search? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotSearch&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotSearch&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.doNotSearch&quot;]</td>
+	<td>label=Do Not Search? Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;true&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotSearch&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.doNotSearch&quot;]</td>
+	<td>label=Do Not Search? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;false&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotSearch&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.doNotSearch&quot;]</td>
+	<td>label=Do Not Search?</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotSearch&quot;] &gt; option</td>
+	<td></td>
+</tr>
+<!--Do Not Feature   ## QA Note:  manual testing plaec -->
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;]</td>
+	<td>exact:Do Not Feature?Do Not Feature? YesDo Not Feature? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;]</td>
+	<td>label=Do Not Feature? Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;] &gt; option[value=&quot;true&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;]</td>
+	<td>label=Do Not Feature? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;] &gt; option[value=&quot;false&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;]</td>
+	<td>label=Do Not Feature?</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.doNotFeature&quot;] &gt; option</td>
+	<td></td>
+</tr>
+<!--Brand-->
+<tr>
+	<td>click</td>
+	<td>//div[20]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[30]/div/div[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Food Network</td>
+	<td>Food Network</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.getBrand.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.getBrand.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[20]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[30]/div/div[1]</td>
+	<td></td>
+</tr>
+<!--Healthy ?-->
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;]</td>
+	<td>exact:Healthy?Healthy? YesHealthy? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;]</td>
+	<td>label=Healthy? Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;] &gt; option[value=&quot;true&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;]</td>
+	<td>label=Healthy? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;] &gt; option[value=&quot;false&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;]</td>
+	<td>label=Healthy?</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.isHealthy&quot;] &gt; option</td>
+	<td></td>
+</tr>
+<!--Has Image? -->
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;f.hasImage&quot;]</td>
+	<td>exact:Has Image?Has Image? YesHas Image? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.hasImage&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.hasImage&quot;]</td>
+	<td>label=Has Image? Yes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.hasImage&quot;] &gt; option[value=&quot;true&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.hasImage&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.hasImage&quot;]</td>
+	<td>label=Has Image? No</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.hasImage&quot;] &gt; option[value=&quot;false&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.hasImage&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;f.hasImage&quot;]</td>
+	<td>label=Has Image?</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;f.hasImage&quot;] &gt; option</td>
+	<td></td>
+</tr>
+<!--CQ APth -->
+<tr>
+	<td>assertText</td>
+	<td>css=input[name=&quot;f.cq.path&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.cq.path.m&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;f.cq.path.m&quot;]</td>
+	<td></td>
+</tr>
+<!--Package Anchor-->
+<tr>
+	<td>assertText</td>
+	<td>//div[24]/div/a/span</td>
+	<td>Package Anchor</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Package Anchor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.searchForm &gt; div.searchControls &gt; div.searchFilters &gt; form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--69/54-->
+<tr>
+	<td>assertText</td>
+	<td>//div[54]/div</td>
+	<td>Any Types<br />Main Content Types<br /> Photo Gallery<br /> Universal Landing Page<br />Misc Content Types<br /> Package Anchor<br /> Show</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[7]/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<!--Published -->
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Published</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input.dropDown-input-bottom</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input.dropDown-input-bottom &gt; a.dropDown-label</td>
+	<td>Initial Draft</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div/div[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input.dropDown-input-bottom</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.dropDown-input.dropDown-input-bottom &gt; a.dropDown-label</td>
+	<td>Archived</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input.dropDown-input-bottom</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div/div[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input.dropDown-input-bottom</td>
+	<td></td>
+</tr>
+<!--advance Query-->
+<tr>
+	<td>assertText</td>
+	<td>css=input[name=&quot;av&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchCreate &gt; h2</td>
+	<td>Create</td>
+</tr>
+<!--## ERROR do we allow to create new recipe ??????-->
+<tr>
+	<td>assertText</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>Recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.action.action-create</td>
+	<td>New</td>
+</tr>
+</tbody></table>
+</body>
+</html>

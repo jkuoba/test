@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>Vidoe List type </title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Vidoe List type </td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--14/16/44  select asset type -Photo Gallery -->
+<tr>
+	<td>assertText</td>
+	<td>//div[16]/div/div[11]</td>
+	<td>Video Playlist</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[11]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Which House Will They Choose? </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<!--ERROR, Please search and see if there is duplicate records on Univeresal Landing page  cuilinary page -->
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Which House Will They Choose? </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=exact:Tiny House Hunters: Which House Will They Choose?</td>
+	<td>exact:Tiny House Hunters: Which House Will They Choose?</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=exact:Tiny House Hunters: Which House Will They Choose?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--Main-->
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputLabel &gt; label</td>
+	<td>Asset Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=em</td>
+	<td>CQ Property Name: assetTitle/assetTitle</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='assetTitle']</td>
+	<td>Tiny House Hunters: Which House Will They Choose?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/label</td>
+	<td>Asset Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/small/em</td>
+	<td>CQ Property Name: assetDescription/assetDescription</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='assetDescription']</td>
+	<td>Follow along as buyers make the transition to tiny living.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[13]/div/label</td>
+	<td>Videos</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-upload</td>
+	<td>Upload Files</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.action-upload</td>
+	<td>Upload Files</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;uploadFiles&quot;] &gt; h1</td>
+	<td>Upload Files</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputContainer.bulk-upload-files &gt; div.inputLabel &gt; label</td>
+	<td>Files</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@multiple='multiple']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div[2]/div/label</td>
+	<td>Type</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//select[@data-root='form']</td>
+	<td>Video</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form/div[3]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;uploadFiles&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[13]/div[2]/div/span</td>
+	<td>Add Item</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[13]/div[2]/div/span</td>
+	<td>Add Item</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-upload</td>
+	<td>Upload Files</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ol.plugin-sortable._sortable &gt; li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[13]/div[2]/div/span</td>
+	<td>Add Item</td>
+</tr>
+<!--Debug-->
+<tr>
+	<td>click</td>
+	<td>link=Debug</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div/div/div[3]</td>
+	<td></td>
+</tr>
+<!--Association-->
+<tr>
+	<td>click</td>
+	<td>link=Associations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[7]/div/label</td>
+	<td>Brand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[7]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:brand</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--Usage-->
+<tr>
+	<td>click</td>
+	<td>link=Usage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[8]/div/label</td>
+	<td>Not for Dynamic Use</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[8]/small/em</td>
+	<td>CQ Property Name: jcr:content/doNotFeature</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[9]/div/label</td>
+	<td>exact:Do Not Search?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[9]/small/em</td>
+	<td>CQ Property Name: jcr:content/doNotSearch</td>
+</tr>
+<!--Tags & Keywords-->
+<tr>
+	<td>click</td>
+	<td>link=Tags &amp; Keywords</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[10]/div/label</td>
+	<td>Primary Tag Group</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[10]/small/em</td>
+	<td>CQ Property Name: tags/primaryTagGroup</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[23]/div/div/h1</td>
+	<td>exact:Add to Primary Tag Group - Tiny House Hunters: Which House Will They Choose?</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[11]/div/label</td>
+	<td>Secondary Tag Groups</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[11]/small/em</td>
+	<td>CQ Property Name: additionalTagGroups-X/additionalTagGroup</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[11]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ol.plugin-sortable._sortable &gt; li &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[23]/div/div/h1</td>
+	<td>exact:Add to Secondary Tag Groups → Tags - Tiny House Hunters: Which House Will They Choose?</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ol.plugin-sortable._sortable &gt; li &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[7]/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[5]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-select</td>
+	<td>Beauty And Wellness</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ol.plugin-sortable._sortable &gt; li &gt; a.objectId-select</td>
+	<td>Download</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.removeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h2</td>
+	<td>Keywords and Preferred Terms</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[12]/div/label</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[12]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:keywords</td>
+</tr>
+<!--Adobe CQ-->
+<tr>
+	<td>click</td>
+	<td>link=Adobe CQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='cq.path']</td>
+	<td>/content/hgtv-com/en/shows/tiny-house-living/video-playlists/tiny-house-hunting</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[15]/div/label</td>
+	<td>Type Map</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=HGTV Video Playlists</td>
+	<td>HGTV Video Playlists</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[25]/div/label</td>
+	<td>Last Replication Action</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='mediadesk.lastReplicationAction']</td>
+	<td>Activate</td>
+</tr>
+<!--Analytics-->
+<tr>
+	<td>click</td>
+	<td>link=Analytics</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form/div/div/div[3]</td>
+	<td></td>
+</tr>
+<!--Note: Video List fores not haev tab : Ad Package-->
+<!--SEO-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=SEO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[21]/div/label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='cms.seo.title']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[22]/div/label</td>
+	<td>Description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='cms.seo.description']</td>
+	<td>QA Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[23]/div/label</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;00000155-2dd0-d435-ab77-edd57d850000/cms.seo.keywords.text&quot;]</td>
+	<td>house</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[23]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[24]/div/label</td>
+	<td>Robots</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=small.inputNote &gt; a</td>
+	<td>robots meta tag documentation</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[24]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[24]/div[2]/div</td>
+	<td></td>
+</tr>
+<!--RR-->
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-action-publish</td>
+	<td>Publish</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a &gt; button</td>
+	<td>Force Read from CQ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[2]/button</td>
+	<td>Force Write to CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[3]/button</td>
+	<td>Force Activate in CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[4]/button</td>
+	<td>Force Deactivate in CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=CQ CF</td>
+	<td>CQ CF</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-urls &gt; h1</td>
+	<td>URLs</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-sites &gt; h1</td>
+	<td>Sites</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h1[contains(.,'Watchers')]</td>
+	<td>Watchers</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-object-history</td>
+	<td>Revisions</td>
+</tr>
+</tbody></table>
+</body>
+</html>

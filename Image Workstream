@@ -289,7 +289,7 @@
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,300)</td>
 	<td></td>
 </tr>
-<!--## ERROR Not working --> Test the workstream start button -->
+<!--## ERROR Not working -->
 <tr>
 	<td>clickAndWait</td>
 	<td>css=a.button.p-workStreams-start</td>

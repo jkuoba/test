@@ -121,17 +121,17 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[42]/div/label</td>
+	<td>//div[30]/div/label</td>
 	<td>Primary Tag Group</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[42]/small/em</td>
+	<td>//div[30]/small/em</td>
 	<td>CQ Property Name: jcr:content/cq:tags</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[42]/div[2]/div/span</td>
+	<td>//div[30]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -192,22 +192,22 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[43]/div/label</td>
+	<td>//div[31]/div/label</td>
 	<td>Secondary Tag Groups</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[43]/small/em</td>
+	<td>//div[31]/small/em</td>
 	<td>CQ Property Name: jcr:content/tagMapping-X</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[43]/div[2]/div/span</td>
+	<td>//div[31]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[43]/div[2]/div/span</td>
+	<td>//div[31]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -303,12 +303,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[44]/div/label</td>
+	<td>//div[32]/div/label</td>
 	<td>Preferred Terms</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[44]/small</td>
+	<td>//div[32]/small</td>
 	<td>Used for ad targeting.<br />CQ Property Name: jcr:content/sni:preferredTerm1 and sni:preferredTerm2</td>
 </tr>
 <tr>
@@ -333,12 +333,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[66]/div/label</td>
+	<td>//div[54]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[66]/small/em</td>
+	<td>//div[54]/small/em</td>
 	<td>CQ Property Name: jcr:content/editorialKeywords</td>
 </tr>
 <tr>

@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+<title>Travel Filters</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Travel Filters</td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--14/16/44  select asset type -Photo Gallery -->
+<tr>
+	<td>assertText</td>
+	<td>//div[16]/div/div[5]</td>
+	<td>Photo Gallery</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!--do the search approach with Fixer Upper: Midcentury "Asian Ranch" Goes French Country-->
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td>Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=figcaption</td>
+	<td>Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=figcaption</td>
+	<td></td>
+</tr>
+<!--main tab -->
+<tr>
+	<td>assertText</td>
+	<td>css=li.state-selected &gt; a</td>
+	<td>Main</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputLabel &gt; label</td>
+	<td>Asset Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=em</td>
+	<td>CQ Property Name: assetTitle/assetTitle</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='assetTitle']</td>
+	<td>Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/label</td>
+	<td>Promo Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/small/em</td>
+	<td>CQ Property Name: jcr:content/promoTitle</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='promoTitle']</td>
+	<td>QA Promo Title</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.inputContainer.state-changed &gt; small.inputNote</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[8]/div/label</td>
+	<td>Slides</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[8]/small/em</td>
+	<td>CQ Property Name: jcr:content/photoGalleryPromo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-upload</td>
+	<td>Upload Files</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.addButton</td>
+	<td>Add Slide</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.view-switcher-grid</td>
+	<td>Grid</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.view-switcher-gallery</td>
+	<td>Gallery</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.ribbon-wrapper-green</td>
+	<td>Cover</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,1600)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,3000)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,300)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.view-switcher-gallery</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-previous</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.carousel-wrapper.carousel-numbered &gt; div.carousel-nav.carousel-nav-previous</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div/div/div/div/label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='title']</td>
+	<td>Rancho Deluxe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div/div/div[2]/div/label</td>
+	<td>Caption</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=pre..CodeMirror-line&nbsp;&nbsp;&gt; span</td>
+	<td>Chip and Joanna Gaines transformed an ordinary looking ranch house into this smartly updated home with Craftsman inspired exterior and a decidedly French country flavor inside.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputContainer.inputContainer-bulkUpload &gt; div.inputLabel &gt; label</td>
+	<td>Image</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-select &gt; figure &gt; figcaption</td>
+	<td>Candidate Fixer Upper: Craftsman Inspired Ranch Exterior</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-edit</td>
+	<td>Edit</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-clear</td>
+	<td>Clear</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,800)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div/div/div[4]/div/label</td>
+	<td>HotSpots</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[2]/div/div[5]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.addButtonContainer &gt; span.addButton</td>
+	<td>Add Editorial Hot Spot</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-preview</td>
+	<td>View Original</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.addButtonContainer &gt; span.addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.popup.popup-show &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--DEBUG-->
+<tr>
+	<td>storeEval</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(20,20)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Debug</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/label</td>
+	<td>SEO Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:seoTitle</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='seoTitle']</td>
+	<td>Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[5]/div</td>
+	<td>GuideAsset Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[5]/small/em</td>
+	<td>CQ Property Name: assetDescription/assetDescription</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='assetDescription']</td>
+	<td>Chip and Joanna help a young couple turn a spacious but dated '60s ranch house into an open and inviting home with fresh elegance and a touch of the romantic.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[7]/div/label</td>
+	<td>SEO Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[7]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:seoDescription</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td>Chip and Joanna help a young couple turn a spacious but dated '60s ranch house into an open and inviting home with fresh elegance and a touch of the romantic. See the photos at HGTV.com.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[25]/div/label</td>
+	<td>Source Package Anchor</td>
+</tr>
+<!--Association Tab -->
+<tr>
+	<td>click</td>
+	<td>link=Associations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[11]/div/label</td>
+	<td>Brand</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[11]/small</td>
+	<td>Owner brand of the asset. Could be blank if not from a host brand.<br />CQ Property Name: jcr:content/sni:brand</td>
+</tr>
+<!--The value is empty but better to have value , we are more concerns on the type Map field -->
+<tr>
+	<td>assertText</td>
+	<td>css=a.dropDown-label.state-placeholder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[12]/div/label</td>
+	<td>Attributions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[12]/small/em</td>
+	<td>CQ Property Name: attribution/source</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[12]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//h1[contains(.,'Add to Attributions - Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//span[contains(.,'Ellen DeGeneres [HGTV]')]</td>
+	<td>Ellen DeGeneres [HGTV]</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[contains(.,'Ellen DeGeneres [HGTV]')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=li &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li &gt; a.objectId-select</td>
+	<td>Ellen DeGeneres [HGTV]</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[13]/div/label</td>
+	<td>Bylines</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li._sortable-item &gt; a.objectId-select</td>
+	<td>David L. Haynes [HGTV]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[13]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-35ba-d5ed-aff7-3fbea7a60000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370041&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;aq=level%20equalsany%20'normal'&amp;sg=false&quot;)])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/div/div/h1</td>
+	<td>Add to Bylines - Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Britney Brooks [GAC]</td>
+	<td>Britney Brooks [GAC]</td>
+</tr>
+<!--Usage tab-->
+<tr>
+	<td>click</td>
+	<td>link=Usage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[14]/div/label</td>
+	<td>Not for Dynamic Use</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[14]/small/em</td>
+	<td>CQ Property Name: jcr:content/doNotFeature</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[15]/div/label</td>
+	<td>exact:Do Not Search?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[15]/small/em</td>
+	<td>CQ Property Name: jcr:content/doNotSearch</td>
+</tr>
+<!--Checkbox testing  needed-->
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<!--Tag&Keywords tab-->
+<tr>
+	<td>click</td>
+	<td>link=Tags &amp; Keywords</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//label[contains(.,'Primary Tag Group')]</td>
+	<td>Primary Tag Group</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[16]/small/em</td>
+	<td>CQ Property Name: tags/primaryTagGroup</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul &gt; li &gt; a.objectId-select</td>
+	<td>Activity :: Renovation</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul &gt; li &gt; a.objectId-edit</td>
+	<td>Edit</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul &gt; li &gt; span.removeButton</td>
+	<td>Remove</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ul &gt; li &gt; a.objectId-edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.popup-objectId-edit-heading</td>
+	<td>Back to Edit Photo Gallery: Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/div/div/form/div/div/h1/span</td>
+	<td>Edit Tag: Activity :: Renovation</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.popup-objectId-edit-heading</td>
+	<td></td>
+</tr>
+<!--Secondary Tag Group -->
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/div/label</td>
+	<td>Secondary Tag Groups</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/small/em</td>
+	<td>CQ Property Name: additionalTagGroups-X/additionalTagGroup</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.repeatableLabel</td>
+	<td>Tag Group: [Style :: French Country]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[17]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[2]/div[2]/div/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[2]/div[2]/div/div[2]/ol/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-35ba-d5ed-aff7-3fbea7a60000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370041&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380007&amp;aq=category%20notequalsall%20'preferred_terms'&amp;sg=false&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Appliance</td>
+	<td>Appliance</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputContainer &gt; h2</td>
+	<td>Keywords and Preferred Terms</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/div/label</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[18]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:keywords</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='keywords']</td>
+	<td>QA Photo Gallery</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='keywords']</td>
+	<td>QA Photo Gallery</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<!--Adobe CQ Tab-->
+<tr>
+	<td>click</td>
+	<td>link=Adobe CQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[20]/div/label</td>
+	<td>CQ Path</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='cq.path']</td>
+	<td>/content/hgtv-com/en/shows/on-tv/f/fixer-upper/photo-galleries/fixer-upper-midcentury-asian-ranch-goes-french-country</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[21]/div/label</td>
+	<td>Type Map</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=HGTV Photo Galleries</td>
+	<td>HGTV Photo Galleries</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[34]/div/label</td>
+	<td>Last Replication Action</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[34]/small/em</td>
+	<td>CQ Property Name: jcr:content/cq:lastReplicationAction</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='mediadesk.lastReplicationAction']</td>
+	<td>Activate</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<!--Ad Package tab -->
+<tr>
+	<td>click</td>
+	<td>link=Ad Package</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[26]/div/label</td>
+	<td>Package Anchor</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-35ba-d5ed-aff7-3fbea7a60000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370041&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370023&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[17]/div/div/h1</td>
+	<td>Select Package Anchor - Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Tour a Stunning Modern Home and Outdoor Space</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputContainer.state-changed &gt; div.inputSmall &gt; a.objectId-select</td>
+	<td>Tour a Stunning Modern Home and Outdoor Space</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[28]/div/label</td>
+	<td>Sponsorship Code</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='sponsorshipCode']</td>
+	<td>QA1234</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Analytics</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/h1</td>
+	<td>Conversation</td>
+</tr>
+<!--SEO Tab-->
+<tr>
+	<td>click</td>
+	<td>link=SEO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[30]/div/label</td>
+	<td>Title</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>//textarea[@data-dynamic-field-name='cms.seo.title']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[31]/div/label</td>
+	<td>Description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='cms.seo.description']</td>
+	<td>QA Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[32]/div/label</td>
+	<td>Keywords</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;00000155-35ba-d5ed-aff7-3fbea7a60000/cms.seo.keywords.text&quot;]</td>
+	<td>Photo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[32]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=input[name=&quot;00000155-35ba-d5ed-aff7-3fbea7a60000/cms.seo.keywords.text&quot;]</td>
+	<td>Photo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[33]/div/label</td>
+	<td>Robots</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=small.inputNote &gt; a</td>
+	<td>robots meta tag documentation</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[33]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[33]/div[2]/div</td>
+	<td></td>
+</tr>
+<!--RR-->
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-action-publish</td>
+	<td>Publish</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a &gt; button</td>
+	<td>Force Read from CQ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[2]/button</td>
+	<td>Force Write to CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[3]/button</td>
+	<td>Force Activate in CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[4]/button</td>
+	<td>Force Deactivate in CQ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=CQ CF</td>
+	<td>CQ CF</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-urls &gt; h1</td>
+	<td>URLs</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.widget-sites &gt; h1</td>
+	<td>Sites</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div[2]/div[6]/h1</td>
+	<td>Watchers</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-object-history</td>
+	<td>Revisions</td>
+</tr>
+</tbody></table>
+</body>
+</html>
