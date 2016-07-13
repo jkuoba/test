@@ -16,7 +16,7 @@
 	<td>600</td>
 	<td></td>
 </tr>
-<!--filter dropdown var  - 45 16---------------------->
+<!--filter dropdown var  - 45 16 14---------------------->
 <tr>
 	<td>store</td>
 	<td>16</td>
@@ -52,7 +52,7 @@
 	<td>34</td>
 	<td>preferredDropDown</td>
 </tr>
-<!--34/  36   AM    /44/42/40  field - published /in workstream etc DropDown -->
+<!--34/  36/ 38 AM     field - published /in workstream etc DropDown -->
 <tr>
 	<td>store</td>
 	<td>36</td>
@@ -76,7 +76,6 @@
 	<td>30</td>
 	<td>locationDropDown</td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

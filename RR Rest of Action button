@@ -442,6 +442,11 @@
 </tr>
 <!--Bulk Archive All -->
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//input[starts-with(@id, 'i')]</td>
 	<td></td>

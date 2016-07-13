@@ -281,7 +281,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[15]/div/div/h1</td>
+	<td>//div[11]/div/div/h1</td>
 	<td>Add to Primary Tag Group - Rebuilding Together</td>
 </tr>
 <tr>
@@ -341,7 +341,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[15]/div/div/h1</td>
+	<td>//div[11]/div/div/h1</td>
 	<td>Add to Secondary Tag Groups → Tags - Rebuilding Together</td>
 </tr>
 <tr>
@@ -479,7 +479,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[15]/div/div/h1</td>
+	<td>//div[11]/div/div/h1</td>
 	<td>Select Package Anchor - Rebuilding Together</td>
 </tr>
 <tr>
@@ -655,7 +655,6 @@
 	<td>css=h1.icon.icon-object-history</td>
 	<td>Revisions</td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

@@ -84,7 +84,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
 <!--Recipe-->
@@ -898,7 +898,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>Article</td>
 </tr>
 <tr>
@@ -954,7 +954,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
 <!--## QA ERROR NOTE:  36/75/63 /84     Do we allow to creat new Article and Recipe here ? this might be the permission ticket fix -->
@@ -1015,12 +1015,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>Article</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>Any Types</td>
 </tr>
 <tr>
@@ -1030,16 +1030,21 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[@class='message message-warning bsp-onDomInsert-inserted-30']</td>
+	<td>css=p</td>
 	<td>No matching items!</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
 <!--There should be three types - Article, Photo gallery, Video Playlist -->
 <!--88/93/72-->
+<tr>
+	<td>assertValue</td>
+	<td>xpath=(//input[@type='text'])[27]</td>
+	<td>Any Types</td>
+</tr>
 <tr>
 	<td>assertText</td>
 	<td>//body/div[72]</td>
@@ -1051,13 +1056,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
-	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
 <!--#ERROR ?? do we allow user to create Article Photo Gallery Video list under recipe content field -->
@@ -1201,25 +1201,25 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>Any Types</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
 <!--## ERROR Please make sure the Filter drop down is correct -->
 <!--78/99-->
 <tr>
 	<td>assertText</td>
-	<td>//div[78]/div</td>
+	<td>//div[84]/div</td>
 	<td>Any Types<br />Main Content Types<br /> Photo Gallery<br /> Universal Landing Page<br />Misc Content Types<br /> Package Anchor<br /> Show</td>
 </tr>
 <!--## Follow up   QA Note: We need to add testing for filter each type -->
 <tr>
 	<td>click</td>
-	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
 <tr>

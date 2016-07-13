@@ -459,11 +459,10 @@
 	<td>link=Save Collection</td>
 	<td></td>
 </tr>
-<!--## ERROR   should be collection, not selection -->
 <tr>
 	<td>assertText</td>
 	<td>css=div[name=&quot;toolUserSaveSearch&quot;] &gt; div.widget &gt; h1.icon.icon-action-search</td>
-	<td>Save Selection</td>
+	<td>Save Collection</td>
 </tr>
 <tr>
 	<td>click</td>

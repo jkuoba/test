@@ -590,7 +590,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[17]/div/div/h1</td>
+	<td>//div[13]/div/div/h1</td>
 	<td>Add to Bylines - Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
 </tr>
 <tr>
@@ -876,7 +876,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[17]/div/div/h1</td>
+	<td>//div[13]/div/div/h1</td>
 	<td>Select Package Anchor - Fixer Upper: Midcentury &quot;Asian Ranch&quot; Goes French Country</td>
 </tr>
 <tr>

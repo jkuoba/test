@@ -356,7 +356,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[23]/div/div/h1</td>
+	<td>//div[13]/div/div/h1</td>
 	<td>exact:Add to Primary Tag Group - Tiny House Hunters: Which House Will They Choose?</td>
 </tr>
 <tr>
@@ -416,7 +416,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[23]/div/div/h1</td>
+	<td>//div[13]/div/div/h1</td>
 	<td>exact:Add to Secondary Tag Groups → Tags - Tiny House Hunters: Which House Will They Choose?</td>
 </tr>
 <tr>

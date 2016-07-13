@@ -16,22 +16,22 @@
 	<td>600</td>
 	<td></td>
 </tr>
-<!--filter dropdown var  - 45 16---------------------->
+<!--filter dropdown var  - 45 16  14---------------------->
 <tr>
 	<td>store</td>
 	<td>16</td>
 	<td>filterDropDown</td>
 </tr>
-<!--24/    26 AM    /28/22/ 30   Brand drop down -->
+<!--24/    (26 AM  30 PM)   /22/ 30   Brand drop down -->
 <tr>
 	<td>store</td>
-	<td>26</td>
+	<td>30</td>
 	<td>brandID</td>
 </tr>
-<!--26/      28  AM            / 30 /32  syndication/restriction drop down -->
+<!--26/      ( 28  AM   32 pm )    29       / 30 /32  syndication/restriction drop down -->
 <tr>
 	<td>store</td>
-	<td>28</td>
+	<td>32</td>
 	<td>syndicationDropDown</td>
 </tr>
 <!--43  / 51collection edit drop down first -->
@@ -43,16 +43,16 @@
 <!--34/30/     32 AM   /36      field Platforms dropdown -->
 <tr>
 	<td>store</td>
-	<td>32</td>
+	<td>36</td>
 	<td>platformDropDown</td>
 </tr>
-<!--32/34 AM  /38     field Preferred tags DropDown -->
+<!--32/34 AM   36 pm /38    field Preferred tags DropDown -->
 <tr>
 	<td>store</td>
-	<td>34</td>
+	<td>38</td>
 	<td>preferredDropDown</td>
 </tr>
-<!--34/  36   AM    /44/42/40  field - published /in workstream etc DropDown -->
+<!--34/  36   AM    /44/42/40/37  field - published /in workstream etc DropDown -->
 <tr>
 	<td>store</td>
 	<td>36</td>
@@ -70,10 +70,10 @@
 	<td>77</td>
 	<td>collection1</td>
 </tr>
-<!--28/    30 AM      /34  locations drop down -->
+<!--28/    30 AM   32 pm     /34 locations drop down -->
 <tr>
 	<td>store</td>
-	<td>30</td>
+	<td>34</td>
 	<td>locationDropDown</td>
 </tr>
 </tbody></table>

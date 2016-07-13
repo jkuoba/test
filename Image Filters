@@ -84,7 +84,7 @@
 </tr>
 <!--31/32/28/34-->
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>//h2[contains(.,'Recent Searches')]</td>
 	<td>Recent Searches</td>
 </tr>
@@ -98,7 +98,7 @@
 	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
-<!--14/16/44-->
+<!--14/16 pm-->
 <tr>
 	<td>assertElementPresent</td>
 	<td>//div[${filterDropDown}]/div/div[4]</td>
@@ -364,7 +364,6 @@
 	<td>2id Interiors [HGTV]</td>
 </tr>
 <!--Subjects-->
-<!--## ERROR  CORE-2059   Media Desk: On the global search image filters - Field "Attributions" pop up "Partners" and "Professionals" path with inconsistent option-->
 <!--## ERROR CORE-2078 Media Desk: Image Global Search field Subjects Pop Up - The capital letters should not showing up  ( Profile only) -->
 <tr>
 	<td>assertText</td>
@@ -382,8 +381,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
-	<td>css=span.link</td>
+	<td>link=Test [HGTV]</td>
 	<td>Test [HGTV]</td>
 </tr>
 <tr>
@@ -438,9 +447,10 @@
 	<td>link=Brand</td>
 	<td></td>
 </tr>
+<!--/24  AM 26/27   30 -->
 <tr>
 	<td>assertText</td>
-	<td>//div[26]/div/div[2]</td>
+	<td>//div[${brandID}]/div/div[2]</td>
 	<td>Cooking Channel</td>
 </tr>
 <tr>
@@ -540,7 +550,7 @@
 	<td>link=HGTV</td>
 	<td>HGTV</td>
 </tr>
-<!--Syndication-->
+<!--Syndication / Distrbution-->
 <tr>
 	<td>assertText</td>
 	<td>link=Syndication / Distribution</td>
@@ -556,12 +566,7 @@
 	<td>2500</td>
 	<td></td>
 </tr>
-<!--26  , 28  AM OR 30 /32-->
-<tr>
-	<td>assertElementPresent</td>
-	<td>//div[28]/div/div[2]</td>
-	<td></td>
-</tr>
+<!--32 pm -->
 <tr>
 	<td>assertElementPresent</td>
 	<td>//div[${syndicationDropDown}]/div/div[2]</td>
@@ -646,23 +651,28 @@
 	<td>(End)</td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[11]/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=span.calendar_clear</td>
+	<td>css=span.calendar_set</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>//div[11]/span[2]</td>
-	<td></td>
+	<td>(End)</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=span.calendar_clear</td>
+	<td>css=span.calendar_set</td>
 	<td></td>
 </tr>
 <!--Location-->
@@ -687,7 +697,7 @@
 	<td>//div[2]/div[12]/div</td>
 	<td>Locations</td>
 </tr>
-<!--28 /30/34 AM   All countries is one of the option? -->
+<!--28 /30/34/30 AM   All countries is one of the option? -->
 <tr>
 	<td>click</td>
 	<td>//div[${locationDropDown}]/div/div[3]</td>
@@ -710,11 +720,6 @@
 	<td></td>
 </tr>
 <!--34/30/32  am -->
-<tr>
-	<td>click</td>
-	<td>//div[36]/div/div[3]</td>
-	<td></td>
-</tr>
 <tr>
 	<td>click</td>
 	<td>//div[${platformDropDown}]/div/div[3]</td>
@@ -798,11 +803,6 @@
 <tr>
 	<td>click</td>
 	<td>//form[2]/div[2]/div[17]/div/div</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[34]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -967,7 +967,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2500</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -992,7 +992,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2500</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <!--advance Query-->
@@ -1008,7 +1008,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2500</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -1024,7 +1024,7 @@
 <!--Create /new-->
 <tr>
 	<td>pause</td>
-	<td>2500</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -1045,7 +1045,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2500</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -1055,7 +1055,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2500</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -1065,7 +1065,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2500</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>

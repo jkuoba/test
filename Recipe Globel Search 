@@ -84,7 +84,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
 <!--Recipe-->
@@ -709,7 +709,7 @@
 <!--# ERROR, Search Pop up should not habe "New" button.-->
 <tr>
 	<td>assertText</td>
-	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.searchForm &gt; div.searchControls &gt; div.searchCreate &gt; form.objectId-create.bsp-onDomInsert-inserted-32 &gt; button.action.action-create</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.searchForm &gt; div.searchControls &gt; div.searchCreate &gt; form.objectId-create.bsp-onDomInsert-inserted-31 &gt; button.action.action-create</td>
 	<td>New</td>
 </tr>
 <tr>
@@ -1027,8 +1027,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.searchForm &gt; div.searchControls &gt; div.searchFilters &gt; form.searchFiltersType.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>assertElementPresent</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -1039,7 +1039,7 @@
 <!--69/54-->
 <tr>
 	<td>assertText</td>
-	<td>//div[54]/div</td>
+	<td>//div[66]/div</td>
 	<td>Any Types<br />Main Content Types<br /> Photo Gallery<br /> Universal Landing Page<br />Misc Content Types<br /> Package Anchor<br /> Show</td>
 </tr>
 <tr>
@@ -1139,10 +1139,10 @@
 	<td>css=div.searchCreate &gt; h2</td>
 	<td>Create</td>
 </tr>
-<!--## ERROR do we allow to create new recipe ??????-->
+<!--## ERROR do we allow to create new recipe this is Role Permission issue-->
 <tr>
 	<td>assertText</td>
-	<td>css=form.objectId-create.bsp-onDomInsert-inserted-32 &gt; div.dropDown-input</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td>Recipe</td>
 </tr>
 <tr>

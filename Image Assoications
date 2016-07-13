@@ -415,20 +415,20 @@
 	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
-<!--48/36-->
+<!--48/36/24-->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//body/div[36]</td>
+	<td>//body/div[24]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[36]/div/div[2]</td>
+	<td>//div[24]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[36]/div/div[2]</td>
+	<td>//div[24]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -446,19 +446,20 @@
 	<td>null</td>
 	<td></td>
 </tr>
+<!--56/30 AM-->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[42]/div/div[3]</td>
+	<td>//div[30]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[42]/div/div[3]</td>
+	<td>//div[30]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>2500</td>
 	<td></td>
 </tr>
 <tr>
@@ -573,7 +574,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/a</td>
 	<td>Partners</td>
 </tr>
 <tr>

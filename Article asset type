@@ -455,13 +455,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//body/div[8]/div/div[2]</td>
+	<td>//div[16]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.inputContainer.state-changed &gt; div.inputSmall &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>css=div.dropDown-input.state-focus &gt; a.dropDown-label</td>
 	<td>Golden HGTV Article</td>
 </tr>
 <tr>
@@ -634,6 +639,11 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>//div[24]/div/div[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>//div[28]/div[2]/div</td>
 	<td></td>
 </tr>
@@ -695,7 +705,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/div[6]/h1</td>
+	<td>//div[2]/div[2]/div[6]/h1</td>
 	<td>Watchers</td>
 </tr>
 <tr>

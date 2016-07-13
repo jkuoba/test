@@ -178,8 +178,9 @@
 	<td>css=div.searchResult-action-simple &gt; a.button</td>
 	<td></td>
 </tr>
+<!--Photo Gallery option has been hidden. -->
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=div.searchResult-action-simple &gt; a.button</td>
 	<td>Create New Photo Gallery</td>
 </tr>

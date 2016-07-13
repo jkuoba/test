@@ -125,6 +125,11 @@
 </tr>
 <!--27 or 31 or 32  28  29-->
 <tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>QA Image selection 1</td>
@@ -409,6 +414,11 @@
 	<td></td>
 </tr>
 <!--75/73/83/77  find the first collection name -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[77]/div/div[2]</td>
+	<td></td>
+</tr>
 <tr>
 	<td>click</td>
 	<td>//div[${collection1}]/div/div[2]</td>

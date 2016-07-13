@@ -225,8 +225,8 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[22]/div/div/h1</td>
-	<td>Add to Secondary Tag Groups → Tags - Transitional Kitchen With Black Island and Cabinetry</td>
+	<td>//div[10]/div/div/h1</td>
+	<td>Add to Secondary Tag Groups → Tags - Candidate Transitional Kitchen With Black Island and Cabinetry</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>

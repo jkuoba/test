@@ -173,7 +173,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[8]/div/div[2]</td>
+	<td>//div[9]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -208,12 +208,12 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[10]/div/div[2]</td>
+	<td>//div[11]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[10]/div/div[2]</td>
+	<td>//div[11]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -223,7 +223,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[12]/div/div</td>
+	<td>//div[13]/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -234,7 +234,7 @@
 <!--End Right /Restrictions End-->
 <tr>
 	<td>storeEval</td>
-	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,600)</td>
+	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,400)</td>
 	<td></td>
 </tr>
 <tr>
