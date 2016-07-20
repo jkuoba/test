@@ -146,6 +146,11 @@
 </tr>
 <!--Main-->
 <tr>
+	<td>waitForText</td>
+	<td>css=div.inputLabel &gt; label</td>
+	<td>Asset Title</td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>css=div.inputLabel &gt; label</td>
 	<td>Asset Title</td>
@@ -673,6 +678,22 @@
 	<td>assertText</td>
 	<td>css=h1.icon.icon-object-history</td>
 	<td>Revisions</td>
+</tr>
+<!--QA Note: verif the adoble CQ widget link CQ CF -->
+<tr>
+	<td>click</td>
+	<td>link=CQ CF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.thumb</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>

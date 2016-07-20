@@ -133,7 +133,6 @@
 	<td>null</td>
 	<td></td>
 </tr>
-<!--jkuojkuokjou-->
 <tr>
 	<td>type</td>
 	<td>//descendant::input[contains(@id,'i')][3]</td>
@@ -144,7 +143,6 @@
 	<td>css=span.link</td>
 	<td>lee</td>
 </tr>
-<!--=============================-->
 <tr>
 	<td>deselectPopUp</td>
 	<td>null</td>
@@ -252,7 +250,6 @@
 	<td>css=div[name=&quot;workStream&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
-<!--=============================-->
 <!--Editing-->
 <tr>
 	<td>click</td>
@@ -289,7 +286,6 @@
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,300)</td>
 	<td></td>
 </tr>
-<!--## ERROR Not working -->
 <tr>
 	<td>clickAndWait</td>
 	<td>css=a.button.p-workStreams-start</td>

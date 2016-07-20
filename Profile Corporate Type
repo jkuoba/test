@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>Profile Corporate Type</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Profile Corporate Type</td></tr>
+</thead><tbody>
+<!--Starting point  ==============================================-->
+<tr>
+	<td>deleteCookie</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>600</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=a.icon.icon-asterisk</td>
+	<td>Mixed</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>link=Clear</td>
+	<td>YN</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${YN}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>'${YN}'==&quot;false&quot;</td>
+	<td>noSelection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--14/16/44  select asset type -Profile Corporate -->
+<tr>
+	<td>assertText</td>
+	<td>//div[16]/div/div[6]</td>
+	<td>Profile Corporate</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[6]</td>
+	<td>Profile Corporate</td>
+</tr>
+<!--## ERROR No data match-->
+
+</tbody></table>
+</body>
+</html>

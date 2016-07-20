@@ -55,7 +55,7 @@
 <tr>
 	<td>type</td>
 	<td>//input[@autocomplete='off']</td>
-	<td>BP_HFXUP205H_Purks_living-room_AFTER_474464.1044014.JPG</td>
+	<td>sugarlandsaraevans2cmaawards2007nominees_h</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -64,7 +64,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=span.breakable</td>
+	<td>css=figcaption</td>
 	<td></td>
 </tr>
 <tr>
@@ -75,13 +75,13 @@
 <!--test for Save Draft -->
 <tr>
 	<td>click</td>
-	<td>//textarea[@name='00000155-2e46-d435-ab77-efd729b00000/seoDescription']</td>
+	<td>//textarea[@name='00000155-336f-d435-ab77-f3ff70410000/seoDescription']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>//textarea[@name='00000155-2e46-d435-ab77-efd729b00000/seoDescription']</td>
-	<td>SEO save draft testing</td>
+	<td>//textarea[@name='00000155-336f-d435-ab77-f3ff70410000/seoDescription']</td>
+	<td>Bulk Edit SEO Description update save draft testing</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -148,18 +148,9 @@
 	<td>css=button[name=&quot;action-delete&quot;]</td>
 	<td></td>
 </tr>
+<!--QA Note: There is no confirmation message shown-->
 <tr>
-	<td>assertConfirmation</td>
-	<td>Are you sure you want to permanently delete this item?</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>4000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
+	<td>waitForText</td>
 	<td>css=button[name=&quot;action-newDraft&quot;]</td>
 	<td>Save Draft</td>
 </tr>

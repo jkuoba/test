@@ -68,8 +68,13 @@
 </tr>
 <!--34/36/38/52  record status -->
 <tr>
+	<td>assertElementPresent</td>
+	<td>//div[36]/div/div[6]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//div[${statusDropDown}]/div/div[6]</td>
+	<td>//div[${imageStatusDropDown}]/div/div[6]</td>
 	<td></td>
 </tr>
 <tr>
@@ -79,7 +84,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[${statusDropDown}]/div/div[3]</td>
+	<td>//div[${imageStatusDropDown}]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
@@ -89,7 +94,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[${statusDropDown}]/div/div[9]</td>
+	<td>//div[${imageStatusDropDown}]/div/div[9]</td>
 	<td></td>
 </tr>
 <tr>
@@ -108,11 +113,25 @@
 	<td></td>
 </tr>
 <tr>
+	<td>click</td>
+	<td>css=div.searchFilters &gt; h2</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>Candidate</td>
 </tr>
-<!--add type - image -->
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilters &gt; h2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input.dropDown-input-bottom</td>
+	<td></td>
+</tr>
 <tr>
 	<td>pause</td>
 	<td>3000</td>

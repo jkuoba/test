@@ -3,7 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
 <title>Global Variables</title>
 </head>
 <body>
@@ -25,13 +24,13 @@
 <!--24/    (26 AM  30 PM)   /22/ 30   Brand drop down -->
 <tr>
 	<td>store</td>
-	<td>30</td>
+	<td>26</td>
 	<td>brandID</td>
 </tr>
 <!--26/      ( 28  AM   32 pm )    29       / 30 /32  syndication/restriction drop down -->
 <tr>
 	<td>store</td>
-	<td>32</td>
+	<td>28</td>
 	<td>syndicationDropDown</td>
 </tr>
 <!--43  / 51collection edit drop down first -->
@@ -52,11 +51,26 @@
 	<td>38</td>
 	<td>preferredDropDown</td>
 </tr>
+<tr>
+	<td>store</td>
+	<td>24</td>
+	<td>preferredDropDownVideoSet</td>
+</tr>
 <!--34/  36   AM    /44/42/40/37  field - published /in workstream etc DropDown -->
 <tr>
 	<td>store</td>
 	<td>36</td>
 	<td>statusDropDown</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>36</td>
+	<td>imageStatusDropDown</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>28</td>
+	<td>videoStatusDropDown</td>
 </tr>
 <!--40/41/42/43/44/50/54     field - Collection DropDown -->
 <tr>

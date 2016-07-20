@@ -56,7 +56,6 @@
 	<td>2000</td>
 	<td></td>
 </tr>
-<!--======  end of filtering IMAGE -->
 <tr>
 	<td>type</td>
 	<td>//input[starts-with(@id, 'i')]</td>
@@ -119,7 +118,7 @@
 	<td>4000</td>
 	<td></td>
 </tr>
-<!--above is image asset STD END  steps  ==============================================-->
+<!--above is image asset STD END   ==============================================-->
 <tr>
 	<td>click</td>
 	<td>link=Tags &amp; Keywords</td>
@@ -165,8 +164,7 @@
 	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
-<!--css=div[name="objectId-1-select"] > div.content > div.closeButton-->
-<!--  ==============================================-->
+<!--==============================================-->
 <!--secondary tag groups-->
 <tr>
 	<td>assertText</td>
@@ -245,7 +243,9 @@
 </tr>
 <!--  ==============================================-->
 <!--Keywords and Terms -->
-<!--## ERROR CORE-1999  option listing duplication-->
+<!--QA Note: Make sure it is working on Prod install -->
+<!--## Preferred terms duplication. ERROR This is an issue on CQ side where duplicates need to be removed. Until they are there they will continue to display duplicates in MD - this is expected-->
+<!--Until they are there they will continue to display duplicates in MD - this is expected-->
 <tr>
 	<td>storeEval</td>
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,800)</td>
@@ -278,7 +278,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[14]/div/div[2]</td>
+	<td>//div[8]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>

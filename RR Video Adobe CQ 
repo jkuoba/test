@@ -133,6 +133,12 @@
 	<td>//form/div[2]/div[2]/div[2]/div</td>
 	<td>Adobe CQForce Read from CQ<br /><br />Force Write to CQ<br /><br />Force Activate in CQ<br /><br />Deactivated.<br /><br />CRX DE Lite</td>
 </tr>
+<!--## ERROR Adobe CQ widget   CRX DE Lite link failed -->
+<tr>
+	<td>click</td>
+	<td>link=CRX DE Lite</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>

@@ -61,7 +61,6 @@
 	<td>css=figcaption</td>
 	<td></td>
 </tr>
-<!--============-->
 <tr>
 	<td>pause</td>
 	<td>3000</td>
@@ -107,8 +106,8 @@
 	<td>noClear</td>
 	<td></td>
 </tr>
-<!--Video asset STD END ==============================================-->
-<!--Analytics =============================================-->
+<!--Video asset STD END ====================================-->
+<!--No More Analytics Widget  =============================================-->
 <tr>
 	<td>click</td>
 	<td>link=Analytics</td>
@@ -125,14 +124,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertElementNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>css=select[name=&quot;range&quot;]</td>
-	<td></td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>

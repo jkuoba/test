@@ -90,12 +90,12 @@
 <!--Recipe-->
 <tr>
 	<td>assertText</td>
-	<td>//div[18]/div/div[7]</td>
+	<td>//div[${filterDropDown}]/div/div[7]</td>
 	<td>Recipe</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[18]/div/div[7]</td>
+	<td>//div[${filterDropDown}]/div/div[7]</td>
 	<td></td>
 </tr>
 <tr>
@@ -676,10 +676,16 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=img[alt=&quot;Recipe: Ham&nbsp;Gravy&quot;]</td>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>css=figure &gt; figcaption</td>
+	<td></td>
+</tr>
+<!--## ERROR duplicate image-->
 <tr>
 	<td>assertText</td>
 	<td>css=p</td>
@@ -1038,11 +1044,6 @@
 </tr>
 <!--69/54-->
 <tr>
-	<td>assertText</td>
-	<td>//div[66]/div</td>
-	<td>Any Types<br />Main Content Types<br /> Photo Gallery<br /> Universal Landing Page<br />Misc Content Types<br /> Package Anchor<br /> Show</td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[7]/td[3]/span</td>
 	<td></td>
@@ -1105,13 +1106,8 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.dropDown-input.dropDown-input-bottom &gt; a.dropDown-label</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input.dropDown-input-bottom &gt; a.dropDown-label</td>
 	<td>Archived</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.dropDown-input.dropDown-input-bottom</td>
-	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1121,11 +1117,6 @@
 <tr>
 	<td>click</td>
 	<td>//div[32]/div/div[1]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.dropDown-input.dropDown-input-bottom</td>
 	<td></td>
 </tr>
 <!--advance Query-->

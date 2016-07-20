@@ -42,7 +42,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForText</td>
+	<td>waitForElementPresent</td>
 	<td>css=a.icon.icon-asterisk</td>
 	<td>Mixed</td>
 </tr>
@@ -63,8 +63,13 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertElementPresent</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//div[16]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -95,21 +100,6 @@
 <tr>
 	<td>label</td>
 	<td>noSelection</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//div[16]/div/div[4]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[16]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -187,7 +177,7 @@
 	<td>4000</td>
 	<td></td>
 </tr>
-<!--Make sure image on the edit mode window-->
+<!--QA Note: Ensure image on the edit mode window-->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>

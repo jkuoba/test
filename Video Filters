@@ -41,7 +41,6 @@
 	<td>2000</td>
 	<td></td>
 </tr>
-<!--34-->
 <tr>
 	<td>click</td>
 	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
@@ -52,7 +51,6 @@
 	<td>3000</td>
 	<td></td>
 </tr>
-<!--24/14-->
 <tr>
 	<td>click</td>
 	<td>//div[${filterDropDown}]/div/div[10]</td>
@@ -70,7 +68,7 @@
 	<td>link=Reset</td>
 	<td></td>
 </tr>
-<!--Collections-->
+<!--Collections  ============-->
 <tr>
 	<td>assertText</td>
 	<td>css=div.searchFilter.searchFilter-record &gt; a.objectId-select</td>
@@ -86,11 +84,10 @@
 	<td>3000</td>
 	<td></td>
 </tr>
-<!--35/36-->
 <tr>
 	<td>assertText</td>
 	<td>xpath=(//select[@name='s'])[2]</td>
-	<td>exact:Sort: Page Views Last 24 HoursSort: Page Views Last 30 DaysSort: Page Views Last 7 DaysSort: Page Views Last HourSort: Page Views This MonthSort: Page Views This WeekSort: Page Views TodaySort: Publish DateSort: Update DateSort: Views Last 24 HoursSort: Views Last 30 DaysSort: Views Last 7 DaysSort: Views Last HourSort: Views This MonthSort: Views This WeekSort: Views Today</td>
+	<td>Sort: Publish DateSort: Update Date</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -127,7 +124,7 @@
 	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
-<!--Publishing -->
+<!--Publishing  ================-->
 <tr>
 	<td>assertText</td>
 	<td>css=span.calendarButton.calendarButton-empty</td>
@@ -144,13 +141,83 @@
 	<td></td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>css=select.month</td>
-	<td>label=December</td>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.week.week4 &gt; span.day.day3</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.previousButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.week.week0 &gt; span.day.day4</td>
 	<td></td>
 </tr>
 <tr>
@@ -158,6 +225,12 @@
 	<td>css=span.calendar_set</td>
 	<td></td>
 </tr>
+<tr>
+	<td>assertText</td>
+	<td>css=figcaption</td>
+	<td>Deactivated Kinds of Mulch</td>
+</tr>
+<!--end date-->
 <tr>
 	<td>click</td>
 	<td>css=span.calendarButton.calendarButton-empty</td>
@@ -165,12 +238,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=span.nextButton</td>
+	<td>css=span.previousButton</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.week.week4 &gt; span.day.day4</td>
+	<td>css=div.week.week1 &gt; span.day.day5</td>
 	<td></td>
 </tr>
 <tr>
@@ -178,14 +251,43 @@
 	<td>css=span.calendar_set</td>
 	<td></td>
 </tr>
-<!--## ERROR   CORE-2030 Media Desk: the start date divider line should be under timestamp-->
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=figcaption</td>
+	<td>Unavailable Top 10 Cool Projects</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[3]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_clear</td>
+	<td></td>
+</tr>
 <!--PSA ID-->
 <tr>
 	<td>assertValue</td>
 	<td>css=input[name=&quot;f.psaId&quot;]</td>
 	<td></td>
 </tr>
-<!--attributions-->
+<!--attributions ==============-->
 <tr>
 	<td>assertText</td>
 	<td>css=span.objectId-placeholder</td>
@@ -241,13 +343,33 @@
 	<td>//span[@data-objectid='00000155-2c4c-db86-a17f-2fdc7ca40000']</td>
 	<td></td>
 </tr>
-<!--subjects-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; a.objectId-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--subjects ==============-->
 <tr>
 	<td>assertText</td>
 	<td>//div[6]/div/a/span</td>
 	<td>Subjects</td>
 </tr>
-<!--## ERROR CORE-2078 Media Desk: Image Global Search field Subjects Pop Up - The capital letters should not showing up.-->
+<!--QA Note:   The dropdown capital letters is WAD-->
 <tr>
 	<td>click</td>
 	<td>link=Subjects</td>
@@ -260,7 +382,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=span.link</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[4]/td[3]/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -270,18 +392,23 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>link=Test [HGTV]</td>
-	<td>Test [HGTV]</td>
+	<td>css=figcaption</td>
+	<td>Deactivated Kinds of Mulch</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
 </tr>
 <!--Preferred Terms-->
-<!--## ERROR Duplicate options drop down -->
+<!--## QA Note: This is CQ data issue, not MD, review during production install-->
 <tr>
 	<td>assertText</td>
 	<td>link=Preferred Terms</td>
 	<td>Preferred Terms</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>assertElementPresent</td>
 	<td>//a[contains(.,'Preferred Terms')]</td>
 	<td></td>
 </tr>
@@ -290,6 +417,32 @@
 	<td>//a[contains(.,'Preferred Terms')]</td>
 	<td></td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>//div[${preferredDropDownVideoSet}]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(.,'Preferred Terms')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${preferredDropDownVideoSet}]/div/div[1]</td>
+	<td></td>
+</tr>
+<!--QA Note: it is per environment fix, no need to worry about atm  e.g., HGTVF -->
 <!--Brand-->
 <tr>
 	<td>assertText</td>
@@ -301,7 +454,6 @@
 	<td>link=Brand</td>
 	<td>Brand</td>
 </tr>
-<!--//body/div[28]/div/div[8]   for Travel Channel under brand lisitng Site: Global-->
 <tr>
 	<td>assertText</td>
 	<td>css=span.link</td>
@@ -355,7 +507,47 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[contains(.,'DIY')]</td>
+	<td>css=div.searchPagination &gt; ul.pagination &gt; li.next &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>Food.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[2]/td[2]/span</td>
+	<td>HGTVF</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[3]/td[2]/span</td>
+	<td>Fine Living Network</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[4]/td[2]/span</td>
+	<td>GOLDEN-HGTV Remodels</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[5]/td[2]/span</td>
+	<td>GOLDEN-HGTV</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.previous &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
 	<td></td>
 </tr>
 <tr>
@@ -364,9 +556,19 @@
 	<td>DIY</td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=p</td>
-	<td>No matching items!</td>
+	<td>verifyText</td>
+	<td>css=figcaption</td>
+	<td>Botanical Topiary</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
 </tr>
 <!--Web Series -->
 <tr>
@@ -379,10 +581,19 @@
 	<td>css=input[name=&quot;f.webSeries&quot;]</td>
 	<td></td>
 </tr>
-<!--Content Types  8/11-->
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>No matching items!</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.webSeries&quot;]</td>
+	<td></td>
+</tr>
+<!--Content Types  Empty for Home is normal -->
 <!--Its empty because the available values are created by ingestion from MPX. Home has no values for that field from MPX   -->
-<!--## NOTE: travel does, hey're looking into populating it for home, but not there yet-->
-<!--## QA Note: need to clarify whether we should remove content types field from the Search section -->
+<!--## NOTE: travel does, they're looking into populating it for home, but not there yet-->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
@@ -393,31 +604,19 @@
 	<td>xpath=(//a[contains(text(),'Content Types')])[2]</td>
 	<td>Content Types</td>
 </tr>
-<!--Type Map -->
-<!--## ERROR  CORE-2032 Media Desk: Travel Image Global Search - field "Type Map" with no dropdown content.-->
+<!--QA Note: Type Map keep in video but unsearchable in Image atm -->
 <tr>
-	<td>assertText</td>
+	<td>click</td>
 	<td>xpath=(//a[contains(text(),'Content Types')])[2]</td>
 	<td>Content Types</td>
 </tr>
-<!--## ERROR CORE-2018 -->
-<tr>
-	<td>assertElementPresent</td>
-	<td>//div[2]/div[10]/div/div</td>
-	<td></td>
-</tr>
 <tr>
 	<td>click</td>
-	<td>//div[2]/div[10]/div/div</td>
-	<td></td>
+	<td>xpath=(//a[contains(text(),'Content Types')])[2]</td>
+	<td>Content Types</td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>css=.bsp-onDomInsert-inserted-37</td>
-	<td></td>
-</tr>
-<!--## ERROR empty dron dow   old drop down click  //div[20]/div/div-->
-<!--Tags-->
+<!--QA Note: Content Types  Empty for Home is normal -->
+<!--Tags  ==============================-->
 <tr>
 	<td>assertText</td>
 	<td>link=Tags</td>
@@ -463,6 +662,16 @@
 	<td>link=Decorating</td>
 	<td>Decorating</td>
 </tr>
+<tr>
+	<td>assertText</td>
+	<td>css=figcaption</td>
+	<td>Star Style: Darryl Worley</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
 <!--## Note: please add a CQ path to verify -->
 <!--CQ Path-->
 <tr>
@@ -470,7 +679,60 @@
 	<td>css=input[name=&quot;f.cq.path&quot;]</td>
 	<td></td>
 </tr>
-<!--im workflow, published-->
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.cq.path&quot;]</td>
+	<td>/etc/sni-asset/gac/videos/7/77/771/7717/77170</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=figcaption</td>
+	<td>&quot;Beautiful Night&quot;</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;f.cq.path&quot;]</td>
+	<td></td>
+</tr>
+<!--QA Note: Package Anchor filter type 1. Photo gallery 2. Universal Landing page, 3. Show  WE NEED TO TEST ALL TYPE AFTER FIX -->
+<!--## ERROR  CORE-2168 Media Desk: Video asset Filter "Package Anchor", selected data display duplicate image on the filter section.-->
+<!--Package Anchor ====================-->
+<tr>
+	<td>click</td>
+	<td>//div[13]/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=figure &gt; figcaption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=figure &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=figcaption</td>
+	<td>Photo Gallery: Untitled</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[2]/a/figure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+<!--im workflow, published  ===================-->
 <tr>
 	<td>pause</td>
 	<td>2000</td>
@@ -489,6 +751,37 @@
 <tr>
 	<td>pause</td>
 	<td>2500</td>
+	<td></td>
+</tr>
+<!--video statusdropdown 30/   28-->
+<tr>
+	<td>click</td>
+	<td>//div[${videoStatusDropDown}]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a &gt; figcaption</td>
+	<td>&quot;Beautiful Night&quot;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${videoStatusDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
 <tr>
@@ -537,6 +830,16 @@
 	<td>css=div.searchForm</td>
 	<td></td>
 </tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a &gt; figcaption</td>
+	<td>Kendall and Kylie's Closets</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;av&quot;]</td>
+	<td></td>
+</tr>
 <!--Create /new-->
 <tr>
 	<td>pause</td>
@@ -554,6 +857,7 @@
 	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
 	<td>Video</td>
 </tr>
+<!--We should not create new video. so it is Permission role setting-->
 <tr>
 	<td>assertText</td>
 	<td>//div[2]/form/button</td>

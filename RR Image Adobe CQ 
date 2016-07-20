@@ -137,13 +137,24 @@
 </tr>
 <tr>
 	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--Force Deactivate in CQ-->
+<tr>
+	<td>click</td>
+	<td>//a[4]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
 	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//a[2]/button</td>
-	<td></td>
+	<td>assertText</td>
+	<td>//form/div[2]/div[2]/div[2]/div</td>
+	<td>Adobe CQForce Read from CQ<br /><br />Force Write to CQ<br /><br />Force Activate in CQ<br /><br />Deactivated.<br /><br />CQ DAM</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -171,10 +182,10 @@
 	<td>//form/div[2]/div[2]/div[2]/div</td>
 	<td>Adobe CQForce Read from CQ<br /><br />Force Write to CQ<br /><br />Activated.<br /><br />Force Deactivate in CQ<br /><br />CQ DAM</td>
 </tr>
-<!--Force Deactivate in CQ-->
+<!--------------------->
 <tr>
-	<td>click</td>
-	<td>//a[3]/button</td>
+	<td>open</td>
+	<td>/cms</td>
 	<td></td>
 </tr>
 <tr>
@@ -183,9 +194,80 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>//form/div[2]/div[2]/div[2]/div</td>
-	<td>Adobe CQForce Read from CQ<br /><br />Force Write to CQ<br /><br />Force Activate in CQ<br /><br />Deactivated.<br /><br />CQ DAM</td>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@autocomplete='off']</td>
+	<td>BP_HFXUP205H_Purks_living-room_AFTER_474464.1044014.JPG</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.breakable</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button[name=&quot;action-publish&quot;]</td>
+	<td>Publish</td>
+</tr>
+<!--## ERROR  CQ DAM link does not work -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=CQ DAM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=CQ DAM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>AEM Assets | BP_HFXUP205H_Purks_living-room_AFTER_474464.1044014.JPG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>

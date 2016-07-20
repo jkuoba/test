@@ -322,7 +322,6 @@
 	<td>//div[30]/div/input</td>
 	<td></td>
 </tr>
-<!--QA Note: WayFair PRodcuts ?  Display wayFair?  not accessible-->
 <tr>
 	<td>assertText</td>
 	<td>//div[31]/div/label</td>

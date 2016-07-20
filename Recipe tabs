@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+
 <title>Suite FOOD</title>
 </head>
 <body>
@@ -11,6 +11,7 @@
 <thead>
 <tr><td rowspan="1" colspan="3">Suite FOOD</td></tr>
 </thead><tbody>
+<!--http://mediadesk1.core-dev.sni.foodnetwork.com/cms/-->
 <!--Starting point  ==============================================-->
 <tr>
 	<td>deleteCookie</td>
@@ -87,15 +88,15 @@
 	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
-<!--Recipe-->
+<!--Recipe   //div[${filterDropDown}]/div/div[7]-->
 <tr>
 	<td>assertText</td>
-	<td>//div[18]/div/div[7]</td>
+	<td>//div[${filterDropDown}]/div/div[7]</td>
 	<td>Recipe</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[18]/div/div[7]</td>
+	<td>//div[${filterDropDown}]/div/div[7]</td>
 	<td></td>
 </tr>
 <tr>
@@ -125,16 +126,11 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
+	<td>waitForElementPresent</td>
 	<td>css=figcaption</td>
 	<td>9 Time Pro-Roller - Chicken Spring Rolls</td>
 </tr>
@@ -151,22 +147,13 @@
 <!--Main Tab -->
 <tr>
 	<td>assertText</td>
-	<td>css=div.inputLabel &gt; label</td>
-	<td>Title</td>
-</tr>
-<tr>
-	<td>assertText</td>
 	<td>css=em</td>
 	<td>CQ Property Name: jcr:content/jcr:title</td>
 </tr>
 <!--#ERROR  CORE-2134 Media Desk: Recipe MD, the Main tab field "Directions" & "Ingredients", please remove carriage return symbols.-->
 <!--# ERROR   CORE-2135 Media Desk: Recipe MD Main tab - missing value of "Total Time" & "Servings Per Recipe"-->
 <!--#ERROR Missing Tags info -->
-<tr>
-	<td>assertText</td>
-	<td>//div[17]/small/em</td>
-	<td>CQ Property Name: jcr:content/sni:seoDescription</td>
-</tr>
+<!--#ERROR missing Direction and Ingredients, and make sure it can contains large data by scrolling !!!!!!!-->
 <tr>
 	<td>assertText</td>
 	<td>//div[17]/div/label</td>
@@ -174,8 +161,18 @@
 </tr>
 <tr>
 	<td>assertText</td>
+	<td>//div[17]/small/em</td>
+	<td>CQ Property Name: jcr:content/sni:seoDescription</td>
+</tr>
+<tr>
+	<td>assertText</td>
 	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td>QA Test Recipe SEO Description</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -191,6 +188,11 @@
 	<td>assertText</td>
 	<td>//textarea[@data-dynamic-field-name='seoTitle']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='seoTitle']</td>
+	<td>QA Test Recipe Title</td>
 </tr>
 <tr>
 	<td>storeEval</td>
@@ -229,7 +231,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[18]/div/div/h1</td>
+	<td>//div[19]/div/div/h1</td>
 	<td>Add to Attributions - 9 Time Pro-Roller - Chicken Spring Rolls</td>
 </tr>
 <tr>
@@ -374,7 +376,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[18]/div/div/h1</td>
+	<td>//div[19]/div/div/h1</td>
 	<td>Select Show - 9 Time Pro-Roller - Chicken Spring Rolls</td>
 </tr>
 <tr>
@@ -392,6 +394,47 @@
 	<td>css=div.inputSmall &gt; a.objectId-select</td>
 	<td>All-Star [Food Network]</td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>css=div.inputSmall &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.inputSmall &gt; a.objectId-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.objectId-select.toBeRemoved</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[8]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.objectId-select.toBeRemoved</td>
+	<td>All-Star Family Cook-off [Food Network]</td>
+</tr>
+<!--##ERROR  CORE-2152 Media Desk: Ad Package Tab, Clear value on field "Package Anchor" and enter the new value, "cross out" line remaining.-->
 <tr>
 	<td>assertText</td>
 	<td>//div[21]/div/label</td>
@@ -414,7 +457,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[18]/div/div/h1</td>
+	<td>//div[19]/div/div/h1</td>
+	<td>Select Episode - 9 Time Pro-Roller - Chicken Spring Rolls</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[19]/div/div/h1</td>
 	<td>Select Episode - 9 Time Pro-Roller - Chicken Spring Rolls</td>
 </tr>
 <tr>
@@ -460,7 +508,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[18]/div/div/h1</td>
+	<td>//div[19]/div/div/h1</td>
 	<td>Select Image - 9 Time Pro-Roller - Chicken Spring Rolls</td>
 </tr>
 <tr>
@@ -473,6 +521,7 @@
 	<td>css=button.action.action-create</td>
 	<td>New Image</td>
 </tr>
+<!--new image adding info -->
 <tr>
 	<td>click</td>
 	<td>css=button.action.action-create</td>
@@ -480,8 +529,13 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>4000</td>
 	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div/div/div/form/div/div/h1/span</td>
+	<td>New Image: Untitled</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -720,9 +774,24 @@
 </tr>
 <!--50/46-->
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
-	<td>//div[46]/div/div/h1</td>
+	<td>//div[50]/div/div/h1</td>
 	<td>Add to Primary Tag Group - Untitled</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[35]/div[2]/div/span</td>
+	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -736,8 +805,51 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div[name=&quot;objectId-6-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td>css=div[name=&quot;objectId-8-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li/div[2]/div/div[2]/div/span</td>
+	<td></td>
+</tr>
+<!--===========-->
+<tr>
+	<td>click</td>
+	<td>css=ul &gt; li &gt; a.objectId-8-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-e9cf-d93d-a75d-fbdf840d0000&amp;py=00000155-0bfa-df30-adf5-7ffa9cbd003a&amp;p=false&amp;rt=00000155-0bfa-df30-adf5-7ffa9cbe0009&amp;aq=category%20notequalsall%20'preferred_terms'&amp;sg=false&quot;)])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ol.plugin-sortable._sortable &gt; li &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<!--========-->
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[7]/span</td>
+	<td></td>
+</tr>
+<!--4/8 -->
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-8-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Accuwx</td>
+	<td>Accuwx</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -775,7 +887,8 @@
 	<td>//div[37]/div[2]/div</td>
 	<td></td>
 </tr>
-<!--## ERROR  preferred Tems drop down empty -->
+<!--## ERROR  Create new  image Untitled  Tag Tab -->
+<!--Adobe CQ -->
 <tr>
 	<td>click</td>
 	<td>xpath=(//a[contains(text(),'Adobe CQ')])[2]</td>
@@ -788,13 +901,13 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[44]/div[2]/div</td>
+	<td>//div[2]/div[44]/div[2]/div</td>
 	<td></td>
 </tr>
-<!--57/49-->
+<!--57/49/65-->
 <tr>
 	<td>click</td>
-	<td>//body/div[49]/div/div[2]</td>
+	<td>//div[65]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -1473,6 +1586,21 @@
 	<td>assertText</td>
 	<td>css=h1.icon.icon-object-history</td>
 	<td>Revisions</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div[name=&quot;objectId-8-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>

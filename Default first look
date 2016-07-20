@@ -106,9 +106,14 @@
 	<td>exact:Fields: Default</td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=select[name=&quot;s&quot;]</td>
 	<td>exact:Sort: Page Views Last 24 HoursSort: Page Views Last 30 DaysSort: Page Views Last 7 DaysSort: Page Views Last HourSort: Page Views This MonthSort: Page Views This WeekSort: Page Views TodaySort: Publish DateSort: Update DateSort: Views Last 24 HoursSort: Views Last 30 DaysSort: Views Last 7 DaysSort: Views Last HourSort: Views This MonthSort: Views This WeekSort: Views Today</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=select[name=&quot;s&quot;]</td>
+	<td>Sort: Publish DateSort: Update Date</td>
 </tr>
 <tr>
 	<td>assertText</td>

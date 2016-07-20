@@ -119,7 +119,7 @@
 	<td>2000</td>
 	<td></td>
 </tr>
-<!--End of Image selection-->
+<!--End of Image selection ===================-->
 <!--filter with candidate  image only-->
 <tr>
 	<td>click</td>
@@ -198,7 +198,6 @@
 	<td>link=Clear</td>
 	<td>Clear</td>
 </tr>
-<!--## ERROR CORE-xxx remove Create Photo Gallery button -->
 <!--Bulk Edit Selected -->
 <tr>
 	<td>assertText</td>

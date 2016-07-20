@@ -11,7 +11,7 @@
 <thead>
 <tr><td rowspan="1" colspan="3">Image Assoications</td></tr>
 </thead><tbody>
-<!--above is image asset STD START ==============================================-->
+<!--Image asset STD START ==============================================-->
 <tr>
 	<td>deleteCookie</td>
 	<td></td>
@@ -84,7 +84,7 @@
 	<td>css=figcaption</td>
 	<td></td>
 </tr>
-<!--Clear Changes %%%%%%%%%%%%-->
+<!--Clear Changes-->
 <tr>
 	<td>pause</td>
 	<td>3000</td>
@@ -120,7 +120,7 @@
 	<td>4000</td>
 	<td></td>
 </tr>
-<!--above is image asset STD END  steps  ==============================================-->
+<!--above is  get image asset STD END ==============================================-->
 <tr>
 	<td>click</td>
 	<td>link=Associations</td>
@@ -142,7 +142,7 @@
 	<td>null</td>
 	<td></td>
 </tr>
-<!--Verify Existing Atrributions-->
+<!--Verify Existing Atrributions  =============================-->
 <tr>
 	<td>assertText</td>
 	<td>css=a.objectId-select</td>
@@ -248,14 +248,12 @@
 	<td>link=Amy Matthews [HGTV]</td>
 	<td>Amy Matthews [HGTV]</td>
 </tr>
-<!--End Attribution -->
-<!--Sources -Show-->
+<!--Sources -Show  ===================-->
 <tr>
 	<td>assertText</td>
 	<td>//div[12]/div/label</td>
 	<td>Show</td>
 </tr>
-<!--==============  dont see this please check   link=Kitchen Cousins [HGTV]-->
 <tr>
 	<td>assertText</td>
 	<td>css=b</td>
@@ -303,6 +301,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertText</td>
+	<td>//div[10]/div/div/h1</td>
+	<td>Select Episode - Candidate Transitional Kitchen With Black Island and Cabinetry</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[2]/td[2]/span</td>
 	<td></td>
@@ -312,7 +315,7 @@
 	<td>link=15 Most Amazing Homes in America [HGTV]</td>
 	<td>15 Most Amazing Homes in America [HGTV]</td>
 </tr>
-<!--Subjects - CORE-1403 -->
+<!--Source - Subjects -->
 <tr>
 	<td>assertText</td>
 	<td>//div[16]/div/label</td>
@@ -337,6 +340,11 @@
 	<td>pause</td>
 	<td>2000</td>
 	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[10]/div/div/h1</td>
+	<td>Add to Subjects - Candidate Transitional Kitchen With Black Island and Cabinetry</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -412,19 +420,8 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
-	<td></td>
-</tr>
-<!--48/36/24-->
-<tr>
-	<td>assertElementPresent</td>
-	<td>//body/div[24]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//div[24]/div/div[2]</td>
-	<td></td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Any Types</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -432,13 +429,28 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=span.link</td>
-	<td>15 FRESH HANDMADE GIFT IDEAS [HGTV]</td>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Episode</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[30]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.searchForm</td>
 	<td></td>
 </tr>
 <tr>
@@ -446,15 +458,80 @@
 	<td>null</td>
 	<td></td>
 </tr>
-<!--56/30 AM-->
 <tr>
-	<td>assertElementPresent</td>
-	<td>//div[30]/div/div[3]</td>
+	<td>click</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[30]/div/div[3]</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>American Standard [HGTV]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Profile</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[36]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>HGTV Crafternoon [HGTV]</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=(com.scripps.mediadesk.model.profile.Profile%2Flevel%20equalsany%20'normal'%20or%20com.scripps.mediadesk.model.profile.Profile%2Fname%20equalsany%20missing)&amp;sg=false&quot;)])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<!--QA Note:  cq.path name and parents are on Sources -->
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Any Types</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[48]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[48]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
@@ -471,11 +548,6 @@
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/ul/li</td>
 	<td>Sponsors</td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=a.searchResultTaxonomyExpand</td>
-	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -497,8 +569,12 @@
 	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]</td>
 	<td>Professionals</td>
 </tr>
-<!--Now test the next level  ===================-->
 <!--sponsors-->
+<tr>
+	<td>assertText</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
 <tr>
 	<td>click</td>
 	<td>css=a.searchResultTaxonomyExpand</td>
@@ -739,20 +815,12 @@
 	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
-<!--Destinations are being re-implemented as Locations, post home/food launch. Interests are being handled by tags (by the Tags fields, no separate field) moving forward.  [3:20]   Subjects is now (Profiles, Shows, Episodes)-->
+<!--QA Note: Destinations/ Locations/Interests are being handled by tags/Subjects is now (Profiles, Shows, Episodes)-->
 <tr>
 	<td>storeEval</td>
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(400,800)</td>
 	<td></td>
 </tr>
-<!--Primary Secondary Destination-->
-<tr>
-	<td>assertTextNotPresent</td>
-	<td>//div[17]/div/label</td>
-	<td>Primary Destination</td>
-</tr>
-<!--Primary Interest  Secondary Interrest -->
-<!--Secondary Interrest -->
 <!--Brand-->
 <tr>
 	<td>assertText</td>
@@ -839,16 +907,16 @@
 	<td>//textarea[@data-dynamic-field-name='owner']</td>
 	<td>joseph@psd.com</td>
 </tr>
-<!--Analytics-->
+<!--Analytics - decided to remove this widget -->
 <tr>
-	<td>assertText</td>
+	<td>assertElementNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
-<!--Conversation-->
+<!--Conversation ( due to Analytics wiget removal the id change from 6 to 5 -->
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <tr>

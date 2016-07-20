@@ -141,6 +141,11 @@
 </tr>
 <!--main tab -->
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>css=li.state-selected &gt; a</td>
 	<td>Main</td>
@@ -214,13 +219,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <tr>
@@ -250,13 +255,13 @@
 	<td>HGRM</td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <!--Usage tab-->
@@ -287,13 +292,13 @@
 </tr>
 <!--Checkbox testing  needed-->
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <!--Tag&Keywords tab-->
@@ -414,13 +419,13 @@
 	<td>QA Article </td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <!--Adobe CQ Tab-->
@@ -480,13 +485,13 @@
 	<td>Activate</td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <!--Analytics-->
@@ -501,16 +506,21 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <!--Ad Package tab -->
+<tr>
+	<td>click</td>
+	<td>css=div.tabs-scroller-toRight</td>
+	<td></td>
+</tr>
 <tr>
 	<td>click</td>
 	<td>link=Ad Package</td>
@@ -669,7 +679,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>waitForText</td>
 	<td>//a[2]/button</td>
 	<td>Force Write to CQ</td>
 </tr>
@@ -712,6 +722,32 @@
 	<td>assertText</td>
 	<td>css=h1.icon.icon-object-history</td>
 	<td>Revisions</td>
+</tr>
+<!--Test the Adobe CQ CQ CF link -->
+<tr>
+	<td>click</td>
+	<td>link=CQ CF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#submit-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>

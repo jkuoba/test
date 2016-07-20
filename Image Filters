@@ -124,7 +124,7 @@
 	<td>null</td>
 	<td></td>
 </tr>
-<!--Go through all filters dropdown -->
+<!--QA Note: Go through all filters dropdown -->
 <tr>
 	<td>assertElementPresent</td>
 	<td>link=Reset</td>
@@ -212,6 +212,7 @@
 	<td></td>
 </tr>
 <!--## ERROR   CORE-2030 Media Desk: Travel - Global Search with image type, the start date divider line should be under timestamp-->
+<!--Looks good on Home. -->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
@@ -222,30 +223,18 @@
 	<td>css=div.searchFilterItem &gt; div.dropDown-input &gt; a.dropDown-label.state-placeholder</td>
 	<td>Image Resolution</td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>css=div.searchFilterItem &gt; div.dropDown-input</td>
-	<td></td>
-</tr>
-<!--22  ## ERROR Missing resoultion data open bug tomorrow-->
-<tr>
-	<td>assertTextNotPresent</td>
-	<td>//div[22]/div/div[3]</td>
-	<td>Extra Small</td>
-</tr>
-<!--click    //div[22]/div/div[3]-->
+<!--## ERROR CORE-2157 image global search field -Image Resolution with empty dropdown-->
 <tr>
 	<td>click</td>
 	<td>css=div.searchFilterItem &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
 <tr>
-	<td>assertTextNotPresent</td>
-	<td>css=div.searchFilterItem &gt; div.dropDown-input &gt; a.dropDown-label</td>
-	<td>Extra Small</td>
+	<td>click</td>
+	<td>css=div.searchFilterItem &gt; div.dropDown-input</td>
+	<td></td>
 </tr>
-<!--attributions ---------------------------------------------------------------------------------->
-<!--## ERROR  CORE-2059   Media Desk: On the global search image filters - Field "Attributions" pop up "Partners" and "Professionals" path with inconsistent option-->
+<!--Attributions ---------------------------------------------------------------------------------->
 <tr>
 	<td>assertText</td>
 	<td>css=span.objectId-placeholder</td>
@@ -321,6 +310,7 @@
 	<td>2000</td>
 	<td></td>
 </tr>
+<!--## Follow up  - ARM Upgrade Test Profiel HW should not be here -->
 <tr>
 	<td>click</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]/a</td>
@@ -331,8 +321,6 @@
 	<td>5000</td>
 	<td></td>
 </tr>
-<!--dev  //a[contains(@href,'/cms/content/objectIdResult.jsp?_u=%E2%9C%93&n=&s=&rt=00000154-7d1b-d1c8-a9d5-fd7bc88e0026&p=false&aq=&pt=&py=&sg=false&o=0&l=10&st=00000154-7d1b-d1c8-a9d5-fd7bc88e0026&is=false&q=&f.cms.content.publishDate=&f.cms.content.publishDate.x=&f.cms.content.publishDate.t=d&f.cq.path=&f.cq.path.t=t&f.cq.typeMap=&md.srs=&av=&taxonParentId=00000154-812d-dbd3-a557-b32d8c320000&taxonLevel=3')]-->
-<!--//a[@href='/cms/content/objectIdResult.jsp?_u=%E2%9C%93&n=&s=&rt=00000155-2b5e-d342-a55f-ab5ff4370044&p=false&aq=&pt=&py=&sg=false&o=0&l=10&st=00000155-2b5e-d342-a55f-ab5ff4370044&is=false&q=&f.cms.content.publishDate=&f.cms.content.publishDate.x=&f.cms.content.publishDate.t=d&f.cq.path=&f.cq.path.t=t&f.cq.typeMap=&md.srs=&av=&taxonParentId=00000155-2c4b-db86-a17f-2fdf7ee90000&taxonLevel=3']-->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
@@ -364,7 +352,7 @@
 	<td>2id Interiors [HGTV]</td>
 </tr>
 <!--Subjects-->
-<!--## ERROR CORE-2078 Media Desk: Image Global Search field Subjects Pop Up - The capital letters should not showing up  ( Profile only) -->
+<!--## ERROR CORE-2158 Media Desk: Image filter field - Subjects - Duplicate options with single letter.-->
 <tr>
 	<td>assertText</td>
 	<td>link=Subjects</td>
@@ -386,21 +374,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr/td[3]/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>link=Test [HGTV]</td>
-	<td>Test [HGTV]</td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
 	<td>assertText</td>
 	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[2]/td[3]/span</td>
 	<td>Sponsors</td>
@@ -414,6 +387,21 @@
 	<td>assertTextNotPresent</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/span</td>
 	<td>Talent</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Test [HGTV]</td>
+	<td>Test [HGTV]</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -441,7 +429,6 @@
 	<td>link=Brand</td>
 	<td>Brand</td>
 </tr>
-<!--//body/div[28]/div/div[8]   for Travel Channel under brand lisitng Site: Global-->
 <tr>
 	<td>click</td>
 	<td>link=Brand</td>
@@ -538,13 +525,11 @@
 	<td>css=span.link</td>
 	<td></td>
 </tr>
-<!--## ERROR  CORE TeamCORE-2029  Media Desk: Travel - Filter with type "image" and Brand "Travel Channel", system returns empty.-->
 <tr>
 	<td>assertText</td>
 	<td>css=p</td>
 	<td>No matching items!</td>
 </tr>
-<!--Missing Travel Channel on SIte:Travel -->
 <tr>
 	<td>assertTextNotPresent</td>
 	<td>link=HGTV</td>
@@ -639,7 +624,6 @@
 	<td></td>
 </tr>
 <!--Right/Restirctions end/end-->
-<!--## ERROR  CORE-1997 Media Desk: Image asset global search "Rights/Restrictions" calendar icon should be line up with Start /End label-->
 <tr>
 	<td>assertText</td>
 	<td>//div[11]/span</td>
@@ -676,7 +660,6 @@
 	<td></td>
 </tr>
 <!--Location-->
-<!--## ERROR  CORE-2031 Media Desk: Travel - Global Search filter:Location, "Locations" title under the bottom of the drop down.-->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
@@ -708,7 +691,7 @@
 	<td>link=USA</td>
 	<td></td>
 </tr>
-<!--platform-->
+<!--Platform-->
 <tr>
 	<td>assertText</td>
 	<td>link=Platforms</td>
@@ -794,7 +777,7 @@
 	<td></td>
 </tr>
 <!--Preferred Terms-->
-<!--## ERROR Duplicate options drop down -->
+<!--## ERROR CORE-2159 Media Desk: Duplicate records on search field - Preferred Terms.-->
 <tr>
 	<td>assertText</td>
 	<td>link=Preferred Terms</td>
@@ -882,7 +865,7 @@
 	<td>2000</td>
 	<td></td>
 </tr>
-<!--CQ Path   jkuojkuojkuo-->
+<!--CQ Path-->
 <tr>
 	<td>assertValue</td>
 	<td>css=input[name=&quot;f.cq.path&quot;]</td>
@@ -904,15 +887,12 @@
 	<td>css=div.searchForm</td>
 	<td></td>
 </tr>
-<!--Type Map -->
-<!--no more this field ## ERROR  CORE-2032 Media Desk: Travel Image Global Search - field "Type Map" with no dropdown con-->
+<!--Type - field unfilterable-->
 <tr>
 	<td>assertTextNotPresent</td>
 	<td>link=Type Map</td>
 	<td>Type Map</td>
 </tr>
-<!--Click   //form[2]/div[2]/div[21]/div/div-->
-<!--old drop down click  //div[20]/div/div-->
 <!--im workflow, published-->
 <tr>
 	<td>pause</td>
@@ -1074,11 +1054,6 @@
 	<td>New Image: Untitled</td>
 </tr>
 <!--ENDENDNED-->
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
 </tbody></table>
 </body>
 </html>

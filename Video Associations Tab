@@ -441,14 +441,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertElementNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <!--Conversation-->
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <tr>

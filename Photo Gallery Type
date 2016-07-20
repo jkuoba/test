@@ -236,13 +236,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <tr>
@@ -477,12 +477,27 @@
 	<td>//div[11]/small</td>
 	<td>Owner brand of the asset. Could be blank if not from a host brand.<br />CQ Property Name: jcr:content/sni:brand</td>
 </tr>
-<!--The value is empty but better to have value , we are more concerns on the type Map field -->
 <tr>
-	<td>assertText</td>
-	<td>css=a.dropDown-label.state-placeholder</td>
+	<td>click</td>
+	<td>css=div.dropDown-input</td>
 	<td></td>
 </tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//body/div[11]/div/div[12]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[11]/div/div[12]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.dropDown-label</td>
+	<td>HGTV</td>
+</tr>
+<!--QA Note: The value is empty but better to have value , we are more concerns on the type Map field -->
 <tr>
 	<td>assertText</td>
 	<td>//div[12]/div/label</td>
@@ -656,13 +671,13 @@
 </tr>
 <!--Checkbox testing  needed-->
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <!--Tag&Keywords tab-->
@@ -755,6 +770,11 @@
 <tr>
 	<td>click</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
 <tr>

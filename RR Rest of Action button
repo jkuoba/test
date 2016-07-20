@@ -11,6 +11,7 @@
 <thead>
 <tr><td rowspan="1" colspan="3">RR Export Selected '</td></tr>
 </thead><tbody>
+<!--QA Note: there are three seleted images before this testing -->
 <tr>
 	<td>open</td>
 	<td>/cms</td>
@@ -52,7 +53,6 @@
 	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
-<!--## ERROR  CORE-2076 Media Desk: RR "Export Selected" save function no working.-->
 <tr>
 	<td>pause</td>
 	<td>3000</td>
@@ -63,7 +63,7 @@
 	<td>//a[contains(text(),'Export&nbsp;&nbsp;Selected')]</td>
 	<td></td>
 </tr>
-<!--Full screen seems not working -->
+<!-- QA Note: Fullscreen clicking, system changes the url with  searchAdvancedFull? -->
 <tr>
 	<td>pause</td>
 	<td>3000</td>
@@ -181,6 +181,16 @@
 	<td>QA Save Search testing</td>
 </tr>
 <!--Save Collection-->
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
 <tr>
 	<td>click</td>
 	<td>link=Save Collection</td>
@@ -377,7 +387,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div[name=&quot;objectId-4-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
 <tr>
@@ -392,7 +402,12 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.toolNav-toggle</td>
 	<td></td>
 </tr>
 <tr>
@@ -412,7 +427,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <tr>
@@ -443,7 +458,7 @@
 <!--Bulk Archive All -->
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <tr>

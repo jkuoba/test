@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>RR Video Action buttons</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RR Video Action buttons</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--14/16/44-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[${filterDropDown}]/div/div[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${filterDropDown}]/div/div[10]</td>
+	<td></td>
+</tr>
+<!--Video Default options -->
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=form.objectId-create.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Video</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
+	<td>All</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-action-simple &gt; a.button</td>
+	<td>Bulk Edit All</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[contains(text(),'Export&nbsp;&nbsp;All')]</td>
+	<td>Export All</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Fullscreen</td>
+	<td>Fullscreen</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Save Search</td>
+	<td>Save Search</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=New Work Stream</td>
+	<td>New Work Stream</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.button.icon-action-trash</td>
+	<td>Bulk Archive All</td>
+</tr>
+<!--With Video asset selected-->
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
+	<td>CollectionClear</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Clear</td>
+	<td>Clear</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.searchResult-selectionPreview</td>
+	<td></td>
+</tr>
+<!--QA Note: We don't allow user to create vidoe playlist,but we don't have feature to prevent them to do so-->
+<tr>
+	<td>assertText</td>
+	<td>css=div.searchResult-action-simple &gt; a.button</td>
+	<td>Create New Video Playlist</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.searchResult-action-simple &gt; a.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h1/span</td>
+	<td>Edit Video Playlist: Initial Draft Untitled</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputLabel &gt; label</td>
+	<td>Asset Title</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='assetTitle']</td>
+	<td>QA testing Video Playlist</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/label</td>
+	<td>Asset Description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='assetDescription']</td>
+	<td>QA Video Playlist Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[13]/div/label</td>
+	<td>Videos</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=ol.plugin-sortable._sortable</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-upload</td>
+	<td>Upload Files</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[13]/div[2]/div/span</td>
+	<td>Add Item</td>
+</tr>
+<!--upload-->
+<tr>
+	<td>click</td>
+	<td>css=a.action-upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;uploadFiles&quot;] &gt; h1</td>
+	<td>Upload Files</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.inputContainer.bulk-upload-files &gt; div.inputLabel &gt; label</td>
+	<td>Files</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div[2]/div/label</td>
+	<td>Type</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@name='file']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//select[@data-root='form']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/div[3]/div/label</td>
+	<td>Editorial Title</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/div[6]/div/label</td>
+	<td>Editorial Description</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/div/div[8]/div</td>
+	<td>GuideEditorial SEO Title</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;uploadFiles&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Add video item-->
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[13]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.Message-returnToDashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--14/16/44-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[16]/div/div[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='id'])[2]</td>
+	<td></td>
+</tr>
+<!--Bulk Edit Selected -->
+<tr>
+	<td>assertText</td>
+	<td>link=Bulk Edit Selected</td>
+	<td>Bulk Edit Selected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Bulk Edit Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.widget.content-edit-bulk &gt; h1</td>
+	<td>Bulk Edit 2 Items</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=MPX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Debug</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Availability</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Associations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Tags &amp; Keywords</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Adobe CQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Analytics</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.toolNav-toggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=li.state-hover &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
+	<td></td>
+</tr>
+<!--14/16/44-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[16]/div/div[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[16]/div/div[10]</td>
+	<td></td>
+</tr>
+<!--Export selected testing skip-->
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[contains(text(),'Export&nbsp;&nbsp;Selected')]</td>
+	<td>Export Selected</td>
+</tr>
+<!--Full Screen not function-->
+<tr>
+	<td>assertText</td>
+	<td>link=Fullscreen</td>
+	<td>Fullscreen</td>
+</tr>
+<!--save search-->
+<tr>
+	<td>assertText</td>
+	<td>link=Save Search</td>
+	<td>Save Search</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;toolUserSaveSearch&quot;] &gt; div.widget &gt; h1.icon.icon-action-search</td>
+	<td>Save Search</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;toolUserSaveSearch&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Save Collection-->
+<tr>
+	<td>assertText</td>
+	<td>link=Save Collection</td>
+	<td>Save Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div[name=&quot;toolUserSaveSearch&quot;] &gt; div.widget &gt; h1.icon.icon-action-search</td>
+	<td>Save Collection</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;toolUserSaveSearch&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Watch selected-->
+<tr>
+	<td>click</td>
+	<td>link=Watch Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Unwatch Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Watch Selected</td>
+	<td>Watch Selected</td>
+</tr>
+<!--New Work Stream-->
+<tr>
+	<td>assertText</td>
+	<td>link=New Work Stream</td>
+	<td>New Work Stream</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=New Work Stream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h1.icon.icon-object</td>
+	<td>New Work Stream</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;newWorkStream&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<!--Bulk  Archive Selected-->
+<tr>
+	<td>assertText</td>
+	<td>css=a.button.icon-action-trash</td>
+	<td>Bulk Archive Selected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.button.icon-action-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button.icon-action-trash</td>
+	<td>Confirm bulk ARCHIVE</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>Click below to confirm bulk archive of 2 items.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;bulkArchive&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Clear</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
