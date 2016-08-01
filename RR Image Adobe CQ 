@@ -79,8 +79,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>//div[2]/div[2]/div/h1</td>
+	<td>Image Preview</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.widget &gt; div &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.frame.loaded &gt; div.widget &gt; h1</td>
 	<td>Adobe CQ</td>
 </tr>
 <tr>
@@ -117,11 +137,6 @@
 <tr>
 	<td>pause</td>
 	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>css=p</td>
 	<td></td>
 </tr>
 <tr>
@@ -243,7 +258,7 @@
 	<td>css=button[name=&quot;action-publish&quot;]</td>
 	<td>Publish</td>
 </tr>
-<!--## ERROR  CQ DAM link does not work -->
+<!--## ERROR  CORE-2202 Media Desk: Edit Image, on the RR Adobe CQ widget, clicking on "CQ DAM" link does not work.-->
 <tr>
 	<td>assertElementPresent</td>
 	<td>link=CQ DAM</td>
@@ -262,11 +277,6 @@
 <tr>
 	<td>close</td>
 	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
 	<td></td>
 </tr>
 </tbody></table>

@@ -44,12 +44,12 @@
 <!--14/16/44-->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[${filterDropDown}]/div/div[10]</td>
+	<td>//div[${filterDropDown}]/div/div[9]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[${filterDropDown}]/div/div[10]</td>
+	<td>//div[${filterDropDown}]/div/div[9]</td>
 	<td></td>
 </tr>
 <!--Video Default options -->
@@ -115,9 +115,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
-	<td>CollectionClear</td>
+	<td>assertElementPresent</td>
+	<td>link=Clear</td>
+	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -245,12 +245,12 @@
 <!--14/16/44-->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[16]/div/div[10]</td>
+	<td>//div[${filterDropDown}]/div/div[9]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[10]</td>
+	<td>//div[${filterDropDown}]/div/div[9]</td>
 	<td></td>
 </tr>
 <!--Export selected testing skip-->
@@ -501,7 +501,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -521,7 +521,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -539,68 +539,7 @@
 	<td>css=button[name=&quot;action-delete&quot;]</td>
 	<td></td>
 </tr>
-<tr>
-	<td>assertConfirmationNotPresent</td>
-	<td>Are you sure you want to permanently delete this item?</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
 <!--Bulk  Archive Selected-->
-<tr>
-	<td>click</td>
-	<td>//input[starts-with(@id, 'i')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//body/div[22]/div/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//body/div[22]/div/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=a.button.icon-action-trash</td>
-	<td>Bulk Archive Selected</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=a.button.icon-action-trash</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=button.icon-action-trash</td>
-	<td>Confirm bulk ARCHIVE</td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=form.bsp-onDomInsert-inserted-31 &gt; p</td>
-	<td>Click below to confirm bulk archive of 2 items.</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;bulkArchive&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
-<!--remove video selection-->
-<tr>
-	<td>click</td>
-	<td>link=Delete Permanently</td>
-	<td></td>
-</tr>
 </tbody></table>
 </body>
 </html>

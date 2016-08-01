@@ -90,12 +90,12 @@
 <!--Recipe-->
 <tr>
 	<td>assertText</td>
-	<td>//div[${filterDropDown}]/div/div[7]</td>
+	<td>//div[${filterDropDownRecipe}]/div/div[6]</td>
 	<td>Recipe</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[${filterDropDown}]/div/div[7]</td>
+	<td>//div[${filterDropDownRecipe}]/div/div[6]</td>
 	<td></td>
 </tr>
 <tr>
@@ -241,7 +241,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=p</td>
+	<td>//div[2]/div/p</td>
 	<td>No matching items!</td>
 </tr>
 <tr>
@@ -1033,7 +1033,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
+	<td>click</td>
 	<td>css=div[name=&quot;objectId-2-select&quot;] &gt; div.content &gt; div.closeButton</td>
 	<td></td>
 </tr>
@@ -1140,6 +1140,11 @@
 	<td>assertText</td>
 	<td>css=button.action.action-create</td>
 	<td>New</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/div/p</td>
+	<td>No matching items!</td>
 </tr>
 </tbody></table>
 </body>

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>Create New Image </title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create New Image </td></tr>
+</thead><tbody>
+<tr>
+	<td>setSpeed</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/cms/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[contains(text(),'Image')])[2]</td>
+	<td>Image</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Image')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//h1/span</td>
+	<td>New Image: Untitled</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='title']</td>
+	<td>Create new Image asset Title</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='caption']</td>
+	<td>Create new Image Caption (Description)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td>SEO description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='altTag']</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='altTag']</td>
+	<td>QA Internal Note</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='internalNotes']</td>
+	<td>label=New Upload</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//select[@data-root='.inputSmall']</td>
+	<td></td>
+</tr>
+<!--## ERROR  CORE-2204 Media Desk: (FF/Chrome) Create new Image, Main tab field "File" drop-down missing option "New URL" .-->
+<!--CORE-2203 Media Desk: Creating new image asset from MD, the image upload failed.-->
+<tr>
+	<td>click</td>
+	<td>//option[contains(.,'New Upload')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name$=&quot;/file.file&quot;]</td>
+	<td>/Users/josephkuo/Desktop/Butchart_gardens.JPG</td>
+</tr>
+<tr>
+	<td>typekeys</td>
+	<td>css=input[name$=&quot;/file.file&quot;]</td>
+	<td>/Users/josephkuo/Desktop/Butchart_gardens.JPG</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[[starts-with(@name,'00000156-3824-d37a')]</td>
+	<td>/Users/josephkuo/Desktop/Butchart_gardens.JPG</td>
+</tr>
+<!--========================-->
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-newDraft&quot;]</td>
+	<td>Save Draft</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td>Generate Candidate</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div/div/div[2]/ul/li</td>
+	<td>Please fix the field errors below and try again.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li.state-error &gt; a</td>
+	<td>Adobe CQ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.state-error &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[6]/div/div[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[6]/div/div[8]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//p[contains(.,'Transitioned to Candidate')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.visibilityLabel.widget-publishingWorkflowState</td>
+	<td>Candidate</td>
+</tr>
+<!--Associations Tab -------->
+<tr>
+	<td>click</td>
+	<td>link=Associations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.addButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000156-3879-d37a-a7f7-3afd37e20000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000156-3879-d37a-a7f7-3afd37e20000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000156-3879-d37a-a7f7-3afd37e20000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000156-3879-d37a-a7f7-3afd37e20000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[7]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[starts-with(@id, 'i')]/div[3]/table/tbody/tr[7]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000156-3879-d37a-a7f7-3afd37e20000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=(com.scripps.mediadesk.model.profile.Profile%2Flevel%20equalsany%20'normal'%20or%20com.scripps.mediadesk.model.profile.Profile%2Fname%20equalsany%20missing)&amp;sg=false&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000156-3879-d37a-a7f7-3afd37e20000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370047&amp;aq=(com.scripps.mediadesk.model.profile.Profile%2Flevel%20equalsany%20'normal'%20or%20com.scripps.mediadesk.model.profile.Profile%2Fname%20equalsany%20missing)&amp;sg=false&quot;)]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.dropDown-label</td>
+	<td>HGTV</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='projectName']</td>
+	<td>QA testing project name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='copyright']</td>
+	<td>Photo: John Russell / CMA</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//textarea[@data-dynamic-field-name='credit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='credit']</td>
+	<td>QA Credit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//textarea[@data-dynamic-field-name='owner']</td>
+	<td>PSDQA@gmail.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[name=&quot;action-draft&quot;]</td>
+	<td></td>
+</tr>
+<!--Debug tab -------------------->
+<tr>
+	<td>click</td>
+	<td>link=Debug</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[10]/div/label</td>
+	<td>Episode Number</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#ie952e8092c754dfa99dd503b261e3766</td>
+	<td>2HW123</td>
+</tr>
+<!--Usage tab -------------------->
+<tr>
+	<td>click</td>
+	<td>link=Usage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select[@data-root='.inputContainer']</td>
+	<td>label=Set:</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[3]/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[3]/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[29]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[29]/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[3]/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.week.week3 &gt; span.day.day3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[4]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[31]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[31]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[4]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[5]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#sizcache06435023685055015</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#i1bfebe98dc37475ab86c28aa37ea3f89</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#i21e07a6116984b32b18e43cd9963b50f</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#i91722a2e5af54b44bf1a1ea2ee4eced4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#ie10beb3ec3a8437ca4736e4299dd930e</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#i26c94bfb1a09450ca540f9a4b6d44d8c</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendarButton.calendarButton-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.nextButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[name=&quot;action-draft&quot;]</td>
+	<td></td>
+</tr>
+<!--Tags & Keyword tab -------------------->
+<tr>
+	<td>click</td>
+	<td>link=Tags &amp; Keywords</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Tags &amp; Keywords</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[35]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ul &gt; li &gt; a.objectId-select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='i64181438329b4b249b5052b35590f361']/div/div/ul/li[4]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#sizcache08417205654171146 &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[36]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, &quot;/cms/content/objectId.jsp?pt=00000156-37df-d37a-a7f7-37dff7f30000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380007&amp;aq=category%20notequalsall%20'preferred_terms'&amp;sg=false&quot;)])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='i301fbe0b492d42eeb777822897814d9a']/div/div/ul/li[5]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#sizcache08417205654171146 &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#i0e1e0b0890ab46c5be19dcf3db41d92e</td>
+	<td>color</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.dropDown-listItem.state-hover</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[name=&quot;action-draft&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=p</td>
+	<td></td>
+</tr>
+<!--Adobe CQ tab  ------------------->
+<tr>
+	<td>click</td>
+	<td>link=Adobe CQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=#ibb5f46bf487b47c1806f18dd80cc6265</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=HGTV Fullset Images</td>
+	<td>HGTV Fullset Images</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=#i211ba9eb4e6d4402a8662c30418e2757</td>
+	<td></td>
+</tr>
+<!--Analytics tab -------------------->
+<tr>
+	<td>click</td>
+	<td>link=Analytics</td>
+	<td></td>
+</tr>
+<!--SEO tab -------------------->
+<tr>
+	<td>click</td>
+	<td>link=SEO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#ibbbd643ff32d4786a811630244a177bd</td>
+	<td>Create new Image asset Title in SEO tab</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#i6be733ecd7404051b3a989f78587acaa</td>
+	<td>Description from the SEO tab</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;00000156-37df-d37a-a7f7-37dff7f30000/cms.seo.keywords.text&quot;]</td>
+	<td>QA </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[55]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.dropDown-label.state-placeholder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#sizcache08417205654171146</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[name=&quot;action-draft&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=p</td>
+	<td></td>
+</tr>
+<!--Approve Candidate   --------------->
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@name='action-workflow'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.visibilityLabel</td>
+	<td>Approved for MD</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>Transitioned to Approved for MD at Fri Jul 29 02:49 PM. Return to Dashboard</td>
+</tr>
+<!--Apply to MD ----------------->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>Transitioned to MD Applied at Fri Jul 29 02:50 PM. Return to Dashboard</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=p</td>
+	<td></td>
+</tr>
+<!--Submit -------------->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[name=&quot;action-workflow&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>Transitioned to Submitted at Fri Jul 29 02:51 PM. Return to Dashboard</td>
+</tr>
+<!--Publishing to CQ -->
+<tr>
+	<td>click</td>
+	<td>link=Publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[name=&quot;action-publish&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>Published Fri Jul 29 02:52 PM. Return to Dashboard</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000156-37df-d37a-a7f7-37dff7f30000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380002&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

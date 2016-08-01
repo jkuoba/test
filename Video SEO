@@ -116,7 +116,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[87]/div/label</td>
+	<td>//div[88]/div/label</td>
 	<td>Title</td>
 </tr>
 <tr>
@@ -126,7 +126,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[88]/div/label</td>
+	<td>//div[89]/div/label</td>
 	<td>Description</td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[89]/div/label</td>
+	<td>//div[90]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
@@ -146,7 +146,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[89]/div[2]/div/span</td>
+	<td>//div[90]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -156,12 +156,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[90]/div/label</td>
+	<td>//div[91]/div/label</td>
 	<td>Robots</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[90]/div[2]/div</td>
+	<td>//div[91]/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -171,7 +171,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[90]/div[2]/div</td>
+	<td>//div[91]/div[2]/div</td>
 	<td></td>
 </tr>
 </tbody></table>

@@ -90,16 +90,15 @@
 <!--14/16/44  select asset type -Profile Corporate -->
 <tr>
 	<td>assertText</td>
-	<td>//div[16]/div/div[8]</td>
+	<td>//div[${filterDropDown}]/div/div[7]</td>
 	<td>Tag Landing</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[8]</td>
+	<td>//div[${filterDropDown}]/div/div[7]</td>
 	<td>Tag Landing</td>
 </tr>
 <!--## ERROR No data match-->
-
 </tbody></table>
 </body>
 </html>

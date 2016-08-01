@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mediadesk.core-qa.sni.hgtv.com/" />
+<title>RR Image Archive Selected</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RR Image Archive Selected</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/cms</td>
+	<td></td>
+</tr>
+<!--Bulk Archive All -->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=h1.icon.icon-object-workStream</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1.icon.icon-bar-chart</td>
+	<td>Messaging Metrics Widget</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
+	<td>//div[${filterDropDown}]/div/div[4]</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(.,'New Collection')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/div[${collectionEdit}]/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.button.icon-action-trash</td>
+	<td>Bulk Archive Selected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.button.icon-action-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>Click below to confirm bulk archive of 2 items.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.icon-action-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--49/57-->
+<tr>
+	<td>waitForText</td>
+	<td>//div[57]/div/div/div</td>
+	<td>Successfully archived 2 items.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[57]/div/div/div</td>
+	<td>Successfully archived 2 items.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;bulkArchive&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Permanently</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -68,11 +68,6 @@
 </tr>
 <!--34/36/38/52  record status -->
 <tr>
-	<td>assertElementPresent</td>
-	<td>//div[36]/div/div[6]</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>//div[${imageStatusDropDown}]/div/div[6]</td>
 	<td></td>
@@ -114,7 +109,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=div.searchFilters &gt; h2</td>
+	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input.dropDown-input-bottom</td>
 	<td></td>
 </tr>
 <tr>
@@ -125,11 +120,6 @@
 <tr>
 	<td>click</td>
 	<td>css=div.searchFilters &gt; h2</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.dropDown-input.dropDown-input-bottom</td>
 	<td></td>
 </tr>
 <tr>

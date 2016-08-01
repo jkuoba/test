@@ -141,12 +141,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[34]/div[2]/div/span</td>
+	<td>//div[35]/div[2]/div/span</td>
 	<td>Add Item</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[34]/div[2]/div/span</td>
+	<td>//div[35]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -168,7 +168,7 @@
 <!--secondary tag groups-->
 <tr>
 	<td>assertText</td>
-	<td>//div[35]/div/label</td>
+	<td>//div[36]/div/label</td>
 	<td>Secondary Tag Groups</td>
 </tr>
 <tr>
@@ -193,12 +193,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[35]/div[2]/div/span</td>
+	<td>//div[36]/div[2]/div/span</td>
 	<td>Add Tag Group</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[35]/div[2]/div/span</td>
+	<td>//div[36]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -253,12 +253,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[36]/h2</td>
+	<td>//div[37]/h2</td>
 	<td>Keywords and Preferred Terms</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[36]/div/label</td>
+	<td>//div[37]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
@@ -268,12 +268,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[37]/div/label</td>
+	<td>//div[38]/div/label</td>
 	<td>Preferred Terms</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[37]/div[2]/div</td>
+	<td>//div[38]/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>

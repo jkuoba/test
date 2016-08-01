@@ -55,7 +55,17 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -207,13 +217,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>//textarea[@data-dynamic-field-name='name']</td>
 	<td>RR Collection Save testing</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -438,7 +463,7 @@
 <tr>
 	<td>assertText</td>
 	<td>css=div.block.p-workStreams-notWorking</td>
-	<td>No users working on QA test Work StreamStart<br />3 of 3 left</td>
+	<td>No users working on QA test Work StreamStart<br />2 of 2 left</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -453,108 +478,6 @@
 <tr>
 	<td>click</td>
 	<td>css=button[name=&quot;action-delete&quot;]</td>
-	<td></td>
-</tr>
-<!--Bulk Archive All -->
-<tr>
-	<td>pause</td>
-	<td>4000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//input[starts-with(@id, 'i')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[${filterDropDown}]/div/div[4]</td>
-	<td>//div[${filterDropDown}]/div/div[4]</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>4000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[contains(.,'New Collection')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//body/div[${collectionEdit}]/div/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=a.button.icon-action-trash</td>
-	<td>Bulk Archive Selected</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=a.button.icon-action-trash</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=p</td>
-	<td>Click below to confirm bulk archive of 3 items.</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=button.icon-action-trash</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<!--49/57-->
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//div[49]/div/div/div</td>
-	<td>Successfully archived 3 items.</td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>//div[49]/div/div/div</td>
-	<td>Successfully archived 3 items.</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div[name=&quot;bulkArchive&quot;] &gt; div.content &gt; div.closeButton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Delete Permanently</td>
 	<td></td>
 </tr>
 </tbody></table>

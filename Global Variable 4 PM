@@ -12,7 +12,7 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>600</td>
+	<td>500</td>
 	<td></td>
 </tr>
 <!--filter dropdown var  -(18 AM   22 AM      24 PM) ---------------------->
@@ -60,10 +60,15 @@
 <!--Preferred  Video Drop  24 /30 AM      32/34 PM -->
 <tr>
 	<td>store</td>
-	<td>32</td>
+	<td>34</td>
 	<td>preferredDropDownVideoSet</td>
 </tr>
 <!--Status DropDown    (36 /42 AM   44PM  -->
+<tr>
+	<td>store</td>
+	<td>46</td>
+	<td>statusDropDownRR</td>
+</tr>
 <tr>
 	<td>store</td>
 	<td>44</td>
@@ -72,7 +77,7 @@
 <!--image Status DropDown    (36 /42AM   44P    46 at 4pm)  -->
 <tr>
 	<td>store</td>
-	<td>46</td>
+	<td>44</td>
 	<td>imageStatusDropDown</td>
 </tr>
 <!--video  Status DropDown   28/34 AM    36/38PM-->
@@ -105,7 +110,7 @@
 	<td>38</td>
 	<td>locationDropDown</td>
 </tr>
-<!--Image Resolution  32 AM   32 PM-->
+<!--Image Resolution  32 AM   32 (7 pm)   36 4 pm)-->
 <tr>
 	<td>store</td>
 	<td>32</td>

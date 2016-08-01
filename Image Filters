@@ -19,7 +19,7 @@
 </tr>
 <tr>
 	<td>setSpeed</td>
-	<td>600</td>
+	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -115,7 +115,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>css=div.searchResult-images</td>
 	<td></td>
 </tr>
@@ -211,8 +211,7 @@
 	<td>css=span.calendar_set</td>
 	<td></td>
 </tr>
-<!--## ERROR   CORE-2030 Media Desk: Travel - Global Search with image type, the start date divider line should be under timestamp-->
-<!--Looks good on Home. -->
+<!--Image Resoultion ---------------->
 <tr>
 	<td>selectWindow</td>
 	<td>null</td>
@@ -223,16 +222,45 @@
 	<td>css=div.searchFilterItem &gt; div.dropDown-input &gt; a.dropDown-label.state-placeholder</td>
 	<td>Image Resolution</td>
 </tr>
-<!--## ERROR CORE-2157 image global search field -Image Resolution with empty dropdown-->
 <tr>
 	<td>click</td>
 	<td>css=div.searchFilterItem &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
 <tr>
+	<td>assertText</td>
+	<td>//body/div[${imageResolution}]/div/div[2]</td>
+	<td>Extra Large</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//body/div[${imageResolution}]/div/div[3]</td>
+	<td>Extra Small</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//body/div[${imageResolution}]/div/div[4]</td>
+	<td>Large</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//body/div[${imageResolution}]/div/div[5]</td>
+	<td>Medium</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//body/div[${imageResolution}]/div/div[6]</td>
+	<td>Small</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>css=div.searchFilterItem &gt; div.dropDown-input</td>
+	<td>//body/div[${imageResolution}]/div/div[2]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[contains(.,'Extra Large')]</td>
+	<td>Extra Large</td>
 </tr>
 <!--Attributions ---------------------------------------------------------------------------------->
 <tr>
@@ -262,27 +290,42 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
 	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[1]/a</td>
 	<td></td>
 </tr>
 <tr>
+	<td>assertText</td>
+	<td>css=span.link</td>
+	<td>Sponsors</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.searchResultTaxonomyExpand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[starts-with(@id, 'i')]/div/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span[contains(.,'Talent')]</td>
+	<td>Talent</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span[contains(.,'Professionals')]</td>
+	<td>Professionals</td>
+</tr>
+<tr>
 	<td>pause</td>
 	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[2]/a</td>
+	<td>//descendant::div[starts-with(@id, 'i')][3]/div/ul/li[7]/a</td>
 	<td></td>
 </tr>
 <tr>
@@ -292,64 +335,18 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[3]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[4]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<!--## Follow up  - ARM Upgrade Test Profiel HW should not be here -->
-<tr>
-	<td>click</td>
-	<td>//div[starts-with(@id, 'i')]/div/div/ul/li[5]/a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//a[contains(@href,'u=%E2%9C%93&amp;n=&amp;s=&amp;rt=00000155-2b5e-d342-a55f-ab5ff4370044&amp;p=false&amp;aq=&amp;pt=&amp;py=&amp;sg=false&amp;o=0&amp;l=10&amp;st=00000155-2b5e-d342-a55f-ab5ff4370044&amp;is=false&amp;q=&amp;f.cms.content.publishDate=&amp;f.cms.content.publishDate.x=&amp;f.cms.content.publishDate.t=d&amp;f.cq.path=&amp;f.cq.path.t=t&amp;md.srs=&amp;av=&amp;taxonParentId=00000155-2c4b-db86-a17f-2fdf7ee90000&amp;taxonLevel=3')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//span[@data-objectid='00000155-2c4b-db86-a17f-2fdf7ed00000']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
+	<td>//span[@data-objectid='00000155-2c41-db86-a17f-2fdd45ac0000']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>css=div.searchFilterItem &gt; a.objectId-select</td>
-	<td>2id Interiors [HGTV]</td>
+	<td>Ikea [HGTV]</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
 </tr>
 <!--Subjects-->
 <!--## ERROR CORE-2158 Media Desk: Image filter field - Subjects - Duplicate options with single letter.-->
@@ -527,7 +524,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=p</td>
+	<td>//p[contains(.,'No matching items!')]</td>
 	<td>No matching items!</td>
 </tr>
 <tr>
@@ -680,7 +677,7 @@
 	<td>//div[2]/div[12]/div</td>
 	<td>Locations</td>
 </tr>
-<!--28 /30/34/30 AM   All countries is one of the option? -->
+<!--36 38AM   All countries is one of the option? -->
 <tr>
 	<td>click</td>
 	<td>//div[${locationDropDown}]/div/div[3]</td>
@@ -789,6 +786,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertElementPresent</td>
+	<td>//div[${preferredDropDown}]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//div[${preferredDropDown}]/div/div[4]</td>
 	<td></td>
@@ -811,7 +813,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=span.calendar_clear</td>
+	<td>css=span.calendar_set</td>
 	<td></td>
 </tr>
 <tr>

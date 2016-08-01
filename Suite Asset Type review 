@@ -8,12 +8,12 @@
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="Global Variables AM ">Global Variables AM </a></td></tr>
 <tr><td><a href="Global Variables">Global Variables</a></td></tr>
 <tr><td><a href="Article asset type">Article asset type</a></td></tr>
 <tr><td><a href="Photo Gallery Type">Photo Gallery Type</a></td></tr>
 <tr><td><a href="Universal Landing Page type">Universal Landing Page type</a></td></tr>
 <tr><td><a href="Video Playlist type ">Video Playlist type </a></td></tr>
-<tr><td><a href="Profile Corporate Type">Profile Corporate Type</a></td></tr>
 <tr><td><a href="Tag Landing Type">Tag Landing Type</a></td></tr>
 </tbody></table>
 </body>

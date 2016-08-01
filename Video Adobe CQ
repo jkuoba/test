@@ -141,7 +141,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[75]/div/label</td>
+	<td>//div[76]/div/label</td>
 	<td>CQ Path</td>
 </tr>
 <tr>
@@ -151,7 +151,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[76]/div/label</td>
+	<td>//div[77]/div/label</td>
 	<td>Type Map</td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[76]/div[2]/div</td>
+	<td>//div[77]/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -186,7 +186,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[91]/div/label</td>
+	<td>//div[92]/div/label</td>
 	<td>Last Replication Action</td>
 </tr>
 <tr>

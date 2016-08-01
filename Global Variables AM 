@@ -13,83 +13,115 @@
 </thead><tbody>
 <tr>
 	<td>setSpeed</td>
-	<td>600</td>
+	<td>500</td>
 	<td></td>
 </tr>
-<!--filter dropdown var  - 45 16 14     18AM-------------->
+<!--filter dropdown var  -(18 AM   22 AM      24 PM) ---------------------->
 <tr>
 	<td>store</td>
-	<td>18</td>
+	<td>24</td>
 	<td>filterDropDown</td>
 </tr>
-<!--24/    26 AM    /28/22/ 30   Brand drop down -->
+<!--recipe filter dropdown -(  16 PM) ---------------------->
 <tr>
 	<td>store</td>
-	<td>30</td>
+	<td>16</td>
+	<td>filterDropDownRecipe</td>
+</tr>
+<!--Brand drop down  (26  32 34AM  34 PM)   -->
+<tr>
+	<td>store</td>
+	<td>34</td>
 	<td>brandID</td>
 </tr>
-<!--26/      28  AM            / 30 /32  syndication/restriction drop down -->
+<!--syndication/restriction drop down   ( 28 34 AM   36 PM)     -->
 <tr>
 	<td>store</td>
-	<td>32</td>
+	<td>36</td>
 	<td>syndicationDropDown</td>
 </tr>
-<!--43  / 51collection edit drop down first -->
+<!--collectionEdit   (43  AM / 51 PM)-->
 <tr>
 	<td>store</td>
 	<td>43</td>
 	<td>collectionEdit</td>
 </tr>
-<!--34/30/     32 AM   /36      field Platforms dropdown -->
-<tr>
-	<td>store</td>
-	<td>36</td>
-	<td>platformDropDown</td>
-</tr>
-<!--32/34 AM  /38     field Preferred tags DropDown -->
-<tr>
-	<td>store</td>
-	<td>38</td>
-	<td>preferredDropDown</td>
-</tr>
-<tr>
-	<td>store</td>
-	<td>24</td>
-	<td>preferredDropDownVideoSet</td>
-</tr>
-<!--34/  36/ 38/ 40  AM     field - published /in workstream etc DropDown -->
+<!--Platforms dropdown   (32 / 38AM   40 PM)      -->
 <tr>
 	<td>store</td>
 	<td>40</td>
+	<td>platformDropDown</td>
+</tr>
+<!--Preferred (34/36 /40  AM ----/ 42PM)     -->
+<tr>
+	<td>store</td>
+	<td>42</td>
+	<td>preferredDropDown</td>
+</tr>
+<!--Preferred  Video Drop  24   /30 AM    32 PM -->
+<tr>
+	<td>store</td>
+	<td>34</td>
+	<td>preferredDropDownVideoSet</td>
+</tr>
+<!--Status DropDown    (34/ 36 /42 AM   44PM)  -->
+<tr>
+	<td>store</td>
+	<td>44</td>
+	<td>statusDropDownRR</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>44</td>
 	<td>statusDropDown</td>
 </tr>
+<!--image Status DropDown    (36 /42 AM   44PM)  -->
 <tr>
 	<td>store</td>
-	<td>36</td>
+	<td>44</td>
 	<td>imageStatusDropDown</td>
 </tr>
+<!--video  Status DropDown   28/34 /38 AM   36 PM -->
 <tr>
 	<td>store</td>
-	<td>28</td>
+	<td>38</td>
 	<td>videoStatusDropDown</td>
 </tr>
-<!--40/41/42/43/44/50/54     field - Collection DropDown -->
+<!--Collection DropDown      (42 PM)-->
 <tr>
 	<td>store</td>
 	<td>42</td>
 	<td>collectionDropDown</td>
 </tr>
-<!--75/73/83/77  find the first collection name -->
+<!--Collection DropDown  RR    48AM   50 PM-->
 <tr>
 	<td>store</td>
-	<td>77</td>
+	<td>50</td>
+	<td>collectionDropDownRR</td>
+</tr>
+<!--Collection 1    83AM /   85pm -->
+<tr>
+	<td>store</td>
+	<td>85</td>
 	<td>collection1</td>
 </tr>
-<!--28/    30 AM      /34  locations drop down -->
+<!--Location   (34 /36AM   38 PM )-->
 <tr>
 	<td>store</td>
-	<td>34</td>
+	<td>38</td>
 	<td>locationDropDown</td>
+</tr>
+<!--Image Resolution   36/ 32   AM     32 PM-->
+<tr>
+	<td>store</td>
+	<td>32</td>
+	<td>imageResolution</td>
+</tr>
+<!--WorkStream Add to Assigned Entities  21 AM 23 PM-->
+<tr>
+	<td>store</td>
+	<td>23</td>
+	<td>assignedEntities</td>
 </tr>
 </tbody></table>
 </body>

@@ -56,8 +56,13 @@
 	<td>2500</td>
 	<td></td>
 </tr>
-<!--## ERROR  BSP-2195 Media Desk: Unnamed SRSs records should be filtered out of the list it displayed.-->
+<!--## ERROR  CORE-2173 Media Desk: Unnamed SRSs records should be filtered out of the search result window.-->
 <!--Create first collection-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=input[name=&quot;id&quot;]</td>
+	<td></td>
+</tr>
 <tr>
 	<td>click</td>
 	<td>css=input[name=&quot;id&quot;]</td>
@@ -123,7 +128,6 @@
 	<td>//div[2]/button</td>
 	<td></td>
 </tr>
-<!--27 or 31 or 32  28  29-->
 <tr>
 	<td>pause</td>
 	<td>2500</td>
@@ -142,12 +146,12 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//body/div[${collectionDropDown}]/div/div</td>
+	<td>//body/div[${collectionDropDownRR}]/div/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//body/div[${collectionDropDown}]/div/div</td>
+	<td>//body/div[${collectionDropDownRR}]/div/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -314,7 +318,7 @@
 <tr>
 	<td>assertText</td>
 	<td>xpath=(//select[@name='s'])[2]</td>
-	<td>Sort: Publish DateSort: Update Date</td>
+	<td>Sort: NameSort: Publish DateSort: Update Date</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -354,7 +358,7 @@
 <tr>
 	<td>assertText</td>
 	<td>xpath=(//select[@name='s'])[2]</td>
-	<td>Sort: Publish DateSort: RelevantSort: Update Date</td>
+	<td>Sort: NameSort: Publish DateSort: RelevantSort: Update Date</td>
 </tr>
 <!--check all the drop down -->
 <tr>
@@ -408,10 +412,10 @@
 	<td>css=div[name=&quot;searchResultActions&quot;] &gt; form.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
-<!--75/73/83/77  find the first collection name -->
+<!--83am /85 pm  find the first collection name -->
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[77]/div/div[2]</td>
+	<td>//div[85]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>

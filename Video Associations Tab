@@ -125,17 +125,17 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[19]/div/label</td>
+	<td>//div[20]/div/label</td>
 	<td>Attributions</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[19]/small/em</td>
+	<td>//div[20]/small/em</td>
 	<td>CQ Property Name: jcr:content/editorialSources</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[19]/div[2]/div/span</td>
+	<td>//div[20]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -197,17 +197,17 @@
 <!--Sources -Show-->
 <tr>
 	<td>assertText</td>
-	<td>//div[22]/div/label</td>
+	<td>//div[23]/div/label</td>
 	<td>Show</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=small.inputNote &gt; span</td>
+	<td>//div[23]/small/span</td>
 	<td>House Hunters [HGTV]</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[22]/small/em</td>
+	<td>//div[23]/small/em</td>
 	<td>CQ Property Name: jcr:content/editorialShow</td>
 </tr>
 <tr>
@@ -251,11 +251,16 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertTextNotPresent</td>
-	<td>//div/div/div/form/div/div/h1/span</td>
-	<td>Edit Show: House Hunters [HGTV]</td>
+	<td>assertText</td>
+	<td>css=div.inputContainer.state-changed &gt; div.inputSmall &gt; a.objectId-edit</td>
+	<td>Edit</td>
 </tr>
 <!--From here, we fixed the data issue -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[5]</td>
+	<td></td>
+</tr>
 <tr>
 	<td>click</td>
 	<td>xpath=(//a[contains(text(),'Edit')])[5]</td>
@@ -266,10 +271,11 @@
 	<td>xpath=(//a[contains(text(),'Adobe CQ')])[2]</td>
 	<td></td>
 </tr>
+<!--## ERROR ================================ waiting Rob's resonpse-->
 <!--click      xpath=(//a[contains(text(),'Adobe CQ')])[2]-->
 <tr>
 	<td>assertText</td>
-	<td>//div/div/div/form/div/div/div[3]/div[4]/div/label</td>
+	<td>//div/div/div/form/div/div/div[3]/div[5]/div/label</td>
 	<td>CQ Path</td>
 </tr>
 <tr>
@@ -279,7 +285,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div/div/div/form/div/div/div[3]/div[5]/div/label</td>
+	<td>//div/div/div/form/div/div/div[3]/div[6]/div/label</td>
 	<td>Type Map</td>
 </tr>
 <tr>
@@ -293,16 +299,17 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>assertElementPresent</td>
 	<td>//div/div/div/form/div/div/div[3]</td>
 	<td></td>
 </tr>
-<!--click    xpath=(//a[contains(text(),'SEO')])[2]-->
+<!--## Ad Package tab   Here is another concern, what is the purpose if we have a show editing tab "ad package" but not entry field or read-only value-->
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Ad Package')])[2]</td>
+	<td></td>
+</tr>
+<!--Editing show SEO tab -->
 <tr>
 	<td>click</td>
 	<td>xpath=(//a[contains(text(),'SEO')])[2]</td>
@@ -323,7 +330,7 @@
 <!--## ERROR Eposide and Show pop up empty -->
 <tr>
 	<td>assertText</td>
-	<td>//div[26]/div/label</td>
+	<td>//div[27]/div/label</td>
 	<td>Episode</td>
 </tr>
 <tr>
@@ -359,12 +366,12 @@
 <!--Subjects -->
 <tr>
 	<td>assertText</td>
-	<td>//div[28]/div/label</td>
+	<td>//div[29]/div/label</td>
 	<td>Subjects</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[28]/div[2]/div/span</td>
+	<td>//div[29]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -406,17 +413,17 @@
 <!--Analytics-->
 <tr>
 	<td>assertText</td>
-	<td>//div[68]/h2</td>
+	<td>//div[69]/h2</td>
 	<td>Other</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[68]/div</td>
+	<td>//div[69]/div</td>
 	<td>GuideWeb Series</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[68]/small/em</td>
+	<td>//div[69]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:editorialWebSeries</td>
 </tr>
 <tr>

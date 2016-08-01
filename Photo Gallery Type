@@ -90,12 +90,12 @@
 <!--14/16/44  select asset type -Photo Gallery -->
 <tr>
 	<td>assertText</td>
-	<td>//div[16]/div/div[5]</td>
+	<td>//div[${filterDropDown}]/div/div[5]</td>
 	<td>Photo Gallery</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[5]</td>
+	<td>//div[${filterDropDown}]/div/div[5]</td>
 	<td></td>
 </tr>
 <tr>
@@ -162,12 +162,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[4]/div/label</td>
+	<td>//div[5]/div/label</td>
 	<td>Promo Title</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[4]/small/em</td>
+	<td>//div[5]/small/em</td>
 	<td>CQ Property Name: jcr:content/promoTitle</td>
 </tr>
 <tr>
@@ -187,12 +187,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[8]/div/label</td>
+	<td>//div[9]/div/label</td>
 	<td>Slides</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[8]/small/em</td>
+	<td>//div[9]/small/em</td>
 	<td>CQ Property Name: jcr:content/photoGalleryPromo</td>
 </tr>
 <tr>
@@ -330,6 +330,7 @@
 	<td>//textarea[@data-dynamic-field-name='title']</td>
 	<td>Rancho Deluxe</td>
 </tr>
+<!--## ERROR  http://screencast.com/t/Kt1aT1EF       caption-->
 <tr>
 	<td>assertText</td>
 	<td>//div[2]/div/div/div[2]/div/label</td>
@@ -366,8 +367,13 @@
 	<td></td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
-	<td>//div[2]/div/div/div[4]/div/label</td>
+	<td>//div[2]/div/div/div[5]/div/label</td>
 	<td>HotSpots</td>
 </tr>
 <tr>
@@ -413,12 +419,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/div/label</td>
+	<td>//div[4]/div/label</td>
 	<td>SEO Title</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/small/em</td>
+	<td>//div[4]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:seoTitle</td>
 </tr>
 <tr>
@@ -428,12 +434,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[5]/div</td>
+	<td>//div[6]/div</td>
 	<td>GuideAsset Description</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[5]/small/em</td>
+	<td>//div[6]/small/em</td>
 	<td>CQ Property Name: assetDescription/assetDescription</td>
 </tr>
 <tr>
@@ -443,12 +449,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[7]/div/label</td>
+	<td>//div[8]/div/label</td>
 	<td>SEO Description</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[7]/small/em</td>
+	<td>//div[8]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:seoDescription</td>
 </tr>
 <tr>
@@ -458,7 +464,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[25]/div/label</td>
+	<td>//div[26]/div/label</td>
 	<td>Source Package Anchor</td>
 </tr>
 <!--Association Tab -->
@@ -469,12 +475,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[11]/div/label</td>
+	<td>//div[12]/div/label</td>
 	<td>Brand</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[11]/small</td>
+	<td>//div[12]/small</td>
 	<td>Owner brand of the asset. Could be blank if not from a host brand.<br />CQ Property Name: jcr:content/sni:brand</td>
 </tr>
 <tr>
@@ -500,17 +506,17 @@
 <!--QA Note: The value is empty but better to have value , we are more concerns on the type Map field -->
 <tr>
 	<td>assertText</td>
-	<td>//div[12]/div/label</td>
+	<td>//div[13]/div/label</td>
 	<td>Attributions</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[12]/small/em</td>
+	<td>//div[13]/small/em</td>
 	<td>CQ Property Name: attribution/source</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[12]/div[2]/div/span</td>
+	<td>//div[13]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -580,7 +586,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[13]/div/label</td>
+	<td>//div[14]/div/label</td>
 	<td>Bylines</td>
 </tr>
 <tr>
@@ -590,7 +596,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[13]/div[2]/div/span</td>
+	<td>//div[14]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -643,6 +649,11 @@
 	<td>link=Britney Brooks [GAC]</td>
 	<td>Britney Brooks [GAC]</td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>css=div[name=&quot;objectId-1-select&quot;] &gt; div.content &gt; div.closeButton</td>
+	<td></td>
+</tr>
 <!--Usage tab-->
 <tr>
 	<td>click</td>
@@ -651,22 +662,22 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[14]/div/label</td>
+	<td>//div[15]/div/label</td>
 	<td>Not for Dynamic Use</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[14]/small/em</td>
+	<td>//div[15]/small/em</td>
 	<td>CQ Property Name: jcr:content/doNotFeature</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[15]/div/label</td>
+	<td>//div[16]/div/label</td>
 	<td>exact:Do Not Search?</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[15]/small/em</td>
+	<td>//div[16]/small/em</td>
 	<td>CQ Property Name: jcr:content/doNotSearch</td>
 </tr>
 <!--Checkbox testing  needed-->
@@ -693,7 +704,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[16]/small/em</td>
+	<td>//div[17]/small/em</td>
 	<td>CQ Property Name: tags/primaryTagGroup</td>
 </tr>
 <tr>
@@ -734,12 +745,12 @@
 <!--Secondary Tag Group -->
 <tr>
 	<td>assertText</td>
-	<td>//div[17]/div/label</td>
+	<td>//div[18]/div/label</td>
 	<td>Secondary Tag Groups</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[17]/small/em</td>
+	<td>//div[18]/small/em</td>
 	<td>CQ Property Name: additionalTagGroups-X/additionalTagGroup</td>
 </tr>
 <tr>
@@ -749,7 +760,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[17]/div[2]/div/span</td>
+	<td>//div[18]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -794,12 +805,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[18]/div/label</td>
+	<td>//div[19]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[18]/small/em</td>
+	<td>//div[19]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:keywords</td>
 </tr>
 <tr>
@@ -813,13 +824,13 @@
 	<td>QA Photo Gallery</td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <!--Adobe CQ Tab-->
@@ -830,7 +841,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[20]/div/label</td>
+	<td>//div[21]/div/label</td>
 	<td>CQ Path</td>
 </tr>
 <tr>
@@ -840,7 +851,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[21]/div/label</td>
+	<td>//div[22]/div/label</td>
 	<td>Type Map</td>
 </tr>
 <tr>
@@ -850,12 +861,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[34]/div/label</td>
+	<td>//div[35]/div/label</td>
 	<td>Last Replication Action</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[34]/small/em</td>
+	<td>//div[35]/small/em</td>
 	<td>CQ Property Name: jcr:content/cq:lastReplicationAction</td>
 </tr>
 <tr>
@@ -865,12 +876,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=h1.icon.icon-bar-chart</td>
-	<td>Analytics</td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <!--Ad Package tab -->
@@ -881,7 +887,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[26]/div/label</td>
+	<td>//div[27]/div/label</td>
 	<td>Package Anchor</td>
 </tr>
 <tr>
@@ -935,13 +941,13 @@
 	<td>QA1234</td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>assertTextNotPresent</td>
 	<td>css=h1.icon.icon-bar-chart</td>
 	<td>Analytics</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/h1</td>
+	<td>//div[5]/h1</td>
 	<td>Conversation</td>
 </tr>
 <!--SEO Tab-->
@@ -952,7 +958,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[30]/div/label</td>
+	<td>//div[31]/div/label</td>
 	<td>Title</td>
 </tr>
 <tr>
@@ -962,7 +968,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[31]/div/label</td>
+	<td>//div[32]/div/label</td>
 	<td>Description</td>
 </tr>
 <tr>
@@ -972,12 +978,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[32]/div/label</td>
+	<td>//div[33]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[32]/div[2]/div/span</td>
+	<td>//div[33]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -987,7 +993,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[32]/div[2]/div/span</td>
+	<td>//div[33]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -997,7 +1003,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[33]/div/label</td>
+	<td>//div[34]/div/label</td>
 	<td>Robots</td>
 </tr>
 <tr>
@@ -1007,12 +1013,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[33]/div[2]/div</td>
+	<td>//div[34]/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[33]/div[2]/div</td>
+	<td>//div[34]/div[2]/div</td>
 	<td></td>
 </tr>
 <!--RR-->
@@ -1056,6 +1062,7 @@
 	<td>link=CQ CF</td>
 	<td>CQ CF</td>
 </tr>
+<!--URL being hidden but element is accessible-->
 <tr>
 	<td>assertText</td>
 	<td>css=div.widget.widget-urls &gt; h1</td>
@@ -1073,7 +1080,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[2]/div[2]/div[6]/h1</td>
+	<td>//div[3]/div[5]/h1</td>
 	<td>Watchers</td>
 </tr>
 <tr>

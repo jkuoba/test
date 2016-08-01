@@ -96,12 +96,17 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[${filterDropDown}]/div/div[7]</td>
+	<td>//div[16]/div/div[6]</td>
+	<td>Recipe</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[${filterDropDownRecipe}]/div/div[6]</td>
 	<td>Recipe</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[${filterDropDown}]/div/div[7]</td>
+	<td>//div[${filterDropDownRecipe}]/div/div[6]</td>
 	<td></td>
 </tr>
 <tr>
@@ -641,7 +646,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[21]/div/label</td>
-	<td>Beverage Pairing</td>
+	<td>Pairings</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -661,7 +666,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[19]/div/div/h1</td>
-	<td>Add to Beverage Pairing - 9 Time Pro-Roller - Chicken Spring Rolls</td>
+	<td>Add to Pairings - 9 Time Pro-Roller - Chicken Spring Rolls</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -1255,12 +1260,17 @@
 	<td>css=button[name=&quot;action-trash&quot;]</td>
 	<td>Archive</td>
 </tr>
-<!--Image preview widget -->
 <tr>
 	<td>storeEval</td>
 	<td>selenium.browserbot.getCurrentWindow().scrollTo(100,0)</td>
 	<td></td>
 </tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.action-preview</td>
+	<td>Preview</td>
+</tr>
+<!--## ERROR Image preview widget    ERROR Imae preview missing -->
 <tr>
 	<td>assertText</td>
 	<td>//div[2]/div[2]/div/div/h1</td>
@@ -1274,7 +1284,7 @@
 <!--Adobe CQ widget -->
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/div/h1</td>
+	<td>css=div.frame.loaded &gt; div.widget &gt; h1</td>
 	<td>Adobe CQ</td>
 </tr>
 <!--## ERROR the Label is incorrecet Read. Reloading Page -->
@@ -1403,6 +1413,7 @@
 	<td>null</td>
 	<td></td>
 </tr>
+<!--## ERROR Image preview widget    ERROR Imae preview missing -->
 </tbody></table>
 </body>
 </html>

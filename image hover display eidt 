@@ -64,6 +64,11 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
+	<td>//div[24]/div/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
 	<td>//div[${filterDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>

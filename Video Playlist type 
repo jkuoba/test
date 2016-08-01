@@ -90,12 +90,17 @@
 <!--14/16/44  select asset type -Photo Gallery -->
 <tr>
 	<td>assertText</td>
-	<td>//div[16]/div/div[11]</td>
+	<td>//div[${filterDropDown}]/div/div[10]</td>
 	<td>Video Playlist</td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//div[16]/div/div[11]</td>
+	<td>//div[${filterDropDown}]/div/div[10]</td>
 	<td></td>
 </tr>
 <tr>
@@ -167,12 +172,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/div/label</td>
+	<td>//div[4]/div/label</td>
 	<td>Asset Description</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/small/em</td>
+	<td>//div[4]/small/em</td>
 	<td>CQ Property Name: assetDescription/assetDescription</td>
 </tr>
 <tr>
@@ -182,7 +187,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[13]/div/label</td>
+	<td>//div[14]/div/label</td>
 	<td>Videos</td>
 </tr>
 <tr>
@@ -232,12 +237,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[13]/div[2]/div/span</td>
+	<td>//div[14]/div[2]/div/span</td>
 	<td>Add Item</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[13]/div[2]/div/span</td>
+	<td>//div[14]/div[2]/div/span</td>
 	<td>Add Item</td>
 </tr>
 <tr>
@@ -252,7 +257,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[13]/div[2]/div/span</td>
+	<td>//div[14]/div[2]/div/span</td>
 	<td>Add Item</td>
 </tr>
 <!--Debug-->
@@ -274,12 +279,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[7]/div/label</td>
+	<td>//div[8]/div/label</td>
 	<td>Brand</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[7]/small/em</td>
+	<td>//div[8]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:brand</td>
 </tr>
 <tr>
@@ -310,22 +315,22 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[8]/div/label</td>
+	<td>//div[9]/div/label</td>
 	<td>Not for Dynamic Use</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[8]/small/em</td>
+	<td>//div[9]/small/em</td>
 	<td>CQ Property Name: jcr:content/doNotFeature</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[9]/div/label</td>
+	<td>//div[10]/div/label</td>
 	<td>exact:Do Not Search?</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[9]/small/em</td>
+	<td>//div[10]/small/em</td>
 	<td>CQ Property Name: jcr:content/doNotSearch</td>
 </tr>
 <!--Tags & Keywords-->
@@ -336,12 +341,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[10]/div/label</td>
+	<td>//div[11]/div/label</td>
 	<td>Primary Tag Group</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[10]/small/em</td>
+	<td>//div[11]/small/em</td>
 	<td>CQ Property Name: tags/primaryTagGroup</td>
 </tr>
 <tr>
@@ -381,12 +386,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[11]/div/label</td>
+	<td>//div[12]/div/label</td>
 	<td>Secondary Tag Groups</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[11]/small/em</td>
+	<td>//div[12]/small/em</td>
 	<td>CQ Property Name: additionalTagGroups-X/additionalTagGroup</td>
 </tr>
 <tr>
@@ -396,7 +401,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[11]/div[2]/div/span</td>
+	<td>//div[12]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -491,12 +496,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[12]/div/label</td>
+	<td>//div[13]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[12]/small/em</td>
+	<td>//div[13]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:keywords</td>
 </tr>
 <!--Adobe CQ-->
@@ -517,7 +522,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[15]/div/label</td>
+	<td>//div[16]/div/label</td>
 	<td>Type Map</td>
 </tr>
 <tr>
@@ -527,7 +532,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[25]/div/label</td>
+	<td>//div[26]/div/label</td>
 	<td>Last Replication Action</td>
 </tr>
 <tr>
@@ -570,7 +575,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[22]/div/label</td>
+	<td>//div[23]/div/label</td>
 	<td>Description</td>
 </tr>
 <tr>
@@ -580,7 +585,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[23]/div/label</td>
+	<td>//div[24]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
@@ -590,12 +595,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[23]/div[2]/div/span</td>
+	<td>//div[24]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[24]/div/label</td>
+	<td>//div[25]/div/label</td>
 	<td>Robots</td>
 </tr>
 <tr>
@@ -605,12 +610,12 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[24]/div[2]/div</td>
+	<td>//div[25]/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[24]/div[2]/div</td>
+	<td>//div[25]/div[2]/div</td>
 	<td></td>
 </tr>
 <!--RR-->
@@ -653,11 +658,6 @@
 	<td>assertText</td>
 	<td>link=CQ CF</td>
 	<td>CQ CF</td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=div.widget.widget-urls &gt; h1</td>
-	<td>URLs</td>
 </tr>
 <tr>
 	<td>assertText</td>

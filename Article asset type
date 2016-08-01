@@ -87,15 +87,15 @@
 	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input</td>
 	<td></td>
 </tr>
-<!--14/16/44  select asset type - Article -->
+<!--Select asset type - Article -->
 <tr>
 	<td>assertText</td>
-	<td>//div[16]/div/div[3]</td>
+	<td>//div[${filterDropDown}]/div/div[3]</td>
 	<td>Article</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[3]</td>
+	<td>//div[${filterDropDown}]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
@@ -167,12 +167,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/div/label</td>
+	<td>//div[4]/div/label</td>
 	<td>Asset Description</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/small/em</td>
+	<td>//div[4]/small/em</td>
 	<td>CQ Property Name: assetDescription/assetDescription</td>
 </tr>
 <tr>
@@ -188,12 +188,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[20]/div/label</td>
+	<td>//div[21]/div/label</td>
 	<td>Source Package Anchor</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[20]/small/em</td>
+	<td>//div[21]/small/em</td>
 	<td>CQ Property Name: jcr:content/packageAnchor</td>
 </tr>
 <!--Source package anchor = value from CQ ad package / package anchor = new editorial value debug / package anchor = value that will be written to CQ We need to do it like that so we don't lose the value from CQ if it points at something we don't have in our system  [5:16]   its weird, but it works-->
@@ -241,12 +241,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[7]/div/label</td>
+	<td>//div[8]/div/label</td>
 	<td>Brand</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[7]/small/em</td>
+	<td>//div[8]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:brand</td>
 </tr>
 <tr>
@@ -273,21 +273,21 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[9]/div/label</td>
-	<td>exact:Do Not Search?</td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>//div[8]/div/label</td>
 	<td>Not for Dynamic Use</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[8]/small/em</td>
+	<td>//div[9]/small/em</td>
 	<td>CQ Property Name: jcr:content/doNotFeature</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[9]/small/em</td>
+	<td>//div[10]/div/label</td>
+	<td>exact:Do Not Search?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[10]/small/em</td>
 	<td>CQ Property Name: jcr:content/doNotSearch</td>
 </tr>
 <!--Checkbox testing  needed-->
@@ -309,12 +309,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[10]/div/label</td>
+	<td>//div[11]/div/label</td>
 	<td>Primary Tag Group</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[10]/small/em</td>
+	<td>//div[11]/small/em</td>
 	<td>CQ Property Name: tags/primaryTagGroup</td>
 </tr>
 <tr>
@@ -355,12 +355,17 @@
 <!--Secondary Tag Group -->
 <tr>
 	<td>click</td>
-	<td>//div[11]/div[2]/div/span</td>
+	<td>//div[12]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
 	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-2dea-d435-ab77-edff1e4a0000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370027&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff4380007&amp;aq=&amp;sg=true')])[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -405,12 +410,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[12]/div/label</td>
+	<td>//div[13]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[12]/small/em</td>
+	<td>//div[13]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:keywords</td>
 </tr>
 <tr>
@@ -436,7 +441,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[13]/div/label</td>
+	<td>//div[14]/div/label</td>
 	<td>CQ Path</td>
 </tr>
 <tr>
@@ -446,7 +451,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[14]/div/label</td>
+	<td>//div[15]/div/label</td>
 	<td>Type Map</td>
 </tr>
 <tr>
@@ -456,7 +461,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[14]/div[2]/div</td>
+	<td>//div[15]/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -466,7 +471,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div/div[2]</td>
+	<td>//div[24]/div/div[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -476,7 +481,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[29]/div/label</td>
+	<td>//div[30]/div/label</td>
 	<td>Last Replication Action</td>
 </tr>
 <tr>
@@ -528,7 +533,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[21]/div/label</td>
+	<td>//div[22]/div/label</td>
 	<td>Package Anchor</td>
 </tr>
 <tr>
@@ -568,12 +573,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[23]/div/label</td>
+	<td>//div[24]/div/label</td>
 	<td>Sponsorship Code</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[23]/small/em</td>
+	<td>//div[24]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:sponsorship</td>
 </tr>
 <tr>
@@ -594,7 +599,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[25]/div/label</td>
+	<td>//div[26]/div/label</td>
 	<td>Title</td>
 </tr>
 <tr>
@@ -604,7 +609,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[26]/div/label</td>
+	<td>//div[27]/div/label</td>
 	<td>Description</td>
 </tr>
 <tr>
@@ -614,7 +619,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[27]/div/label</td>
+	<td>//div[28]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
@@ -624,7 +629,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[27]/div[2]/div/span</td>
+	<td>//div[28]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -634,7 +639,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[28]/div/label</td>
+	<td>//div[29]/div/label</td>
 	<td>Robots</td>
 </tr>
 <tr>
@@ -644,17 +649,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[28]/div[2]/div</td>
+	<td>//div[29]/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[24]/div/div[5]</td>
+	<td>//div[32]/div/div[5]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[28]/div[2]/div</td>
+	<td>//div[29]/div[2]/div</td>
 	<td></td>
 </tr>
 <!--RR-->
@@ -700,11 +705,6 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.widget.widget-urls &gt; h1</td>
-	<td>URLs</td>
-</tr>
-<tr>
-	<td>assertText</td>
 	<td>css=div.widget.widget-sites &gt; h1</td>
 	<td>Sites</td>
 </tr>
@@ -715,7 +715,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[2]/div[2]/div[6]/h1</td>
+	<td>//div[3]/div[5]/h1</td>
 	<td>Watchers</td>
 </tr>
 <tr>

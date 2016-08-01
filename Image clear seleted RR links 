@@ -57,6 +57,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>storeElementPresent</td>
 	<td>link=Clear</td>
 	<td>YN</td>
@@ -103,7 +108,7 @@
 	<td>New Selection</td>
 </tr>
 <tr>
-	<td>assertText</td>
+	<td>waitForText</td>
 	<td>css=div[name=&quot;searchResultActions&quot;] &gt; h2</td>
 	<td>All</td>
 </tr>
@@ -164,7 +169,7 @@
 	<td>All</td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
+	<td>waitForElementPresent</td>
 	<td>link=Clear</td>
 	<td></td>
 </tr>

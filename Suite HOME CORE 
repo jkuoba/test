@@ -8,13 +8,15 @@
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
-<tr><td><a href="Global Variables">Global Variables</a></td></tr>
+<tr><td><a href="Global Variable 4 PM">Global Variable 4 PM</a></td></tr>
+<tr><td><a href="Global Variable 4 PM">Global Variables</a></td></tr>
 <tr><td><a href="Global Variables AM ">Global Variables AM </a></td></tr>
 <tr><td><a href="default filter workflow published">default filter workflow published</a></td></tr>
 <tr><td><a href="image hover display eidt ">image hover display eidt </a></td></tr>
 <tr><td><a href="Image Filters">Image Filters</a></td></tr>
 <tr><td><a href="Image clear seleted RR links ">Image clear seleted RR links </a></td></tr>
 <tr><td><a href="Selection RR">Selection RR</a></td></tr>
+<tr><td><a href="Default first look">Default first look</a></td></tr>
 <tr><td><a href="Image Workstream">Image Workstream</a></td></tr>
 <tr><td><a href="Approve_Apply_Submit_Reject_reSubmit">Approve_Apply_Submit_Reject_reSubmit</a></td></tr>
 <tr><td><a href="image Main Tab">image Main Tab</a></td></tr>
@@ -25,6 +27,11 @@
 <tr><td><a href="Image Adobe CQ">Image Adobe CQ</a></td></tr>
 <tr><td><a href="Image Analytics">Image Analytics</a></td></tr>
 <tr><td><a href="Image SEO">Image SEO</a></td></tr>
+<tr><td><a href="RR Bulk Edit ">RR Bulk Edit </a></td></tr>
+<tr><td><a href="RR Bulk workflow selected ">RR Bulk workflow selected </a></td></tr>
+<tr><td><a href="RR Rest of Action button">RR Rest of Action button</a></td></tr>
+<tr><td><a href="RR Image Save Draft ">RR Image Save Draft </a></td></tr>
+<tr><td><a href="RR Image Adobe CQ ">RR Image Adobe CQ </a></td></tr>
 <tr><td><a href="Video Filters">Video Filters</a></td></tr>
 <tr><td><a href="Video edit page rendering">Video edit page rendering</a></td></tr>
 <tr><td><a href="Video Main Tab">Video Main Tab</a></td></tr>
@@ -38,6 +45,9 @@
 <tr><td><a href="Video Analytics">Video Analytics</a></td></tr>
 <tr><td><a href="Video SEO">Video SEO</a></td></tr>
 <tr><td><a href="Video RR components">Video RR components</a></td></tr>
+<tr><td><a href="RR Video Action buttons">RR Video Action buttons</a></td></tr>
+<tr><td><a href="RR Video Archive Selected">RR Video Archive Selected</a></td></tr>
+<tr><td><a href="RR Video Adobe CQ ">RR Video Adobe CQ </a></td></tr>
 </tbody></table>
 </body>
 </html>

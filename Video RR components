@@ -207,7 +207,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[2]/div[2]/div/div/h1</td>
+	<td>//div[2]/div[2]/div/h1</td>
 	<td>Image Preview</td>
 </tr>
 <tr>
@@ -382,7 +382,6 @@
 	<td>css=select[name=&quot;00000155-3626-d82d-ad57-bf6f9cce0000/sites/owner&quot;]</td>
 	<td>label=regexp:Home</td>
 </tr>
-<!--ttttttttt-->
 <tr>
 	<td>click</td>
 	<td>//select[starts-with(@id, 'i')]</td>

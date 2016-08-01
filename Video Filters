@@ -17,6 +17,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>setSpeed</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/cms</td>
 	<td></td>
@@ -53,7 +58,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[${filterDropDown}]/div/div[10]</td>
+	<td>//div[${filterDropDown}]/div/div[9]</td>
 	<td></td>
 </tr>
 <!--Video asset STD END ==============================================-->
@@ -63,6 +68,11 @@
 	<td></td>
 </tr>
 <!--Starting from the video filter testing    *********************************-->
+<tr>
+	<td>assertText</td>
+	<td>css=form.searchFiltersType.bsp-onDomInsert-inserted-31 &gt; div.dropDown-input &gt; a.dropDown-label</td>
+	<td>Video</td>
+</tr>
 <tr>
 	<td>assertElementPresent</td>
 	<td>link=Reset</td>
@@ -87,7 +97,7 @@
 <tr>
 	<td>assertText</td>
 	<td>xpath=(//select[@name='s'])[2]</td>
-	<td>Sort: Publish DateSort: Update Date</td>
+	<td>Sort: NameSort: Publish DateSort: Update Date</td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
@@ -258,8 +268,8 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=figcaption</td>
-	<td>Unavailable Top 10 Cool Projects</td>
+	<td>css=figcaption &gt; span.visibilityLabel</td>
+	<td>Deactivated</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -350,7 +360,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=p</td>
+	<td>//div[2]/div/p</td>
 	<td>No matching items!</td>
 </tr>
 <tr>
@@ -424,7 +434,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=p</td>
+	<td>//div[2]/div/p</td>
 	<td>No matching items!</td>
 </tr>
 <tr>
@@ -583,7 +593,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=p</td>
+	<td>//div[2]/div/p</td>
 	<td>No matching items!</td>
 </tr>
 <tr>
@@ -604,11 +614,16 @@
 	<td>xpath=(//a[contains(text(),'Content Types')])[2]</td>
 	<td>Content Types</td>
 </tr>
-<!--QA Note: Type Map keep in video but unsearchable in Image atm -->
+<!--#A# ERROR, there is no data on content type    QA Note: Type Map keep in video but unsearchable in Image atm -->
 <tr>
 	<td>click</td>
 	<td>xpath=(//a[contains(text(),'Content Types')])[2]</td>
 	<td>Content Types</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -672,7 +687,6 @@
 	<td>link=Clear</td>
 	<td></td>
 </tr>
-<!--## Note: please add a CQ path to verify -->
 <!--CQ Path-->
 <tr>
 	<td>assertValue</td>
@@ -683,6 +697,11 @@
 	<td>type</td>
 	<td>css=input[name=&quot;f.cq.path&quot;]</td>
 	<td>/etc/sni-asset/gac/videos/7/77/771/7717/77170</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -722,6 +741,7 @@
 	<td>css=figcaption</td>
 	<td>Photo Gallery: Untitled</td>
 </tr>
+<!--## ERROR, when clear/delete the anchor image, user still seeing the image -->
 <tr>
 	<td>assertElementPresent</td>
 	<td>//div[2]/a/figure</td>
@@ -753,12 +773,12 @@
 	<td>2500</td>
 	<td></td>
 </tr>
-<!--video statusdropdown 30/   28-->
 <tr>
 	<td>click</td>
 	<td>//div[${videoStatusDropDown}]/div/div[4]</td>
 	<td></td>
 </tr>
+<!--video statusdropdown 30 28AM     36 PM -->
 <tr>
 	<td>click</td>
 	<td>css=div.searchFilter.searchFilter-visibilities &gt; div.dropDown-input</td>

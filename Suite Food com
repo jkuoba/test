@@ -8,8 +8,9 @@
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="Global Variables AM ">Global Variables AM </a></td></tr>
 <tr><td><a href="Global Variables">Global Variables</a></td></tr>
-<tr><td><a href="Recipe tabs">Recipe tabs</a></td></tr>
+<tr><td><a href="Recipe tabs - old ">Recipe tabs</a></td></tr>
 <tr><td><a href="Recipe Globel Search ">Recipe Globel Search </a></td></tr>
 </tbody></table>
 </body>

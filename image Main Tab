@@ -182,7 +182,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/div/label</td>
+	<td>//div[4]/div/label</td>
 	<td>Caption</td>
 </tr>
 <tr>
@@ -192,7 +192,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[4]/div/label</td>
+	<td>//div[5]/div/label</td>
 	<td>SEO Description</td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[5]/div</td>
+	<td>//div[6]/div</td>
 	<td>GuideAlt Tag</td>
 </tr>
 <tr>
@@ -212,7 +212,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/div/label</td>
+	<td>//div[7]/div/label</td>
 	<td>Internal Notes</td>
 </tr>
 <tr>
@@ -365,23 +365,8 @@
 	<td>GuideTitle</td>
 </tr>
 <tr>
-	<td>assertValue</td>
-	<td>//input[starts-with(@id, 'i')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>css=#i5b8086bdea11440eb3a1e074076b6fe0rNaN</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertElementPresent</td>
-	<td>//textarea[starts-with(@name,'00000155-fe6e')]</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
-	<td>//textarea[starts-with(@name,'00000155-fe6e')]</td>
+	<td>css=textarea[id$='NaN']</td>
 	<td>QA HotSpot Title 1</td>
 </tr>
 <tr>
@@ -447,6 +432,16 @@
 <tr>
 	<td>click</td>
 	<td>//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff437003a&amp;aq=&amp;sg=true')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(@href, '/cms/content/objectId.jsp?pt=00000155-310f-d435-ab77-f1df36a70000&amp;py=00000155-2b5e-d342-a55f-ab5ff4370038&amp;p=false&amp;rt=00000155-2b5e-d342-a55f-ab5ff437003a&amp;aq=&amp;sg=true')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.link &gt; figure &gt; figcaption &gt; span.breakable</td>
 	<td></td>
 </tr>
 <tr>

@@ -8,6 +8,7 @@
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="Global Variables AM ">Global Variables AM </a></td></tr>
 <tr><td><a href="Global Variables">Global Variables</a></td></tr>
 <tr><td><a href="Default first look">Default first look</a></td></tr>
 <tr><td><a href="RR Bulk Edit ">RR Bulk Edit </a></td></tr>

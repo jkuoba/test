@@ -129,7 +129,7 @@
 <!--Sources - Attributions-->
 <tr>
 	<td>assertText</td>
-	<td>//div[7]/div/label</td>
+	<td>//div[8]/div/label</td>
 	<td>Attributions</td>
 </tr>
 <tr>
@@ -251,7 +251,7 @@
 <!--Sources -Show  ===================-->
 <tr>
 	<td>assertText</td>
-	<td>//div[12]/div/label</td>
+	<td>//div[13]/div/label</td>
 	<td>Show</td>
 </tr>
 <tr>
@@ -260,8 +260,13 @@
 	<td>Current Value:</td>
 </tr>
 <tr>
-	<td>assertTextNotPresent</td>
-	<td>//div[12]/small/em</td>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[13]/small/em</td>
 	<td>CQ Property Name: metadata/editorialShow</td>
 </tr>
 <tr>
@@ -318,12 +323,12 @@
 <!--Source - Subjects -->
 <tr>
 	<td>assertText</td>
-	<td>//div[16]/div/label</td>
+	<td>//div[17]/div/label</td>
 	<td>Subjects</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div[2]/div/span</td>
+	<td>//div[17]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -383,7 +388,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[16]/div[2]/div/span</td>
+	<td>//div[17]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <!--testing Subjects Filter options -->
@@ -725,11 +730,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>css=span.link</td>
-	<td>Carol Duvall [HGTV]</td>
-</tr>
-<tr>
 	<td>assertText</td>
 	<td>css=span.link</td>
 	<td>Carol Duvall [HGTV]</td>
@@ -824,7 +824,7 @@
 <!--Brand-->
 <tr>
 	<td>assertText</td>
-	<td>//div[17]/div/label</td>
+	<td>//div[18]/div/label</td>
 	<td>Brand</td>
 </tr>
 <tr>
@@ -850,7 +850,7 @@
 <!--Project Name-->
 <tr>
 	<td>assertText</td>
-	<td>//div[18]/div/label</td>
+	<td>//div[19]/div/label</td>
 	<td>Project Name</td>
 </tr>
 <tr>
@@ -866,7 +866,7 @@
 <!--Copyright-->
 <tr>
 	<td>assertText</td>
-	<td>//div[19]/div/label</td>
+	<td>//div[20]/div/label</td>
 	<td>Copyright</td>
 </tr>
 <tr>
@@ -877,7 +877,7 @@
 <!--Credit-->
 <tr>
 	<td>assertText</td>
-	<td>//div[20]/div/label</td>
+	<td>//div[21]/div/label</td>
 	<td>Credit</td>
 </tr>
 <tr>
@@ -888,13 +888,13 @@
 <!--QA note: not travel image does not have location info and field -->
 <tr>
 	<td>assertText</td>
-	<td>//div[21]/div</td>
+	<td>//div[22]/div</td>
 	<td>GuideLocation</td>
 </tr>
 <!--Owner-->
 <tr>
 	<td>assertText</td>
-	<td>//div[22]/div</td>
+	<td>//div[23]/div</td>
 	<td>GuideOwner</td>
 </tr>
 <tr>

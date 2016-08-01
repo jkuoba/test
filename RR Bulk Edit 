@@ -19,7 +19,7 @@
 </tr>
 <tr>
 	<td>setSpeed</td>
-	<td>700</td>
+	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -133,7 +133,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[${statusDropDown}]/div/div[6]</td>
+	<td>//div[${statusDropDownRR}]/div/div[6]</td>
 	<td></td>
 </tr>
 <tr>
@@ -143,7 +143,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[${statusDropDown}]/div/div[9]</td>
+	<td>//div[${statusDropDownRR}]/div/div[9]</td>
 	<td></td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[${statusDropDown}]/div/div[3]</td>
+	<td>//div[${statusDropDownRR}]/div/div[3]</td>
 	<td></td>
 </tr>
 <tr>
@@ -436,7 +436,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//form[starts-with(@id, 'i')]/div/div[43]/div/label</td>
+	<td>//form[starts-with(@id, 'i')]/div/div[44]/div/label</td>
 	<td>CQ Path</td>
 </tr>
 <tr>

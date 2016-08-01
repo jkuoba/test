@@ -127,7 +127,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[23]/div/label</td>
+	<td>//div[24]/div/label</td>
 	<td>Rights / Usage Permissions</td>
 </tr>
 <tr>
@@ -239,22 +239,22 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[24]/div/label</td>
+	<td>//div[25]/div/label</td>
 	<td>Not for Dynamic Use</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[24]/div/input</td>
+	<td>//div[25]/div/input</td>
 	<td>Not for Dynamic Use</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[25]/div/label</td>
+	<td>//div[26]/div/label</td>
 	<td>exact:Do Not Search?</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[25]/div/label</td>
+	<td>//div[26]/div/label</td>
 	<td>exact:Do Not Search?</td>
 </tr>
 <tr>
@@ -264,38 +264,28 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[25]/div/input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>//div[26]/div/label</td>
-	<td>Public</td>
-</tr>
-<tr>
-	<td>click</td>
 	<td>//div[26]/div/input</td>
-	<td>Public</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[27]/div/input</td>
-	<td>Public</td>
+	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>//div[27]/div/label</td>
-	<td>exact:Sponsored?</td>
+	<td>Public</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>//div[27]/div/input</td>
-	<td></td>
+	<td>Public</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[27]/div/input</td>
+	<td>Public</td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>//div[28]/div/label</td>
-	<td>exact:Disable Products?</td>
+	<td>exact:Sponsored?</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -305,7 +295,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[29]/div/label</td>
-	<td>Has Wayfair Products?</td>
+	<td>exact:Disable Products?</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -315,7 +305,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[30]/div/label</td>
-	<td>Display Wayfair?</td>
+	<td>Has Wayfair Products?</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -325,27 +315,22 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[31]/div/label</td>
-	<td>Dynamic Promotion Start</td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>//div[31]/div[2]/span</td>
-	<td>N/A</td>
+	<td>Display Wayfair?</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[31]/div[2]/span</td>
-	<td>Dynamic Promotion Start</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=span.calendar_set</td>
+	<td>//div[31]/div/input</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
 	<td>//div[32]/div/label</td>
-	<td>Dynamic Promotion End</td>
+	<td>Dynamic Promotion Start</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[32]/div[2]/span</td>
+	<td>N/A</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -360,11 +345,26 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[33]/div/label</td>
+	<td>Dynamic Promotion End</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[33]/div[2]/span</td>
+	<td>Dynamic Promotion Start</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.calendar_set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[34]/div/label</td>
 	<td>Expiration Date</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[33]/div[2]/span</td>
+	<td>//div[34]/div[2]/span</td>
 	<td>2022-09-29 21:19:15</td>
 </tr>
 </tbody></table>

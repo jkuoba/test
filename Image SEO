@@ -132,12 +132,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[52]/div/label</td>
+	<td>//div[53]/div/label</td>
 	<td>Title</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[53]/div/label</td>
+	<td>//div[54]/div/label</td>
 	<td>Description</td>
 </tr>
 <tr>
@@ -148,7 +148,7 @@
 <!--Note: Keyword field, user needs to enter first -->
 <tr>
 	<td>assertText</td>
-	<td>//div[54]/div/label</td>
+	<td>//div[55]/div/label</td>
 	<td>Keywords</td>
 </tr>
 <tr>
@@ -163,7 +163,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[54]/div[2]/div/span</td>
+	<td>//div[55]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -173,7 +173,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[54]/div[2]/div/span</td>
+	<td>//div[55]/div[2]/div/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -188,17 +188,17 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[55]/div/label</td>
+	<td>//div[56]/div/label</td>
 	<td>Robots</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[55]/small</td>
+	<td>//div[56]/small</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[55]/div[2]/div</td>
+	<td>//div[56]/div[2]/div</td>
 	<td></td>
 </tr>
 <tr>
@@ -208,7 +208,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[55]/div[2]/div</td>
+	<td>//div[56]/div[2]/div</td>
 	<td></td>
 </tr>
 </tbody></table>

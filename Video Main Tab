@@ -117,11 +117,11 @@
 <tr>
 	<td>assertText</td>
 	<td>//div[3]/div/label</td>
-	<td>Editorial Title</td>
+	<td>Source Title</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[3]/small</td>
+	<td>//div[4]/small/em</td>
 	<td>CQ Property Name: jcr:content/editorialTitle</td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[6]/div/label</td>
+	<td>//div[7]/div/label</td>
 	<td>Editorial Description</td>
 </tr>
 <tr>
@@ -151,7 +151,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[8]/div/label</td>
+	<td>//div[9]/div/label</td>
 	<td>Editorial SEO Title</td>
 </tr>
 <tr>
@@ -167,7 +167,7 @@
 <!--## ERROR Video Preview does not have image -->
 <tr>
 	<td>assertText</td>
-	<td>//div[10]/div/label</td>
+	<td>//div[11]/div/label</td>
 	<td>Editorial SEO Description</td>
 </tr>
 <tr>
@@ -182,7 +182,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[12]/div/label</td>
+	<td>//div[13]/div/label</td>
 	<td>Internal Notes</td>
 </tr>
 <tr>
@@ -192,7 +192,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[13]/div/label</td>
+	<td>//div[14]/div/label</td>
 	<td>Tracking</td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[17]/div/label</td>
+	<td>//div[18]/div/label</td>
 	<td>Cq Thumbnail Image</td>
 </tr>
 <tr>
@@ -253,7 +253,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[29]/div/label</td>
+	<td>//div[30]/div/label</td>
 	<td>Video Preview</td>
 </tr>
 <!--#############-->
@@ -264,12 +264,12 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[63]/h2</td>
+	<td>//div[64]/h2</td>
 	<td>Open Graph</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[63]/div/label</td>
+	<td>//div[64]/div/label</td>
 	<td>OpenGraph Title</td>
 </tr>
 <tr>
@@ -279,7 +279,7 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[65]/div/label</td>
+	<td>//div[66]/div/label</td>
 	<td>OpenGraph Description</td>
 </tr>
 <tr>

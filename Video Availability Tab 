@@ -111,22 +111,22 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[14]/div/label</td>
+	<td>//div[15]/div/label</td>
 	<td>exact:No Index?</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[14]/small/em</td>
+	<td>//div[15]/small/em</td>
 	<td>CQ Property Name: jcr:content/sni:noIndex</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[39]/small/span</td>
+	<td>//div[40]/small/span</td>
 	<td>Default: Tue Jul 01 03:00:00 EDT 2014</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[39]/div/label</td>
+	<td>//div[40]/div/label</td>
 	<td>Available Date Override</td>
 </tr>
 <tr>
@@ -141,17 +141,17 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[42]/div/label</td>
+	<td>//div[43]/div/label</td>
 	<td>Expiration Date Override</td>
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[42]/small/span</td>
+	<td>//div[43]/small/span</td>
 	<td>Default: Mon Jul 11 14:36:18 EDT 2044</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[42]/div[2]/span</td>
+	<td>//div[43]/div[2]/span</td>
 	<td></td>
 </tr>
 <tr>

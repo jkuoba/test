@@ -11,6 +11,7 @@
 <thead>
 <tr><td rowspan="1" colspan="3">RR Editing Image</td></tr>
 </thead><tbody>
+<!--Test Save Draft should be using Published asset -->
 <tr>
 	<td>open</td>
 	<td>/cms</td>
@@ -55,7 +56,7 @@
 <tr>
 	<td>type</td>
 	<td>//input[@autocomplete='off']</td>
-	<td>sugarlandsaraevans2cmaawards2007nominees_h</td>
+	<td>mirandalambert20_v</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -75,18 +76,18 @@
 <!--test for Save Draft -->
 <tr>
 	<td>click</td>
-	<td>//textarea[@name='00000155-336f-d435-ab77-f3ff70410000/seoDescription']</td>
+	<td>//textarea[@data-dynamic-field-name='seoDescription']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>//textarea[@name='00000155-336f-d435-ab77-f3ff70410000/seoDescription']</td>
+	<td>//textarea[@name='00000155-336f-d435-ab77-f3ff30e20000/seoDescription']</td>
 	<td>Bulk Edit SEO Description update save draft testing</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.inputContainer.state-changed &gt; small.inputNote</td>
-	<td></td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -94,7 +95,7 @@
 	<td>Save Draft</td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>css=button[name=&quot;action-newDraft&quot;]</td>
 	<td></td>
 </tr>
@@ -104,10 +105,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertText</td>
+	<td>//p[contains(.,'Saved')]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertElementPresent</td>
 	<td>css=p</td>
 	<td></td>
 </tr>
+<!--## ERROR Due to  CORE-2201 Media Desk: Cq path not found message pops up with "Force activate in CQ" clicks.  scannot verify atm-->
 <tr>
 	<td>assertText</td>
 	<td>css=a.Message-returnToDashboard</td>
